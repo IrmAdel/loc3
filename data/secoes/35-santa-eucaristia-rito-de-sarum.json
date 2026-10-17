@@ -1,1164 +1,240 @@
 {
-  "id": "35-santa-eucaristia-rito-de-sarum",
-  "titulo": "Santa Eucaristia, Rito de Sarum",
-  "modo": "prosa",
-  "paginaInicial": null,
-  "paginaFinal": null,
-  "blocos": [
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Santa Eucaristia - Rito de Sarum"
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Preparação (na Sacristia, Enquanto se Paramenta)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* No altar de Nossa Senhora."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "HINO"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Vem, Espírito Criador,\nvisita a mente dos teus fiéis;\nenche de graça do alto\nos corações que criaste.\n\nTu és chamado Consolador,\ndom do Deus altíssimo,\nfonte viva, fogo, amor\ne unção espiritual.\n\nTu és o dom sétuplo,\ndedo da mão direita de Deus;\ntu és a promessa do Pai,\nque dás a palavra aos lábios.\n\nAcende a luz em nossos sentidos,\nderrama o amor em nossos corações;\nfortalece com tua força eterna\na fraqueza do nosso corpo.\n\nAfasta de nós o inimigo,\nconcede-nos logo a paz;\nsendo tu o nosso guia,\nevitaremos todo mal.\n\nFaze-nos conhecer o Pai\ne também conhecer o Filho;\ne crer sempre em ti,\nEspírito de ambos.\n\nLouvor ao Pai e ao Filho,\ne também ao Espírito Consolador;\ne que o Filho nos envie\no dom do Espírito Santo."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Envia o teu Espírito, e tudo será criado.\nAcólito - E renovarás a face da terra."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "ORAÇÃO"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Deus, para quem todo coração está aberto, toda vontade fala e nenhum segredo se esconde: purifica os pensamentos do nosso coração pela inspiração do teu Espírito Santo, para que te amemos com perfeição e dignamente glorifiquemos o teu Santo Nome. Por nosso Senhor Jesus Cristo, que contigo vive e reina, na unidade do mesmo Espírito Santo, por todos os séculos dos séculos.\nAcólito - Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Segue-se, andando em procissão para o altar-mor:"
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "ANTÍFONA"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Introibo ad altare Dei."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "SALMO 43 (VULGATA: 42)"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Faze-me justiça, ó Deus, defende a minha causa contra os maus; livra-me do homem fraudulento e perverso. Pois és tu o Deus que me protege; por que me rejeitas? E por que ando eu abatido sob a opressão do inimigo? Envia a tua luz e a tua verdade, para que elas me guiem e me levem ao teu santo monte e à tua morada. Possa eu então chegar ao altar de Deus, a Deus, que alegra a minha juventude; e louvar-te ao som da harpa, ó Deus, Deus meu! Por que estás abatida, ó minha alma? E por que te perturbas no meu íntimo? Espera em Deus, que ainda o louvarei, pois é ele a salvação de minha pessoa e Deus meu."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Glória ao Pai e ao Filho, e ao Espírito Santo;\nComo era no princípio, é agora e será sempre, por todos os séculos. Amém."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "ANTÍFONA"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Introibo ad altare Dei: ad Deum qui laetificat juventutem meam.\n\nKyrie eleison.\nChriste eleison.\nKyrie eleison.\n\nPai nosso, que estás nos céus, santificado seja o teu Nome; venha o teu Reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje. E perdoa-nos as nossas dívidas, assim como nós também perdoamos aos nossos devedores. E não nos deixes cair em tentação, mas livra-nos do mal.\n\nAve Maria, cheia de graça, o Senhor é contigo; bendita és tu entre as mulheres, e bendito é o fruto do teu ventre. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Aqui o sacerdote se dirige ao altar."
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Ao Pé do Altar: Confissão"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Ao pé do altar, no degrau."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - E não nos deixes cair em tentação.\nAcólito - Mas livra-nos do mal.\nCelebrante - Dai graças ao Senhor, porque ele é bom.\nAcólito - Porque a sua misericórdia dura para sempre."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Confesso a Deus, à bem-aventurada Maria, a todos os santos e a vós, irmãos, que pequei gravemente em pensamentos, palavras e obras: minha culpa. Peço à Santa Maria, a todos os santos de Deus e a vós, que oreis por mim."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante faz uma venia."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Acólito - Que Deus Todo-poderoso tenha misericórdia de vós, perdoe todos os vossos pecados, vos livre de todo mal, vos conserve e confirme no bem e vos conduza à vida eterna.\nCelebrante - Amém."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Acólito - Confesso a Deus, à bem-aventurada Maria, a todos os santos e a ti, padre, que pequei gravemente em pensamentos, palavras e obras: minha culpa. Peço à Santa Maria, a todos os santos de Deus e a ti, padre, que ores por mim."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O acólito se ajoelha."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Que Deus Todo-poderoso tenha misericórdia de vós, perdoe todos os vossos pecados, vos livre de todo mal, vos conserve e confirme no bem e vos conduza à vida eterna.\n\nQue Deus Todo-poderoso e misericordioso vos conceda a absolvição e a remissão de todos os vossos pecados, tempo para verdadeira penitência e emenda de vida, e a graça e a consolação do Espírito Santo.\nAcólito - Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O acólito se levanta e permanece no lugar."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O nosso auxílio está no nome do Senhor.\nAcólito - Que fez o céu e a terra.\nCelebrante - Seja bendito o nome do Senhor.\nAcólito - Desde agora e para sempre.\n\nCelebrante - Oremos."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante sobe ao altar e diz em voz baixa, inclinado, de mãos juntas:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Afasta de nós, pedimos-te, Senhor, todas as nossas iniquidades, para que mereçamos entrar com mentes puras no Santo dos Santos. Por Cristo, nosso Senhor. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante se ergue, beija o altar no meio e faz o sinal da cruz:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Em nome do Pai ✠ e do Filho e do Espírito Santo. Amém."
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Entrada da Palavra"
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "INTROITO (antífona do dia)"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Antífona do dia.)\n\nCelebrante - (Versículo do salmo.) Glória ao Pai e ao Filho, e ao Espírito Santo;\nAcólito - Como era no princípio, é agora e será sempre, por todos os séculos. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Repete-se a antífona do Introito."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "KYRIE"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Todos - Kyrie eleison. Kyrie eleison. Kyrie eleison.\nChriste eleison. Christe eleison. Christe eleison.\nKyrie eleison. Kyrie eleison. Kyrie eleison."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "GLÓRIA IN EXCELSIS"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Omite-se durante todo o Advento e da Septuagésima até a Vigília Pascal. Dito no meio do altar."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Glória a Deus nas alturas,"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Todos - E na terra paz, boa vontade entre os homens. Nós te louvamos, bendizemos e adoramos, glorificamos e te damos graças por tua grande glória. Ó Senhor Deus, Rei do Céu, Deus Pai Onipotente. Ó Senhor, Unigênito Filho, Jesus Cristo; ó Senhor Deus, Cordeiro de Deus, Filho do Eterno Pai, que tiras os pecados do mundo, tem misericórdia de nós. Tu que tiras os pecados do mundo, recebe a nossa oração. Tu que estás à destra de Deus Pai, tem misericórdia de nós. Porque só tu és Santo; só tu és o Senhor; só tu, ó Cristo, com o Espírito Santo, és altíssimo na glória de Deus Pai. Amém."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "COLETA"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo.\n\nCelebrante - Oremos."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Coleta do dia, com sua conclusão própria.)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Havendo memórias ou comemorações, dizem-se sob um só «Oremos» e um só «Por nosso Senhor», até o máximo de sete coletas."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Povo - Amém."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "EPÍSTOLA"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Leitura do dia.)"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Povo - Demos graças a Deus."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "GRADUAL"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Gradual do dia.)"
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "ALELUIA (ou TRATO)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Fora do Tempo Pascal diz-se o Aleluia ou, em seu lugar, o Trato; no Tempo Pascal, dois Aleluias."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Aleluia ou Trato do dia.)"
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "SEQUÊNCIA"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Quando prescrita."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Sequência do dia.)"
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "EVANGELHO"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O Santo Evangelho de nosso Senhor Jesus Cristo, conforme __________, no capítulo __________, começando com o versículo __________."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante faz o sinal da cruz sobre o livro, na fronte e no peito."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Povo - Glória te seja dada, ó Senhor."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Evangelho do dia.)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante beija o livro."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "CREDO"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Nos domingos e festas em que o calendário o prescreve."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Todos - Creio em um só Deus, Pai Onipotente, Criador do céu e da terra, e de todas as coisas visíveis e invisíveis; e em um só Senhor Jesus Cristo, Filho Unigênito de Deus; gerado de seu Pai antes de todos os mundos, Deus de Deus, Luz de Luz, Verdadeiro Deus, de Verdadeiro Deus; gerado, não feito; consubstancial com o Pai; por quem todas as coisas foram feitas; o qual por nós homens e pela nossa salvação desceu do Céu;"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "e encarnou, por obra do Espírito Santo, da Virgem Maria, e foi feito homem;"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "foi também crucificado por nós, sob o poder de Pôncio Pilatos;"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "padeceu e foi sepultado:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "e ao terceiro dia ressuscitou, segundo as Escrituras: e subiu ao Céu, e está sentado à direita do Pai: e virá outra vez, com glória, a julgar os vivos e os mortos; e o seu Reino não terá fim. E creio no Espírito Santo, Senhor, Doador da Vida, procedente do Pai e do Filho; o qual com o Pai e o Filho juntamente é adorado e glorificado; o qual falou pelos profetas: e creio na Igreja Una, Santa, Católica e Apostólica:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "reconheço um só Batismo para a remissão de pecados: e espero a ressurreição dos mortos: e a vida do mundo vindouro. Amém."
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Ofertório"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "OFERTÓRIO (antífona do dia)"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Antífona do ofertório do dia.)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante toma o cálice e, elevando-o um pouco com as duas mãos, oferece o sacrifício ao Senhor, dizendo:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Recebe, ó Santíssima Trindade, esta oferta que eu, indigno pecador, te apresento em honra tua, da bem-aventurada Maria e de todos os teus santos, pelos meus pecados e ofensas, pela salvação dos vivos e pelo descanso de todos os fiéis falecidos. Em nome do Pai e do Filho e do Espírito Santo, seja aceito por Deus Todo-poderoso este novo sacrifício."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Coloca o cálice sobre o altar e o cobre com o corporal; coloca o pão sobre o corporal diante do cálice. Havendo incenso, o celebrante diz:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Dirigatur, Domine, ad te oratio mea, sicut incensum in conspectu tuo."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante vai ao lado da epístola e lava as mãos, dizendo:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Lava-me, Senhor, de toda impureza da mente e do corpo, para que eu possa cumprir, com pureza, a santa obra do Senhor."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Volta ao meio do altar, inclinado, de mãos juntas:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Em espírito de humildade e com o coração contrito, sejamos acolhidos por ti, Senhor; e que o nosso sacrifício seja realizado hoje diante de ti, de modo que te agrade, Senhor meu Deus."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante se ergue, beija o altar, abençoa a oferta e se benze:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Em nome do Pai ✠ e do Filho e do Espírito Santo."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Volta-se ao povo e diz em voz baixa:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Orai, irmãos e irmãs, por mim, para que o meu sacrifício e o vosso seja aceito pelo Senhor, nosso Deus."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O acólito responde em voz baixa:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Acólito - Que a graça do Espírito Santo ilumine o teu coração e os teus lábios, e que o Senhor receba dignamente das tuas mãos este sacrifício de louvor pelos nossos pecados e ofensas."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "SECRETAS"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Oremos."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Secreta do dia.)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* As secretas das memórias seguem na mesma ordem e número das coletas."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Em voz alta:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Por todos os séculos dos séculos.\nPovo - Amém."
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Prefácio e Sanctus"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo.\nCelebrante - Elevai os corações.\nPovo - Ao Senhor os elevamos.\nCelebrante - Demos graças ao Senhor, nosso Deus.\nPovo - Assim fazê-lo é digno e justo."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "PREFÁCIO COMUM (cotidiano)"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - É verdadeiramente digno e justo, nosso dever e nossa salvação, que sempre e em toda parte te rendamos graças, Senhor santo, Pai Onipotente, Deus eterno, por Cristo, nosso Senhor. Por ele, os anjos louvam a tua majestade, as dominações a adoram, as potestades a reverenciam com tremor; os céus, as virtudes celestes e os bem-aventurados serafins a celebram juntos, com alegria. Concede que a eles se unam também as nossas vozes, e com humilde louvor nós digamos:"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Quando há Prefácio Próprio, ele substitui o texto acima, a partir de «Deus eterno»."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "PREFÁCIO PRÓPRIO DO DIA"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Prefácio próprio do dia, se houver.)"
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "SANCTUS"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Todos - Santo, Santo, Santo, Senhor Deus do Universo. Os céus e a terra estão plenos da tua glória. Hosana nas alturas. Bendito o que vem em nome do Senhor. Hosana nas alturas."
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Cânon da Missa"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - A ti, portanto, clementíssimo Pai, por Jesus Cristo, teu Filho, nosso Senhor, suplicantes pedimos e rogamos:"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante se ergue e beija o altar."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - que aceites e abençoes estes ✠ dons, estas ✠ oferendas, estes ✠ santos sacrifícios imaculados,"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Faz os sinais sobre o cálice e eleva as mãos:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - em primeiro lugar, oferecemos-te por tua santa Igreja Católica: concede-lhe a paz, protege-a, une-a e governa-a por todo o mundo, juntamente com o teu servo, o(a) Arcebispo(a) de Cantuária __________, com o nosso Primaz __________, com o nosso bispo diocesano __________ e com todos os que professam, com retidão, a fé católica e apostólica."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Aqui reza pelos vivos:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Lembra-te, Senhor, dos teus servos e servas __________ e __________ e de todos os que aqui estão, cuja fé e devoção conheces; por eles te oferecemos, ou eles mesmos te oferecem, este sacrifício de louvor por si e por todos os seus, pela redenção das suas almas, na esperança de salvação e de segurança, e te dirigem as suas preces, a ti, Deus eterno, vivo e verdadeiro."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Em comunhão e venerando a memória, em primeiro lugar, da gloriosa sempre Virgem Maria, mãe de nosso Deus e Senhor Jesus Cristo; e também dos teus bem-aventurados apóstolos e mártires Pedro e Paulo, André, Tiago, João, Tomé, Tiago, Filipe, Bartolomeu, Mateus, Simão e Tadeu, Lino, Cleto, Clemente, Sisto, Cornélio, Cipriano, Lourenço, Crisógono, João e Paulo, Cosme e Damião, e de todos os teus santos; por seus méritos e orações, concede que sejamos sempre protegidos pelo auxílio da tua proteção. Pelo mesmo Cristo, nosso Senhor. Amém."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "COMMUNICANTES PRÓPRIO DO DIA"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Communicantes próprio, se houver.)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante olha a hóstia com grande reverência:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Aceita, pois, Senhor, esta oferta do nosso serviço e de toda a tua família; dispõe os nossos dias na tua paz, livra-nos da condenação eterna e conta-nos entre os teus eleitos. Por Cristo, nosso Senhor. Amém."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "HANC IGITUR PRÓPRIO DO DIA"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Hanc igitur próprio, se houver.)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante olha de novo a hóstia:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - A qual oferta, ó Deus, nós te pedimos que te dignes torná-la em tudo bene✠dita, ad✠scrita, ra✠ta, espiritual e aceitável, para que se torne para nós o Cor✠po e o San✠gue do teu amadíssimo Filho, nosso Senhor Jesus Cristo."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante toma a hóstia e a eleva um pouco:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O qual, na véspera de sua paixão, tomou o pão em suas santas e veneráveis mãos e, elevando os olhos ao céu, a ti, Deus Pai Onipotente, dando-te graças ✠ abençoou, partiu e deu aos seus discípulos, dizendo: Tomai e comei todos."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - ISTO É O MEU CORPO."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Estas palavras devem ser ditas de um só fôlego, sem pausa. O celebrante eleva a hóstia acima da fronte para ser vista pelo povo e a repõe diante do cálice. Descobre o cálice e o toma entre as mãos:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Do mesmo modo, depois da ceia, tomou também este precioso cálice em suas santas e veneráveis mãos, deu-te graças de novo, abençoou ✠ e o deu aos seus discípulos, dizendo: Tomai e bebei todos."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - ESTE É O CÁLICE DO MEU SANGUE, DA NOVA E ETERNA ALIANÇA, MISTÉRIO DA FÉ, QUE SERÁ DERRAMADO POR VÓS E POR MUITOS PARA A REMISSÃO DOS PECADOS."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante eleva o cálice:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Todas as vezes que fizerdes isto, fazei-o em memória de mim."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Repõe o cálice e estende os braços em cruz, até «de tuis donis»:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Por isso, Senhor, lembrados nós, teus servos e também o teu povo santo, da bem-aventurada Paixão de Cristo, teu Filho, nosso Senhor Deus, bem como da sua Ressurreição dentre os mortos e da sua gloriosa Ascensão aos céus, oferecemos à tua excelsa Majestade, dos teus próprios dons e dádivas, a Hóstia ✠ pura, a Hóstia ✠ santa, a Hóstia ✠ imaculada, o Pão ✠ santo da vida eterna e o Cálice ✠ da salvação perpétua."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Sobre estas oferendas, digna-te olhar com rosto benigno e sereno, e aceitá-las como aceitaste os dons do teu servo, o justo Abel, o sacrifício do nosso patriarca Abraão e o que te ofereceu o teu sumo sacerdote Melquisedeque: sacrifício santo, hóstia imaculada."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante, inclinado, de mãos cruzadas:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Suplicantes te rogamos, Deus Onipotente: manda que estas ofertas sejam levadas pelas mãos do teu santo anjo ao teu altar sublime, à presença da tua divina Majestade, para que todos nós que,"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante se ergue e beija o altar:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - ao participarmos deste altar, recebermos o sacrossanto Corpo e Sangue ✠ do teu Filho, sejamos cheios de toda ✠ bênção e graça do céu. Pelo mesmo Cristo, nosso Senhor. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Aqui reza pelos mortos:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Lembra-te também, Senhor, das almas dos teus servos e servas __________ e __________ que nos precederam com o sinal da fé e dormem o sono da paz. A eles, Senhor, e a todos os que repousam em Cristo, nós te pedimos que concedas o lugar do refrigério, da luz e da paz. Pelo mesmo Cristo, nosso Senhor. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante bate uma vez no peito:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Também a nós, pecadores, teus servos, que esperamos na multidão das tuas misericórdias, digna-te conceder alguma parte e comunhão com os teus santos apóstolos e mártires: com João, Estêvão, Matias, Barnabé, Inácio, Alexandre, Marcelino, Pedro, Felicidade, Perpétua, Lúcia, Ágata, Inês, Cecília, Anastácia e com todos os teus santos; admite-nos na companhia deles, nós te pedimos, não pesando os nossos méritos, mas concedendo o teu perdão. Por Cristo, nosso Senhor."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Por ele, Senhor, crias sempre todos estes bens,"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante faz três sinais da cruz sobre o cálice:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - santifi✠cas, vivifi✠cas, aben✠çoas e os dás a nós."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Descobre o cálice e faz com a hóstia cinco sinais da cruz:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Por ✠ ele, com ✠ ele e nele ✠, a ti, Deus Pai ✠ Onipotente, na unidade do Espírito ✠ Santo, toda honra e toda glória,"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Cobre o cálice e mantém as mãos sobre o altar até o Pai Nosso:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - por todos os séculos dos séculos.\nPovo - Amém."
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Pai Nosso, Fração e Comunhão"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Oremos. Instruídos pelos ensinamentos da salvação e formados pela instituição divina, ousamos dizer:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Pai nosso, que estás nos céus, santificado seja o teu Nome; venha o teu Reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje. E perdoa-nos as nossas dívidas, assim como nós também perdoamos aos nossos devedores. E não nos deixes cair em tentação.\nPovo - Mas livra-nos do mal.\nCelebrante - Amém."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Livra-nos, pedimos-te, Senhor, de todos os males, passados, presentes e futuros; e, pela intercessão da bem-aventurada e gloriosa sempre Virgem Maria, mãe de Deus, e dos teus bem-aventurados apóstolos Pedro, Paulo e André, com todos os santos,"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante toma a patena, beija-a, toca com ela o olho esquerdo, depois o direito, faz uma cruz sobre a cabeça e a repõe:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - concede-nos, benigno, a paz em nossos dias, para que, ajudados pela tua misericórdia, estejamos sempre livres do pecado e protegidos de toda perturbação;"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Descobre o cálice e parte a hóstia em três partes:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - pelo mesmo Senhor nosso Jesus Cristo, teu Filho, que contigo vive e reina na unidade do Espírito Santo, Deus,"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Mantém as duas partes na mão esquerda e a terceira na direita:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - por todos os séculos dos séculos.\nPovo - Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Faz três cruzes sobre o cálice com a terceira parte:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - A paz ✠ do Senhor esteja ✠ sempre ✠ convosco.\nPovo - Seja também contigo."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "CORDEIRO DE DEUS"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Em voz baixa. Nas Missas dos defuntos, em lugar de «tem misericórdia de nós» (duas vezes) diz-se «dá-lhes o descanso» e, em lugar de «dá-nos a tua paz», «dá-lhes o descanso eterno»."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Cordeiro de Deus, que tiras os pecados do mundo, tem misericórdia de nós.\nCordeiro de Deus, que tiras os pecados do mundo, tem misericórdia de nós.\nCordeiro de Deus, que tiras os pecados do mundo, dá-nos a tua paz."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante deixa cair, em forma de cruz, a terceira parte no Sangue:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Que esta sacro✠santa comunhão do Corpo e do Sangue de nosso Senhor Jesus Cristo seja para mim e para todos os que a recebem salvação da mente e do corpo, e preparo salutar para merecer e alcançar a vida eterna. Pelo mesmo Cristo, nosso Senhor. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Antes da paz:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Senhor, santo Pai, Deus eterno e Todo-poderoso, concede-me receber este sacrossanto Corpo e Sangue do teu Filho, nosso Senhor Jesus Cristo, de tal modo que, por ele, mereça receber o perdão de todos os meus pecados, ser cheio do teu Santo Espírito e ter a tua paz; pois só tu és Deus, e fora de ti não há outro, e o teu Reino e glorioso império permanecem sem fim pelos séculos dos séculos. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante beija o corporal e a borda do cálice, depois beija o acólito:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - A paz seja contigo e com a Igreja de Deus.\nAcólito - Seja também contigo."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Antes de comungar, segurando a hóstia com as duas mãos, o celebrante diz em voz baixa:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Deus Pai, fonte e origem de toda a bondade, que, movido pela misericórdia, quiseste que o teu Unigênito descesse por nós às profundezas do mundo e assumisse a carne, que eu, indigno, seguro aqui em minhas mãos:"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Inclina-se diante da hóstia:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - adoro-te, glorifico-te, louvo-te com toda a intenção da mente e do coração; e peço que não abandones a nós, teus servos, mas perdoes os nossos pecados, para que possamos servir somente a ti, Deus vivo e verdadeiro, com coração puro e corpo casto. Pelo mesmo Cristo, nosso Senhor. Amém."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Senhor Jesus Cristo, Filho do Deus vivo, que, por vontade do Pai e com a cooperação do Espírito Santo, deste a vida ao mundo pela tua morte, livra-me, peço, por este sacrossanto Corpo e este teu Sangue, de todas as minhas iniquidades e de todos os males; faze-me obedecer sempre aos teus mandamentos e nunca permitas que eu me separe de ti, Salvador do mundo, que com Deus Pai e o mesmo Espírito Santo vives e reinas, Deus, por todos os séculos dos séculos. Amém."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O sacramento do teu Corpo e Sangue, Senhor Jesus Cristo, que, embora indigno, recebo, não me seja para julgamento e condenação; mas, pela tua bondade, aproveite à saúde do meu corpo e da minha alma. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Ao Corpo, com humildade, antes de recebê-lo:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Salve para sempre, santíssima Carne de Cristo, para mim, antes de tudo e acima de tudo, suprema doçura. O Corpo de nosso Senhor Jesus Cristo seja para mim, pecador, caminho e vida. Em nome ✠ do Pai e do Filho e do Espírito Santo. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante comunga o Corpo, tendo antes feito uma cruz com ele diante da boca. Depois, ao Sangue, com grande devoção:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Salve para sempre, bebida celeste, para mim, antes de tudo e acima de tudo, suprema doçura. Que o Corpo e o Sangue de nosso Senhor Jesus Cristo sejam para mim, pecador, remédio perene para a vida eterna. Amém. Em nome ✠ do Pai e do Filho e do Espírito Santo. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante comunga o Sangue; depois, inclinado, com devoção:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Graças te dou, Senhor, santo Pai, Deus eterno e Todo-poderoso, que me alimentaste com o sacratíssimo Corpo e Sangue do teu Filho, nosso Senhor Jesus Cristo; e peço que este sacramento da nossa salvação, que recebi, indigno pecador, não me seja motivo de julgamento nem de condenação por meus méritos, mas sirva ao proveito do meu corpo e à salvação da minha alma na vida eterna. Amém."
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Abluções, Comunhão (Antífona) e Pós-Comunhão"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante vai ao lado da epístola com o cálice; o acólito derrama vinho e água no cálice. Após a primeira ablução:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O que recebemos pela boca, Senhor, possamos acolher com a mente pura; e que esta dádiva temporal se torne para nós remédio eterno."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante lava os dedos no cálice com vinho derramado pelo acólito e, depois de beber:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Que esta comunhão, Senhor, nos purifique de toda culpa e nos faça participantes do remédio celeste."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Após beber, coloca o cálice sobre a patena para escorrer; depois, inclinando-se:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Adoramos o sinal da cruz, por meio do qual recebemos o sacramento da salvação."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante lava as mãos."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "ANTÍFONA DA COMUNHÃO"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Antífona da comunhão do dia.)"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo.\n\nCelebrante - Oremos."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "PÓS-COMUNHÃO"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - (Pós-comunhão do dia.)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* As pós-comunhões das memórias seguem na mesma ordem e número das coletas."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Povo - Amém."
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Despedida"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante, voltado para o povo, diz:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Ide, a missa está terminada."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Ou, voltado para o altar:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Bendigamos ao Senhor."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Ou, nas Missas dos defuntos:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Descansai em paz."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Povo - Demos graças a Deus."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante, inclinado, de mãos juntas, em voz baixa, diante do altar:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Seja-te agradável, ó Santíssima Trindade, a homenagem do meu serviço; e concede que este sacrifício, que eu, indigno, ofereci aos olhos da tua Majestade, seja, por tua misericórdia, propiciatório. Tu que vives e reinas, Deus, por todos os séculos dos séculos. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* O celebrante se ergue e se benze:"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - ✠ Em nome do Pai e do Filho e do Espírito Santo. Amém."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Ao retirar-se do altar, o sacerdote diz o Evangelho:"
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "NO PRINCÍPIO (João 1.1-14)"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Início do santo Evangelho segundo João."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio com Deus. Todas as coisas foram feitas por ele: e sem ele nada foi feito do que foi feito: nele estava a vida, e a vida era a luz dos homens: e a luz brilha nas trevas, e as trevas não a compreenderam."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Houve um homem enviado por Deus, cujo nome era João. Este veio como testemunho, para dar testemunho da luz, para que todos cressem por ele. Não era ele a luz, mas para dar testemunho da luz."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Era a luz verdadeira, que ilumina todo homem que vem a este mundo."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Estava no mundo, e o mundo foi feito por ele, e o mundo não o conheceu. Veio para o que era seu, e os seus não o receberam. Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, aos que creem no seu nome: os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - E o Verbo se fez carne, e habitou entre nós: e vimos a sua glória, glória como do Unigênito do Pai, cheio de graça e de verdade."
-    },
-    {
-      "tipo": "subtitulo",
-      "pagina": null,
-      "texto": "Ação de Graças (na Sacristia, Após Desparamentar-se)"
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Despido da casula e dos demais paramentos, o sacerdote diz os salmos abaixo com a antífona «Trium puerorum», até o fim:"
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "CÂNTICO «BENEDICITE» (Daniel 3.57-88 e 56)"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Bendizei, todas as obras do Senhor, ao Senhor: louvai-o e exaltai-o pelos séculos.\nBendizei, anjos do Senhor, ao Senhor: bendizei, céus, ao Senhor.\nBendizei, todas as águas que estão sobre os céus, ao Senhor: bendiga toda virtude ao Senhor.\nBendizei, sol e lua, ao Senhor: bendizei, estrelas do céu, ao Senhor.\nBendizei, toda chuva e orvalho, ao Senhor: bendizei, todos os espíritos de Deus, ao Senhor.\nBendizei, fogo e calor, ao Senhor: bendizei, frio e calor, ao Senhor.\nBendizei, orvalhos e geadas, ao Senhor: bendizei, gelo e frio, ao Senhor.\nBendizei, gelos e neves, ao Senhor: bendizei, noites e dias, ao Senhor.\nBendizei, luz e trevas, ao Senhor: bendizei, relâmpagos e nuvens, ao Senhor.\nBendiga a terra ao Senhor: louve-o e exalte-o pelos séculos.\nBendizei, montes e colinas, ao Senhor: bendizei, todas as coisas que germinam na terra, ao Senhor.\nBendizei, mares e rios, ao Senhor: bendizei, fontes, ao Senhor.\nBendizei, monstros marinhos e tudo o que se move nas águas, ao Senhor: bendizei, todas as aves do céu, ao Senhor.\nBendizei, todos os animais e rebanhos, ao Senhor: bendizei, filhos dos homens, ao Senhor.\nBendiga Israel ao Senhor: louve-o e exalte-o pelos séculos.\nBendizei, sacerdotes do Senhor, ao Senhor: bendizei, servos do Senhor, ao Senhor.\nBendizei, espíritos e almas dos justos, ao Senhor: bendizei, santos e humildes de coração, ao Senhor.\nBendizei, Ananias, Azarias, Misael, ao Senhor: louvai-o e exaltai-o pelos séculos.\nBendigamos ao Pai e ao Filho com o Espírito Santo: louvemo-lo e exaltemo-lo pelos séculos.\nBendito és tu, Senhor, no firmamento do céu: digno de louvor e de glória pelos séculos."
-    },
-    {
-      "tipo": "rubrica",
-      "pagina": null,
-      "texto": "* Segue-se, sem Glória ao Pai, o Salmo 150:"
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "SALMO 150"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Louvai a Deus no seu santuário, louvai-o no firmamento, obra de seu poder. Louvai-o por seus feitos poderosos, louvai-o conforme a excelência de sua grandeza. Louvai-o ao som de trombetas, louvai-o com o saltério e a harpa. Louvai-o com pandeiro e danças, louvai-o com instrumentos de corda e com flautas. Louvai-o com címbalos sonoros, louvai-o com címbalos retumbantes. Tudo quanto respira louve ao SENHOR!"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Glória ao Pai e ao Filho, e ao Espírito Santo;\nComo era no princípio, é agora e será sempre, por todos os séculos. Amém."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "CÂNTICO DE SIMEÃO (Nunc dimittis, Lucas 2.29-32)"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Eis que agora, SENHOR, despedes em paz o teu servo, segundo a tua palavra; pois já os meus olhos viram a tua salvação, a qual tu preparaste perante a face de todos os povos: luz de revelação aos gentios e glória de Israel, teu povo."
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Glória ao Pai e ao Filho, e ao Espírito Santo;\nComo era no princípio, é agora e será sempre, por todos os séculos. Amém."
-    },
-    {
-      "tipo": "titulo",
-      "pagina": null,
-      "texto": "ANTÍFONA"
-    },
-    {
-      "tipo": "texto",
-      "pagina": null,
-      "texto": "Celebrante - Trium puerorum cantemus hymnum, quem cantabant in camino ignis, benedicentes Dominum."
-    }
+  "id":"35-santa-eucaristia-rito-de-sarum",
+  "titulo":"Santa Eucaristia, Rito de Sarum",
+  "modo":"prosa",
+  "paginaInicial":null,
+  "paginaFinal":null,
+  "blocos":[
+    {"tipo":"subtitulo","pagina":null,"texto":"Santa Eucaristia - Rito de Sarum"},
+    {"tipo":"subtitulo","pagina":null,"texto":"Preparação (na Sacristia, Enquanto se Paramenta)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* No altar de Nossa Senhora."},
+    {"tipo":"titulo","pagina":null,"texto":"HINO"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Vem, Espírito Criador,\nvisita a mente dos teus fiéis;\nenche de graça do alto\nos corações que criaste.\n\nTu és chamado Consolador,\ndom do Deus altíssimo,\nfonte viva, fogo, amor\ne unção espiritual.\n\nTu és o dom sétuplo,\ndedo da mão direita de Deus;\ntu és a promessa do Pai,\nque dás a palavra aos lábios.\n\nAcende a luz em nossos sentidos,\nderrama o amor em nossos corações;\nfortalece com tua força eterna\na fraqueza do nosso corpo.\n\nAfasta de nós o inimigo,\nconcede-nos logo a paz;\nsendo tu o nosso guia,\nevitaremos todo mal.\n\nFaze-nos conhecer o Pai\ne também conhecer o Filho;\ne crer sempre em ti,\nEspírito de ambos.\n\nLouvor ao Pai e ao Filho,\ne também ao Espírito Consolador;\ne que o Filho nos envie\no dom do Espírito Santo."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Envia o teu Espírito, e tudo será criado.\nAcólito - E renovarás a face da terra."},
+    {"tipo":"titulo","pagina":null,"texto":"ORAÇÃO"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Deus, para quem todo coração está aberto, toda vontade fala e nenhum segredo se esconde: purifica os pensamentos do nosso coração pela inspiração do teu Espírito Santo, para que te amemos com perfeição e dignamente glorifiquemos o teu Santo Nome. Por nosso Senhor Jesus Cristo, que contigo vive e reina, na unidade do mesmo Espírito Santo, por todos os séculos dos séculos.\nAcólito - Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Segue-se, andando em procissão para o altar-mor:"},
+    {"tipo":"titulo","pagina":null,"texto":"ANTÍFONA"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Introibo ad altare Dei."},
+    {"tipo":"titulo","pagina":null,"texto":"SALMO 43 (VULGATA: 42)"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Faze-me justiça, ó Deus, defende a minha causa contra os maus; livra-me do homem fraudulento e perverso. Pois és tu o Deus que me protege; por que me rejeitas? E por que ando eu abatido sob a opressão do inimigo? Envia a tua luz e a tua verdade, para que elas me guiem e me levem ao teu santo monte e à tua morada. Possa eu então chegar ao altar de Deus, a Deus, que alegra a minha juventude; e louvar-te ao som da harpa, ó Deus, Deus meu! Por que estás abatida, ó minha alma? E por que te perturbas no meu íntimo? Espera em Deus, que ainda o louvarei, pois é ele a salvação de minha pessoa e Deus meu."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Glória ao Pai e ao Filho, e ao Espírito Santo;\nComo era no princípio, é agora e será sempre, por todos os séculos. Amém."},
+    {"tipo":"titulo","pagina":null,"texto":"ANTÍFONA"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Introibo ad altare Dei: ad Deum qui laetificat juventutem meam.\n\nKyrie eleison.\nChriste eleison.\nKyrie eleison.\n\nPai nosso, que estás nos céus, santificado seja o teu Nome; venha o teu Reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje. E perdoa-nos as nossas dívidas, assim como nós também perdoamos aos nossos devedores. E não nos deixes cair em tentação, mas livra-nos do mal.\n\nAve Maria, cheia de graça, o Senhor é contigo; bendita és tu entre as mulheres, e bendito é o fruto do teu ventre. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Aqui o sacerdote se dirige ao altar."},
+    {"tipo":"subtitulo","pagina":null,"texto":"Ao Pé do Altar: Confissão"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Ao pé do altar, no degrau."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - E não nos deixes cair em tentação.\nAcólito - Mas livra-nos do mal.\nCelebrante - Dai graças ao Senhor, porque ele é bom.\nAcólito - Porque a sua misericórdia dura para sempre."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Confesso a Deus, à bem-aventurada Maria, a todos os santos e a vós, irmãos, que pequei gravemente em pensamentos, palavras e obras: minha culpa. Peço à Santa Maria, a todos os santos de Deus e a vós, que oreis por mim."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante faz uma venia."},
+    {"tipo":"texto","pagina":null,"texto":"Acólito - Que Deus Todo-poderoso tenha misericórdia de vós, perdoe todos os vossos pecados, vos livre de todo mal, vos conserve e confirme no bem e vos conduza à vida eterna.\nCelebrante - Amém."},
+    {"tipo":"texto","pagina":null,"texto":"Acólito - Confesso a Deus, à bem-aventurada Maria, a todos os santos e a ti, padre, que pequei gravemente em pensamentos, palavras e obras: minha culpa. Peço à Santa Maria, a todos os santos de Deus e a ti, padre, que ores por mim."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O acólito se ajoelha."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Que Deus Todo-poderoso tenha misericórdia de vós, perdoe todos os vossos pecados, vos livre de todo mal, vos conserve e confirme no bem e vos conduza à vida eterna.\n\nQue Deus Todo-poderoso e misericordioso vos conceda a absolvição e a remissão de todos os vossos pecados, tempo para verdadeira penitência e emenda de vida, e a graça e a consolação do Espírito Santo.\nAcólito - Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O acólito se levanta e permanece no lugar."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O nosso auxílio está no nome do Senhor.\nAcólito - Que fez o céu e a terra.\nCelebrante - Seja bendito o nome do Senhor.\nAcólito - Desde agora e para sempre.\n\nCelebrante - Oremos."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante sobe ao altar e diz em voz baixa, inclinado, de mãos juntas:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Afasta de nós, pedimos-te, Senhor, todas as nossas iniquidades, para que mereçamos entrar com mentes puras no Santo dos Santos. Por Cristo, nosso Senhor. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante se ergue, beija o altar no meio e faz o sinal da cruz:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Em nome do Pai ✠ e do Filho e do Espírito Santo. Amém."},
+    {"tipo":"subtitulo","pagina":null,"texto":"Entrada da Palavra"},
+    {"tipo":"titulo","pagina":null,"texto":"INTROITO (antífona do dia)"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Antífona do dia.)\n\nCelebrante - (Versículo do salmo.) Glória ao Pai e ao Filho, e ao Espírito Santo;\nAcólito - Como era no princípio, é agora e será sempre, por todos os séculos. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Repete-se a antífona do Introito."},
+    {"tipo":"titulo","pagina":null,"texto":"KYRIE"},
+    {"tipo":"texto","pagina":null,"texto":"Todos - Kyrie eleison. Kyrie eleison. Kyrie eleison.\nChriste eleison. Christe eleison. Christe eleison.\nKyrie eleison. Kyrie eleison. Kyrie eleison."},
+    {"tipo":"titulo","pagina":null,"texto":"GLÓRIA IN EXCELSIS"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Omite-se durante todo o Advento e da Septuagésima até a Vigília Pascal. Dito no meio do altar."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Glória a Deus nas alturas,"},
+    {"tipo":"texto","pagina":null,"texto":"Todos - E na terra paz, boa vontade entre os homens. Nós te louvamos, bendizemos e adoramos, glorificamos e te damos graças por tua grande glória. Ó Senhor Deus, Rei do Céu, Deus Pai Onipotente. Ó Senhor, Unigênito Filho, Jesus Cristo; ó Senhor Deus, Cordeiro de Deus, Filho do Eterno Pai, que tiras os pecados do mundo, tem misericórdia de nós. Tu que tiras os pecados do mundo, recebe a nossa oração. Tu que estás à destra de Deus Pai, tem misericórdia de nós. Porque só tu és Santo; só tu és o Senhor; só tu, ó Cristo, com o Espírito Santo, és altíssimo na glória de Deus Pai. Amém."},
+    {"tipo":"titulo","pagina":null,"texto":"COLETA"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo.\n\nCelebrante - Oremos."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Coleta do dia, com sua conclusão própria.)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Havendo memórias ou comemorações, dizem-se sob um só «Oremos» e um só «Por nosso Senhor», até o máximo de sete coletas."},
+    {"tipo":"texto","pagina":null,"texto":"Povo - Amém."},
+    {"tipo":"titulo","pagina":null,"texto":"EPÍSTOLA"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Leitura do dia.)"},
+    {"tipo":"texto","pagina":null,"texto":"Povo - Demos graças a Deus."},
+    {"tipo":"titulo","pagina":null,"texto":"GRADUAL"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Gradual do dia.)"},
+    {"tipo":"titulo","pagina":null,"texto":"ALELUIA (ou TRATO)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Fora do Tempo Pascal diz-se o Aleluia ou, em seu lugar, o Trato; no Tempo Pascal, dois Aleluias."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Aleluia ou Trato do dia.)"},
+    {"tipo":"titulo","pagina":null,"texto":"SEQUÊNCIA"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Quando prescrita."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Sequência do dia.)"},
+    {"tipo":"titulo","pagina":null,"texto":"EVANGELHO"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O Santo Evangelho de nosso Senhor Jesus Cristo, conforme __________, no capítulo __________, começando com o versículo __________."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante faz o sinal da cruz sobre o livro, na fronte e no peito."},
+    {"tipo":"texto","pagina":null,"texto":"Povo - Glória te seja dada, ó Senhor."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Evangelho do dia.)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante beija o livro."},
+    {"tipo":"titulo","pagina":null,"texto":"CREDO"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Nos domingos e festas em que o calendário o prescreve."},
+    {"tipo":"texto","pagina":null,"texto":"Todos - Creio em um só Deus, Pai Onipotente, Criador do céu e da terra, e de todas as coisas visíveis e invisíveis; e em um só Senhor Jesus Cristo, Filho Unigênito de Deus; gerado de seu Pai antes de todos os mundos, Deus de Deus, Luz de Luz, Verdadeiro Deus, de Verdadeiro Deus; gerado, não feito; consubstancial com o Pai; por quem todas as coisas foram feitas; o qual por nós homens e pela nossa salvação desceu do Céu;"},
+    {"tipo":"texto","pagina":null,"texto":"e encarnou, por obra do Espírito Santo, da Virgem Maria, e foi feito homem;"},
+    {"tipo":"texto","pagina":null,"texto":"foi também crucificado por nós, sob o poder de Pôncio Pilatos;"},
+    {"tipo":"texto","pagina":null,"texto":"padeceu e foi sepultado:"},
+    {"tipo":"texto","pagina":null,"texto":"e ao terceiro dia ressuscitou, segundo as Escrituras: e subiu ao Céu, e está sentado à direita do Pai: e virá outra vez, com glória, a julgar os vivos e os mortos; e o seu Reino não terá fim. E creio no Espírito Santo, Senhor, Doador da Vida, procedente do Pai e do Filho; o qual com o Pai e o Filho juntamente é adorado e glorificado; o qual falou pelos profetas: e creio na Igreja Una, Santa, Católica e Apostólica:"},
+    {"tipo":"texto","pagina":null,"texto":"reconheço um só Batismo para a remissão de pecados: e espero a ressurreição dos mortos: e a vida do mundo vindouro. Amém."},
+    {"tipo":"subtitulo","pagina":null,"texto":"Ofertório"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo."},
+    {"tipo":"titulo","pagina":null,"texto":"OFERTÓRIO (antífona do dia)"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Antífona do ofertório do dia.)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante toma o cálice e, elevando-o um pouco com as duas mãos, oferece o sacrifício ao Senhor, dizendo:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Recebe, ó Santíssima Trindade, esta oferta que eu, indigno pecador, te apresento em honra tua, da bem-aventurada Maria e de todos os teus santos, pelos meus pecados e ofensas, pela salvação dos vivos e pelo descanso de todos os fiéis falecidos. Em nome do Pai e do Filho e do Espírito Santo, seja aceito por Deus Todo-poderoso este novo sacrifício."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Coloca o cálice sobre o altar e o cobre com o corporal; coloca o pão sobre o corporal diante do cálice. Havendo incenso, o celebrante diz:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Dirigatur, Domine, ad te oratio mea, sicut incensum in conspectu tuo."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante vai ao lado da epístola e lava as mãos, dizendo:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Lava-me, Senhor, de toda impureza da mente e do corpo, para que eu possa cumprir, com pureza, a santa obra do Senhor."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Volta ao meio do altar, inclinado, de mãos juntas:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Em espírito de humildade e com o coração contrito, sejamos acolhidos por ti, Senhor; e que o nosso sacrifício seja realizado hoje diante de ti, de modo que te agrade, Senhor meu Deus."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante se ergue, beija o altar, abençoa a oferta e se benze:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Em nome do Pai ✠ e do Filho e do Espírito Santo."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Volta-se ao povo e diz em voz baixa:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Orai, irmãos e irmãs, por mim, para que o meu sacrifício e o vosso seja aceito pelo Senhor, nosso Deus."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O acólito responde em voz baixa:"},
+    {"tipo":"texto","pagina":null,"texto":"Acólito - Que a graça do Espírito Santo ilumine o teu coração e os teus lábios, e que o Senhor receba dignamente das tuas mãos este sacrifício de louvor pelos nossos pecados e ofensas."},
+    {"tipo":"titulo","pagina":null,"texto":"SECRETAS"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Oremos."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Secreta do dia.)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* As secretas das memórias seguem na mesma ordem e número das coletas."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Em voz alta:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Por todos os séculos dos séculos.\nPovo - Amém."},
+    {"tipo":"subtitulo","pagina":null,"texto":"Prefácio e Sanctus"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo.\nCelebrante - Elevai os corações.\nPovo - Ao Senhor os elevamos.\nCelebrante - Demos graças ao Senhor, nosso Deus.\nPovo - Assim fazê-lo é digno e justo."},
+    {"tipo":"titulo","pagina":null,"texto":"PREFÁCIO COMUM (cotidiano)"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - É verdadeiramente digno e justo, nosso dever e nossa salvação, que sempre e em toda parte te rendamos graças, Senhor santo, Pai Onipotente, Deus eterno, por Cristo, nosso Senhor. Por ele, os anjos louvam a tua majestade, as dominações a adoram, as potestades a reverenciam com tremor; os céus, as virtudes celestes e os bem-aventurados serafins a celebram juntos, com alegria. Concede que a eles se unam também as nossas vozes, e com humilde louvor nós digamos:"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Quando há Prefácio Próprio, ele substitui o texto acima, a partir de «Deus eterno»."},
+    {"tipo":"titulo","pagina":null,"texto":"PREFÁCIO PRÓPRIO DO DIA"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Prefácio próprio do dia, se houver.)"},
+    {"tipo":"titulo","pagina":null,"texto":"SANCTUS"},
+    {"tipo":"texto","pagina":null,"texto":"Todos - Santo, Santo, Santo, Senhor Deus do Universo. Os céus e a terra estão plenos da tua glória. Hosana nas alturas. Bendito o que vem em nome do Senhor. Hosana nas alturas."},
+    {"tipo":"subtitulo","pagina":null,"texto":"Cânon da Missa"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - A ti, portanto, clementíssimo Pai, por Jesus Cristo, teu Filho, nosso Senhor, suplicantes pedimos e rogamos:"},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante se ergue e beija o altar."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - que aceites e abençoes estes ✠ dons, estas ✠ oferendas, estes ✠ santos sacrifícios imaculados,"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Faz os sinais sobre o cálice e eleva as mãos:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - em primeiro lugar, oferecemos-te por tua santa Igreja Católica: concede-lhe a paz, protege-a, une-a e governa-a por todo o mundo, juntamente com o(a) teu(tua) servo(a), o(a) Arcebispo(a) de Cantuária __________, com o(a) nosso(a) Primaz __________, com o(a) nosso(a) bispo(a) diocesano(a) __________ e com todos os que professam, com retidão, a fé católica e apostólica."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Aqui reza pelos vivos:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Lembra-te, Senhor, dos teus servos e servas __________ e __________ e de todos os que aqui estão, cuja fé e devoção conheces; por eles te oferecemos, ou eles mesmos te oferecem, este sacrifício de louvor por si e por todos os seus, pela redenção das suas almas, na esperança de salvação e de segurança, e te dirigem as suas preces, a ti, Deus eterno, vivo e verdadeiro."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Em comunhão e venerando a memória, em primeiro lugar, da gloriosa sempre Virgem Maria, mãe de nosso Deus e Senhor Jesus Cristo; e também dos teus bem-aventurados apóstolos e mártires Pedro e Paulo, André, Tiago, João, Tomé, Tiago, Filipe, Bartolomeu, Mateus, Simão e Tadeu, Lino, Cleto, Clemente, Sisto, Cornélio, Cipriano, Lourenço, Crisógono, João e Paulo, Cosme e Damião, e de todos os teus santos; por seus méritos e orações, concede que sejamos sempre protegidos pelo auxílio da tua proteção. Pelo mesmo Cristo, nosso Senhor. Amém."},
+    {"tipo":"titulo","pagina":null,"texto":"COMMUNICANTES PRÓPRIO DO DIA"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Communicantes próprio, se houver.)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante olha a hóstia com grande reverência:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Aceita, pois, Senhor, esta oferta do nosso serviço e de toda a tua família; dispõe os nossos dias na tua paz, livra-nos da condenação eterna e conta-nos entre os teus eleitos. Por Cristo, nosso Senhor. Amém."},
+    {"tipo":"titulo","pagina":null,"texto":"HANC IGITUR PRÓPRIO DO DIA"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Hanc igitur próprio, se houver.)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante olha de novo a hóstia:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - A qual oferta, ó Deus, nós te pedimos que te dignes torná-la em tudo bene✠dita, ad✠scrita, ra✠ta, espiritual e aceitável, para que se torne para nós o Cor✠po e o San✠gue do teu amadíssimo Filho, nosso Senhor Jesus Cristo."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante toma a hóstia e a eleva um pouco:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O qual, na véspera de sua paixão, tomou o pão em suas santas e veneráveis mãos e, elevando os olhos ao céu, a ti, Deus Pai Onipotente, dando-te graças ✠ abençoou, partiu e deu aos seus discípulos, dizendo: Tomai e comei todos."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - ISTO É O MEU CORPO."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Estas palavras devem ser ditas de um só fôlego, sem pausa. O celebrante eleva a hóstia acima da fronte para ser vista pelo povo e a repõe diante do cálice. Descobre o cálice e o toma entre as mãos:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Do mesmo modo, depois da ceia, tomou também este precioso cálice em suas santas e veneráveis mãos, deu-te graças de novo, abençoou ✠ e o deu aos seus discípulos, dizendo: Tomai e bebei todos."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - ESTE É O CÁLICE DO MEU SANGUE, DA NOVA E ETERNA ALIANÇA, MISTÉRIO DA FÉ, QUE SERÁ DERRAMADO POR VÓS E POR MUITOS PARA A REMISSÃO DOS PECADOS."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante eleva o cálice:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Todas as vezes que fizerdes isto, fazei-o em memória de mim."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Repõe o cálice e estende os braços em cruz, até «de tuis donis»:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Por isso, Senhor, lembrados nós, teus servos e também o teu povo santo, da bem-aventurada Paixão de Cristo, teu Filho, nosso Senhor Deus, bem como da sua Ressurreição dentre os mortos e da sua gloriosa Ascensão aos céus, oferecemos à tua excelsa Majestade, dos teus próprios dons e dádivas, a Hóstia ✠ pura, a Hóstia ✠ santa, a Hóstia ✠ imaculada, o Pão ✠ santo da vida eterna e o Cálice ✠ da salvação perpétua."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Sobre estas oferendas, digna-te olhar com rosto benigno e sereno, e aceitá-las como aceitaste os dons do teu servo, o justo Abel, o sacrifício do nosso patriarca Abraão e o que te ofereceu o teu sumo sacerdote Melquisedeque: sacrifício santo, hóstia imaculada."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante, inclinado, de mãos cruzadas:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Suplicantes te rogamos, Deus Onipotente: manda que estas ofertas sejam levadas pelas mãos do teu santo anjo ao teu altar sublime, à presença da tua divina Majestade, para que todos nós que,"},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante se ergue e beija o altar:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - ao participarmos deste altar, recebermos o sacrossanto Corpo e Sangue ✠ do teu Filho, sejamos cheios de toda ✠ bênção e graça do céu. Pelo mesmo Cristo, nosso Senhor. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Aqui reza pelos mortos:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Lembra-te também, Senhor, das almas dos teus servos e servas __________ e __________ que nos precederam com o sinal da fé e dormem o sono da paz. A eles, Senhor, e a todos os que repousam em Cristo, nós te pedimos que concedas o lugar do refrigério, da luz e da paz. Pelo mesmo Cristo, nosso Senhor. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante bate uma vez no peito:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Também a nós, pecadores, teus servos, que esperamos na multidão das tuas misericórdias, digna-te conceder alguma parte e comunhão com os teus santos apóstolos e mártires: com João, Estêvão, Matias, Barnabé, Inácio, Alexandre, Marcelino, Pedro, Felicidade, Perpétua, Lúcia, Ágata, Inês, Cecília, Anastácia e com todos os teus santos; admite-nos na companhia deles, nós te pedimos, não pesando os nossos méritos, mas concedendo o teu perdão. Por Cristo, nosso Senhor."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Por ele, Senhor, crias sempre todos estes bens,"},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante faz três sinais da cruz sobre o cálice:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - santifi✠cas, vivifi✠cas, aben✠çoas e os dás a nós."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Descobre o cálice e faz com a hóstia cinco sinais da cruz:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Por ✠ ele, com ✠ ele e nele ✠, a ti, Deus Pai ✠ Onipotente, na unidade do Espírito ✠ Santo, toda honra e toda glória,"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Cobre o cálice e mantém as mãos sobre o altar até o Pai Nosso:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - por todos os séculos dos séculos.\nPovo - Amém."},
+    {"tipo":"subtitulo","pagina":null,"texto":"Pai Nosso, Fração e Comunhão"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Oremos. Instruídos pelos ensinamentos da salvação e formados pela instituição divina, ousamos dizer:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Pai nosso, que estás nos céus, santificado seja o teu Nome; venha o teu Reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje. E perdoa-nos as nossas dívidas, assim como nós também perdoamos aos nossos devedores. E não nos deixes cair em tentação.\nPovo - Mas livra-nos do mal.\nCelebrante - Amém."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Livra-nos, pedimos-te, Senhor, de todos os males, passados, presentes e futuros; e, pela intercessão da bem-aventurada e gloriosa sempre Virgem Maria, mãe de Deus, e dos teus bem-aventurados apóstolos Pedro, Paulo e André, com todos os santos,"},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante toma a patena, beija-a, toca com ela o olho esquerdo, depois o direito, faz uma cruz sobre a cabeça e a repõe:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - concede-nos, benigno, a paz em nossos dias, para que, ajudados pela tua misericórdia, estejamos sempre livres do pecado e protegidos de toda perturbação;"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Descobre o cálice e parte a hóstia em três partes:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - pelo mesmo Senhor nosso Jesus Cristo, teu Filho, que contigo vive e reina na unidade do Espírito Santo, Deus,"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Mantém as duas partes na mão esquerda e a terceira na direita:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - por todos os séculos dos séculos.\nPovo - Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Faz três cruzes sobre o cálice com a terceira parte:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - A paz ✠ do Senhor esteja ✠ sempre ✠ convosco.\nPovo - Seja também contigo."},
+    {"tipo":"titulo","pagina":null,"texto":"CORDEIRO DE DEUS"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Em voz baixa. Nas Missas dos defuntos, em lugar de «tem misericórdia de nós» (duas vezes) diz-se «dá-lhes o descanso» e, em lugar de «dá-nos a tua paz», «dá-lhes o descanso eterno»."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Cordeiro de Deus, que tiras os pecados do mundo, tem misericórdia de nós.\nCordeiro de Deus, que tiras os pecados do mundo, tem misericórdia de nós.\nCordeiro de Deus, que tiras os pecados do mundo, dá-nos a tua paz."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante deixa cair, em forma de cruz, a terceira parte no Sangue:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Que esta sacro✠santa comunhão do Corpo e do Sangue de nosso Senhor Jesus Cristo seja para mim e para todos os que a recebem salvação da mente e do corpo, e preparo salutar para merecer e alcançar a vida eterna. Pelo mesmo Cristo, nosso Senhor. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Antes da paz:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Senhor, santo Pai, Deus eterno e Todo-poderoso, concede-me receber este sacrossanto Corpo e Sangue do teu Filho, nosso Senhor Jesus Cristo, de tal modo que, por ele, mereça receber o perdão de todos os meus pecados, ser cheio do teu Santo Espírito e ter a tua paz; pois só tu és Deus, e fora de ti não há outro, e o teu Reino e glorioso império permanecem sem fim pelos séculos dos séculos. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante beija o corporal e a borda do cálice, depois beija o acólito:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - A paz seja contigo e com a Igreja de Deus.\nAcólito - Seja também contigo."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Antes de comungar, segurando a hóstia com as duas mãos, o celebrante diz em voz baixa:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Deus Pai, fonte e origem de toda a bondade, que, movido pela misericórdia, quiseste que o teu Unigênito descesse por nós às profundezas do mundo e assumisse a carne, que eu, indigno, seguro aqui em minhas mãos:"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Inclina-se diante da hóstia:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - adoro-te, glorifico-te, louvo-te com toda a intenção da mente e do coração; e peço que não abandones a nós, teus servos, mas perdoes os nossos pecados, para que possamos servir somente a ti, Deus vivo e verdadeiro, com coração puro e corpo casto. Pelo mesmo Cristo, nosso Senhor. Amém."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Senhor Jesus Cristo, Filho do Deus vivo, que, por vontade do Pai e com a cooperação do Espírito Santo, deste a vida ao mundo pela tua morte, livra-me, peço, por este sacrossanto Corpo e este teu Sangue, de todas as minhas iniquidades e de todos os males; faze-me obedecer sempre aos teus mandamentos e nunca permitas que eu me separe de ti, Salvador do mundo, que com Deus Pai e o mesmo Espírito Santo vives e reinas, Deus, por todos os séculos dos séculos. Amém."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O sacramento do teu Corpo e Sangue, Senhor Jesus Cristo, que, embora indigno, recebo, não me seja para julgamento e condenação; mas, pela tua bondade, aproveite à saúde do meu corpo e da minha alma. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Ao Corpo, com humildade, antes de recebê-lo:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Salve para sempre, santíssima Carne de Cristo, para mim, antes de tudo e acima de tudo, suprema doçura. O Corpo de nosso Senhor Jesus Cristo seja para mim, pecador, caminho e vida. Em nome ✠ do Pai e do Filho e do Espírito Santo. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante comunga o Corpo, tendo antes feito uma cruz com ele diante da boca. Depois, ao Sangue, com grande devoção:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Salve para sempre, bebida celeste, para mim, antes de tudo e acima de tudo, suprema doçura. Que o Corpo e o Sangue de nosso Senhor Jesus Cristo sejam para mim, pecador, remédio perene para a vida eterna. Amém. Em nome ✠ do Pai e do Filho e do Espírito Santo. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante comunga o Sangue; depois, inclinado, com devoção:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Graças te dou, Senhor, santo Pai, Deus eterno e Todo-poderoso, que me alimentaste com o sacratíssimo Corpo e Sangue do teu Filho, nosso Senhor Jesus Cristo; e peço que este sacramento da nossa salvação, que recebi, indigno pecador, não me seja motivo de julgamento nem de condenação por meus méritos, mas sirva ao proveito do meu corpo e à salvação da minha alma na vida eterna. Amém."},
+    {"tipo":"subtitulo","pagina":null,"texto":"Abluções, Comunhão (Antífona) e Pós-Comunhão"},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante vai ao lado da epístola com o cálice; o acólito derrama vinho e água no cálice. Após a primeira ablução:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O que recebemos pela boca, Senhor, possamos acolher com a mente pura; e que esta dádiva temporal se torne para nós remédio eterno."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante lava os dedos no cálice com vinho derramado pelo acólito e, depois de beber:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Que esta comunhão, Senhor, nos purifique de toda culpa e nos faça participantes do remédio celeste."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Após beber, coloca o cálice sobre a patena para escorrer; depois, inclinando-se:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Adoramos o sinal da cruz, por meio do qual recebemos o sacramento da salvação."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante lava as mãos."},
+    {"tipo":"titulo","pagina":null,"texto":"ANTÍFONA DA COMUNHÃO"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Antífona da comunhão do dia.)"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo.\n\nCelebrante - Oremos."},
+    {"tipo":"titulo","pagina":null,"texto":"PÓS-COMUNHÃO"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - (Pós-comunhão do dia.)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* As pós-comunhões das memórias seguem na mesma ordem e número das coletas."},
+    {"tipo":"texto","pagina":null,"texto":"Povo - Amém."},
+    {"tipo":"subtitulo","pagina":null,"texto":"Despedida"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - O Espírito do Senhor seja convosco.\nPovo - Seja também contigo."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante, voltado para o povo, diz:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Ide, a missa está terminada."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Ou, voltado para o altar:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Bendigamos ao Senhor."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Ou, nas Missas dos defuntos:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Descansai em paz."},
+    {"tipo":"texto","pagina":null,"texto":"Povo - Demos graças a Deus."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante, inclinado, de mãos juntas, em voz baixa, diante do altar:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Seja-te agradável, ó Santíssima Trindade, a homenagem do meu serviço; e concede que este sacrifício, que eu, indigno, ofereci aos olhos da tua Majestade, seja, por tua misericórdia, propiciatório. Tu que vives e reinas, Deus, por todos os séculos dos séculos. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O celebrante se ergue e se benze:"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - ✠ Em nome do Pai e do Filho e do Espírito Santo. Amém."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Ao retirar-se do altar, o sacerdote diz o Evangelho:"},
+    {"tipo":"titulo","pagina":null,"texto":"NO PRINCÍPIO (João 1.1-14)"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Início do santo Evangelho segundo João."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio com Deus. Todas as coisas foram feitas por ele: e sem ele nada foi feito do que foi feito: nele estava a vida, e a vida era a luz dos homens: e a luz brilha nas trevas, e as trevas não a compreenderam."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Houve um homem enviado por Deus, cujo nome era João. Este veio como testemunho, para dar testemunho da luz, para que todos cressem por ele. Não era ele a luz, mas para dar testemunho da luz."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Era a luz verdadeira, que ilumina todo homem que vem a este mundo."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Estava no mundo, e o mundo foi feito por ele, e o mundo não o conheceu. Veio para o que era seu, e os seus não o receberam. Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, aos que creem no seu nome: os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - E o Verbo se fez carne, e habitou entre nós: e vimos a sua glória, glória como do Unigênito do Pai, cheio de graça e de verdade."},
+    {"tipo":"subtitulo","pagina":null,"texto":"Ação de Graças (na Sacristia, Após Desparamentar-se)"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Despido da casula e dos demais paramentos, o sacerdote diz os salmos abaixo com a antífona «Trium puerorum», até o fim:"},
+    {"tipo":"titulo","pagina":null,"texto":"CÂNTICO «BENEDICITE» (Daniel 3.57-88 e 56)"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Bendizei, todas as obras do Senhor, ao Senhor: louvai-o e exaltai-o pelos séculos.\nBendizei, anjos do Senhor, ao Senhor: bendizei, céus, ao Senhor.\nBendizei, todas as águas que estão sobre os céus, ao Senhor: bendiga toda virtude ao Senhor.\nBendizei, sol e lua, ao Senhor: bendizei, estrelas do céu, ao Senhor.\nBendizei, toda chuva e orvalho, ao Senhor: bendizei, todos os espíritos de Deus, ao Senhor.\nBendizei, fogo e calor, ao Senhor: bendizei, frio e calor, ao Senhor.\nBendizei, orvalhos e geadas, ao Senhor: bendizei, gelo e frio, ao Senhor.\nBendizei, gelos e neves, ao Senhor: bendizei, noites e dias, ao Senhor.\nBendizei, luz e trevas, ao Senhor: bendizei, relâmpagos e nuvens, ao Senhor.\nBendiga a terra ao Senhor: louve-o e exalte-o pelos séculos.\nBendizei, montes e colinas, ao Senhor: bendizei, todas as coisas que germinam na terra, ao Senhor.\nBendizei, mares e rios, ao Senhor: bendizei, fontes, ao Senhor.\nBendizei, monstros marinhos e tudo o que se move nas águas, ao Senhor: bendizei, todas as aves do céu, ao Senhor.\nBendizei, todos os animais e rebanhos, ao Senhor: bendizei, filhos dos homens, ao Senhor.\nBendiga Israel ao Senhor: louve-o e exalte-o pelos séculos.\nBendizei, sacerdotes do Senhor, ao Senhor: bendizei, servos do Senhor, ao Senhor.\nBendizei, espíritos e almas dos justos, ao Senhor: bendizei, santos e humildes de coração, ao Senhor.\nBendizei, Ananias, Azarias, Misael, ao Senhor: louvai-o e exaltai-o pelos séculos.\nBendigamos ao Pai e ao Filho com o Espírito Santo: louvemo-lo e exaltemo-lo pelos séculos.\nBendito és tu, Senhor, no firmamento do céu: digno de louvor e de glória pelos séculos."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Segue-se, sem Glória ao Pai, o Salmo 150:"},
+    {"tipo":"titulo","pagina":null,"texto":"SALMO 150"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Louvai a Deus no seu santuário, louvai-o no firmamento, obra de seu poder. Louvai-o por seus feitos poderosos, louvai-o conforme a excelência de sua grandeza. Louvai-o ao som de trombetas, louvai-o com o saltério e a harpa. Louvai-o com pandeiro e danças, louvai-o com instrumentos de corda e com flautas. Louvai-o com címbalos sonoros, louvai-o com címbalos retumbantes. Tudo quanto respira louve ao SENHOR!"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Glória ao Pai e ao Filho, e ao Espírito Santo;\nComo era no princípio, é agora e será sempre, por todos os séculos. Amém."},
+    {"tipo":"titulo","pagina":null,"texto":"CÂNTICO DE SIMEÃO (Nunc dimittis, Lucas 2.29-32)"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Eis que agora, SENHOR, despedes em paz o teu servo, segundo a tua palavra; pois já os meus olhos viram a tua salvação, a qual tu preparaste perante a face de todos os povos: luz de revelação aos gentios e glória de Israel, teu povo."},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Glória ao Pai e ao Filho, e ao Espírito Santo;\nComo era no princípio, é agora e será sempre, por todos os séculos. Amém."},
+    {"tipo":"titulo","pagina":null,"texto":"ANTÍFONA"},
+    {"tipo":"texto","pagina":null,"texto":"Celebrante - Trium puerorum cantemus hymnum, quem cantabant in camino ignis, benedicentes Dominum."}
   ]
 }
