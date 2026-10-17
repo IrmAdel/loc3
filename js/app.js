@@ -61,6 +61,8 @@
   const estado = {
     indice: [], secao: null, sha: null,
     editando: false, sujo: false, timer: null, navegacao: 0, indiceBusca: null,
+    novas: new Set(),            // ids de seções criadas aqui e ainda não publicadas
+    indiceSha: null,             // sha do indice.json no GitHub (quando lido pela API)
   };
 
   // ------------------------------------------------------------- configuração admin
@@ -146,6 +148,19 @@
 
   const pastaDados = cfg => cfg.pasta.replace(/^\/+|\/+$/g, '');
   const caminhoSecao = (cfg, id) => `${pastaDados(cfg)}/secoes/${id}.json`;
+  const caminhoIndice = cfg => `${pastaDados(cfg)}/indice.json`;
+
+  /** Mesmo formato do indice.json original: uma seção por linha. */
+  function serializarIndice(lista) {
+    const j = JSON.stringify;
+    const linhas = lista.map(it => {
+      let o = '  {"id":' + j(it.id) + ',"titulo":' + j(it.titulo);
+      if (it.paginaInicial != null) o += ',"paginaInicial":' + j(it.paginaInicial);
+      if (it.paginaFinal != null) o += ',"paginaFinal":' + j(it.paginaFinal);
+      return o + '}';
+    });
+    return '[\n' + linhas.join(',\n') + '\n]\n';
+  }
 
   // ---------------------------------------------------------------------- avisos
 
@@ -161,12 +176,31 @@
 
   // ----------------------------------------------------------- índice e navegação
 
+  const CHAVE_INDICE = 'loc.indice.rascunho';
+
+  function salvarIndiceRascunho() {
+    if (!estado.novas.size) { apagar(CHAVE_INDICE); return; }
+    guardar(CHAVE_INDICE, JSON.stringify({ indice: estado.indice, novas: [...estado.novas], shaBase: estado.indiceSha }));
+  }
+
   async function carregarIndice() {
     const nav = $('#indice');
     try {
-      const r = await fetch('data/indice.json', { cache: 'no-cache' });
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      estado.indice = await r.json();
+      let lido = null;
+      if (adminAtivo()) {
+        try {
+          const cfg = lerConfig();
+          const r = await ghLer(cfg, caminhoIndice(cfg));
+          lido = { dados: JSON.parse(r.texto), sha: r.sha };
+        } catch { /* cai para a versão publicada */ }
+      }
+      if (lido) { estado.indice = lido.dados; estado.indiceSha = lido.sha; }
+      else {
+        const r = await fetch('data/indice.json', { cache: 'no-cache' });
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        estado.indice = await r.json();
+        estado.indiceSha = null;
+      }
     } catch (e) {
       nav.replaceChildren(el('p', 'carregando', 'Sem dados.'));
       $('#leitura').replaceChildren(
@@ -174,14 +208,47 @@
         el('p', null, 'Não encontrei data/indice.json. Rode o conversor Java sobre o PDF (veja o README) e abra o site por um servidor — por exemplo “python3 -m http.server” dentro da pasta docs — ou pelo GitHub Pages. Abrir o arquivo direto (file://) não funciona.'));
       throw e;
     }
+    estado.novas = new Set();
+    if (adminAtivo()) {                                  // seções novas ainda não publicadas
+      try {
+        const r = JSON.parse(ler(CHAVE_INDICE) || 'null');
+        if (r && Array.isArray(r.indice) && Array.isArray(r.novas)) {
+          const publicados = new Set(estado.indice.map(i => i.id));
+          const pendentes = r.novas.filter(id => !publicados.has(id) && lerRascunho(id));
+          if (pendentes.length) {
+            estado.novas = new Set(pendentes);
+            estado.indice = r.indice.filter(i => publicados.has(i.id) || estado.novas.has(i.id));
+            for (const it of estado.indice) it.nova = estado.novas.has(it.id) || undefined;
+            aviso(pendentes.length + ' seção(ões) nova(s) ainda não publicada(s) neste navegador.');
+          }
+        }
+      } catch { /* ignora rascunho corrompido */ }
+      salvarIndiceRascunho();
+    }
+    renderNav();
+  }
+
+  function renderNav() {
+    const nav = $('#indice');
     nav.replaceChildren();
+    if (estado.editando) {
+      const b = el('button', 'nova-secao', '＋ Nova seção');
+      b.type = 'button';
+      b.title = 'Criar uma seção nova no índice, além das que vêm do livro';
+      b.addEventListener('click', abrirNovaSecao);
+      nav.appendChild(b);
+    }
     for (const it of estado.indice) {
       const a = el('a', null, it.titulo);
       a.href = '#/' + it.id;
       a.dataset.id = it.id;
-      a.appendChild(el('small', null, it.paginaInicial === it.paginaFinal ? `p. ${it.paginaInicial}` : `pp. ${it.paginaInicial}–${it.paginaFinal}`));
+      let nota = '';
+      if (estado.novas.has(it.id)) nota = 'nova · não publicada';
+      else if (it.paginaInicial != null) nota = it.paginaInicial === it.paginaFinal ? `p. ${it.paginaInicial}` : `pp. ${it.paginaInicial}–${it.paginaFinal}`;
+      if (nota) a.appendChild(el('small', null, nota));
       nav.appendChild(a);
     }
+    if (estado.secao) marcarNav(estado.secao.id);
   }
 
   function marcarNav(id) {
@@ -212,6 +279,11 @@
   // ------------------------------------------------------------ carregar a seção
 
   async function carregarJSON(id) {
+    if (estado.novas.has(id)) {
+      const r = lerRascunho(id);
+      if (!r) throw new Error('Rascunho da seção nova não encontrado neste navegador.');
+      return { dados: r.secao, sha: null };
+    }
     if (adminAtivo()) {
       try {
         const cfg = lerConfig();
@@ -385,10 +457,21 @@
     const s = estado.secao;
     const alvo = $('#leitura');
     const rolagem = window.scrollY;
-    alvo.replaceChildren(el('h1', 'nome-secao', s.titulo));
+    const h1 = el('h1', 'nome-secao', s.titulo);
+    if (estado.editando && estado.novas.has(s.id)) {      // título de seção nova ainda pode mudar
+      tornarEditavel(h1, true);
+      h1.addEventListener('input', () => {
+        s.titulo = lerTexto(h1) || 'Sem título';
+        const it = estado.indice.find(i => i.id === s.id);
+        if (it) it.titulo = s.titulo;
+        marcarSujo(); salvarIndiceRascunho();
+      });
+      h1.addEventListener('blur', renderNav);
+    }
+    alvo.replaceChildren(h1);
     let pagina = null;
     s.blocos.forEach((b, i) => {
-      if (b.pagina !== pagina) { pagina = b.pagina; alvo.appendChild(el('div', 'marca-pagina', 'p. ' + pagina)); }
+      if (b.pagina != null && b.pagina !== pagina) { pagina = b.pagina; alvo.appendChild(el('div', 'marca-pagina', 'p. ' + pagina)); }
       const e = criarElemento(b);
       if (estado.editando) {
         const w = el('div', 'envolve');
@@ -436,6 +519,7 @@
     document.body.classList.toggle('editando', estado.editando);
     $('#btn-editar').textContent = estado.editando ? '✎ Editando' : '✎ Editar';
     if (estado.secao) renderSecao();
+    renderNav();
     atualizarBarra();
   }
 
@@ -455,9 +539,89 @@
   }
 
   function descartarRascunho() {
-    if (!estado.secao || !confirm('Descartar as alterações não publicadas desta seção?')) return;
+    if (!estado.secao) return;
+    if (estado.novas.has(estado.secao.id)) {
+      if (!confirm('Esta seção ainda não foi publicada. Descartar significa APAGÁ-LA. Continuar?')) return;
+      const id = estado.secao.id;
+      apagar(chaveRascunho(id));
+      estado.novas.delete(id);
+      estado.indice = estado.indice.filter(i => i.id !== id);
+      salvarIndiceRascunho();
+      estado.secao = null; estado.sujo = false;
+      renderNav();
+      location.hash = '#/' + (estado.indice[0] ? estado.indice[0].id : '');
+      rotear();
+      aviso('Seção nova descartada.');
+      return;
+    }
+    if (!confirm('Descartar as alterações não publicadas desta seção?')) return;
     apagar(chaveRascunho(estado.secao.id));
     abrirSecao(estado.secao.id, { ignorarRascunho: true });
+  }
+
+  // ------------------------------------------------------------------ nova seção
+
+  function gerarId(titulo) {
+    const slug = normalizar(titulo).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60) || 'secao';
+    const maior = estado.indice.reduce((m, i) => Math.max(m, parseInt(i.id, 10) || 0), 0);
+    let id = String(maior + 1).padStart(2, '0') + '-' + slug;
+    while (estado.indice.some(i => i.id === id)) id += '-x';
+    return id;
+  }
+
+  function abrirNovaSecao() {
+    $('#nova-titulo').value = '';
+    const sel = $('#nova-posicao');
+    sel.replaceChildren();
+    const fim = el('option', null, 'No final do índice');
+    fim.value = '__fim__';
+    sel.appendChild(fim);
+    const ini = el('option', null, 'No começo do índice');
+    ini.value = '__ini__';
+    sel.appendChild(ini);
+    for (const it of estado.indice) {
+      const o = el('option', null, 'Depois de: ' + it.titulo);
+      o.value = it.id;
+      sel.appendChild(o);
+    }
+    sel.value = estado.secao ? estado.secao.id : '__fim__';
+    mensagem($('#nova-msg'), '');
+    $('#dlg-nova').showModal();
+    $('#nova-titulo').focus();
+  }
+
+  function criarNovaSecao(ev) {
+    ev.preventDefault();
+    const titulo = $('#nova-titulo').value.trim();
+    if (!titulo) { mensagem($('#nova-msg'), 'Dê um título à seção.', 'erro'); return; }
+    if (estado.indice.some(i => normalizar(i.titulo) === normalizar(titulo))) {
+      mensagem($('#nova-msg'), 'Já existe uma seção com esse título.', 'erro'); return;
+    }
+    clearTimeout(estado.timer);
+    if (estado.secao && estado.sujo) salvarRascunho();    // não perde o que estava sendo editado
+
+    const id = gerarId(titulo);
+    const secao = { id, titulo, modo: 'prosa', paginaInicial: null, paginaFinal: null,
+                    blocos: [{ tipo: 'texto', pagina: null, texto: '' }] };
+    const pos = $('#nova-posicao').value;
+    const entrada = { id, titulo, nova: true };
+    if (pos === '__ini__') estado.indice.unshift(entrada);
+    else if (pos === '__fim__') estado.indice.push(entrada);
+    else estado.indice.splice(estado.indice.findIndex(i => i.id === pos) + 1, 0, entrada);
+
+    estado.novas.add(id);
+    estado.secao = secao; estado.sha = null; estado.sujo = true;
+    estado.navegacao++;
+    guardar(chaveRascunho(id), JSON.stringify({ secao, shaBase: null, em: Date.now() }));
+    salvarIndiceRascunho();
+    $('#dlg-nova').close();
+    document.title = titulo + ' — LOC IEAB 1987';
+    renderNav();
+    renderSecao(0);
+    atualizarBarra();
+    history.replaceState(null, '', '#/' + id);
+    window.scrollTo({ top: 0 });
+    aviso('Seção criada. Escreva o conteúdo e use “Publicar no GitHub” para colocá-la no ar.');
   }
 
   // -------------------------------------------------------------------- publicação
@@ -466,8 +630,11 @@
     if (!adminAtivo()) { abrirAdmin(); return; }
     if (!estado.sujo) { aviso('Não há alterações para publicar nesta seção.'); return; }
     const cfg = lerConfig();
-    $('#pub-resumo').textContent = `Será gravado ${caminhoSecao(cfg, estado.secao.id)} em ${cfg.dono}/${cfg.repo} (ramo ${cfg.ramo}).`;
-    $('#pub-mensagem').value = 'Edita: ' + estado.secao.titulo;
+    const nova = estado.novas.has(estado.secao.id);
+    $('#pub-resumo').textContent = nova
+      ? `Serão criados ${caminhoSecao(cfg, estado.secao.id)} e atualizado ${caminhoIndice(cfg)} em ${cfg.dono}/${cfg.repo} (ramo ${cfg.ramo}).`
+      : `Será gravado ${caminhoSecao(cfg, estado.secao.id)} em ${cfg.dono}/${cfg.repo} (ramo ${cfg.ramo}).`;
+    $('#pub-mensagem').value = (nova ? 'Cria seção: ' : 'Edita: ') + estado.secao.titulo;
     mensagem($('#pub-msg'), '');
     $('#dlg-publicar').showModal();
   }
@@ -475,6 +642,27 @@
   function mensagem(alvo, texto, tipo = '') {
     alvo.textContent = texto;
     alvo.className = 'msg ' + tipo;
+  }
+
+  /** Insere a seção nova no indice.json do GitHub, logo depois da entrada que a precede no rascunho. */
+  async function publicarEntradaIndice(cfg, id, mensagemCommit) {
+    const caminho = caminhoIndice(cfg);
+    const atual = await ghLer(cfg, caminho);
+    const remoto = JSON.parse(atual.texto);
+    if (!remoto.some(i => i.id === id)) {
+      const pos = estado.indice.findIndex(i => i.id === id);
+      let apos = -1;                                      // procura a vizinha anterior já publicada
+      for (let k = pos - 1; k >= 0 && apos < 0; k--) apos = remoto.findIndex(i => i.id === estado.indice[k].id);
+      const { titulo } = estado.indice[pos];
+      remoto.splice(apos + 1, 0, { id, titulo });
+    }
+    const res = await ghGravar(cfg, caminho, serializarIndice(remoto), atual.sha, mensagemCommit);
+    estado.indiceSha = res.content.sha;
+    estado.novas.delete(id);
+    estado.indice.forEach(i => { if (i.id === id) delete i.nova; });   // mantém as outras seções novas pendentes
+    estado.indiceBusca = null;
+    salvarIndiceRascunho();
+    renderNav();
   }
 
   async function confirmarPublicar(ev) {
@@ -491,7 +679,11 @@
       if (atual.sha && estado.sha && atual.sha !== estado.sha) {
         throw new Error('O arquivo mudou no GitHub depois que você o abriu. Baixe o .json para guardar suas alterações, recarregue a seção e refaça a edição.');
       }
-      const res = await ghGravar(cfg, caminho, serializar(estado.secao), atual.sha, $('#pub-mensagem').value.trim());
+      const nova = estado.novas.has(estado.secao.id);
+      if (nova && atual.sha) throw new Error('Já existe no GitHub um arquivo com o id ' + estado.secao.id + '. Mude o título da seção e tente de novo.');
+      const texto = $('#pub-mensagem').value.trim();
+      const res = await ghGravar(cfg, caminho, serializar(estado.secao), atual.sha, texto);
+      if (nova) await publicarEntradaIndice(cfg, estado.secao.id, texto);
       estado.sha = res.content.sha;
       estado.sujo = false;
       apagar(chaveRascunho(estado.secao.id));
@@ -618,7 +810,7 @@
       const li = el('li');
       const link = el('a');
       link.href = `#/${a.id}/${a.i}`;
-      link.append(el('div', 'onde', `${a.secao} · p. ${a.pagina}`), trecho(a.texto, Math.max(0, pos), termos[0].length));
+      link.append(el('div', 'onde', a.pagina != null ? `${a.secao} · p. ${a.pagina}` : a.secao), trecho(a.texto, Math.max(0, pos), termos[0].length));
       li.appendChild(link);
       lista.appendChild(li);
     }
@@ -672,6 +864,8 @@
     $('#adm-cancelar').addEventListener('click', () => $('#dlg-admin').close());
     $('#form-publicar').addEventListener('submit', confirmarPublicar);
     $('#pub-cancelar').addEventListener('click', () => $('#dlg-publicar').close());
+    $('#form-nova').addEventListener('submit', criarNovaSecao);
+    $('#nova-cancelar').addEventListener('click', () => $('#dlg-nova').close());
 
     document.addEventListener('keydown', ev => {
       if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 's' && estado.editando) {
@@ -691,5 +885,5 @@
   }
 
   if (typeof document !== 'undefined') iniciar();
-  if (typeof module !== 'undefined') module.exports = { serializar, textoParaB64, b64ParaTexto, normalizar, ROTULO };
+  if (typeof module !== 'undefined') module.exports = { serializar, serializarIndice, textoParaB64, b64ParaTexto, normalizar, ROTULO };
 })();

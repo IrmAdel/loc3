@@ -12,3 +12,10 @@ PARA EDITAR (opcional):
   Restrinja a ESTE repositório e dê "Contents: Read and write".
 - No site, clique em ⚙, preencha usuário, repositório, ramo (main) e pasta (data), cole o token.
 - Clique em "Editar", altere o texto e use "Publicar no GitHub".
+
+CRIAR NOVAS SEÇÕES (modo de edição):
+- Com o modo "✎ Editar" ligado, aparece o botão "＋ Nova seção" no topo do índice.
+- Informe o título e a posição (no começo, no final ou depois de uma seção existente).
+- Escreva o conteúdo (o título da seção nova também pode ser corrigido enquanto não for publicada).
+- "Publicar no GitHub" grava o arquivo da seção em data/secoes/ e atualiza data/indice.json.
+- Antes de publicar, a seção fica só como rascunho neste navegador; "Descartar rascunho" a apaga.

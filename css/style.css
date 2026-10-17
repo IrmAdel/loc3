@@ -76,6 +76,17 @@ body.editando .icone.destaque { background: var(--destaque); color: var(--papel)
 .indice a:hover { background: var(--fundo); }
 .indice a[aria-current="page"] { background: var(--fundo); border-left: 3px solid var(--rubrica); font-weight: 600; }
 
+.indice .nova-secao {
+  display: block; width: 100%; margin: 0 0 .6rem; padding: .5rem .6rem; border: 1px dashed var(--destaque);
+  border-radius: .45rem; background: transparent; color: var(--destaque); font-weight: 600; cursor: pointer;
+}
+.indice .nova-secao:hover { background: var(--fundo); }
+dialog select {
+  display: block; width: 100%; margin-top: .2rem; padding: .45rem .6rem; border: 1px solid var(--linha);
+  border-radius: .4rem; background: var(--fundo); color: var(--texto);
+}
+body.editando h1.nome-secao[contenteditable] { outline: 1px dashed var(--linha); outline-offset: 4px; }
+
 .conteudo { flex: 1; min-width: 0; padding: 1.5rem 1rem 6rem; outline: none; }
 #leitura, .resultados { max-width: 44rem; margin: 0 auto; }
 

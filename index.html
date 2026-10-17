@@ -110,6 +110,29 @@
   </form>
 </dialog>
 
+<!-- ============ Nova seção ============ -->
+<dialog id="dlg-nova">
+  <form method="dialog" id="form-nova" autocomplete="off">
+    <h2>Nova seção</h2>
+    <p class="ajuda">
+      Cria uma seção nova no índice, além das que vêm do livro. Ela fica como rascunho neste navegador
+      até você usar <strong>Publicar no GitHub</strong>, que grava o arquivo da seção e atualiza o <code>indice.json</code>.
+    </p>
+    <label>Título
+      <input id="nova-titulo" required maxlength="120" placeholder="ex.: Orações da nossa comunidade">
+    </label>
+    <label>Posição no índice
+      <select id="nova-posicao"></select>
+    </label>
+    <p id="nova-msg" class="msg" role="status"></p>
+    <div class="botoes">
+      <span class="espaco"></span>
+      <button type="button" id="nova-cancelar">Cancelar</button>
+      <button type="submit" class="primario" value="ok">Criar seção</button>
+    </div>
+  </form>
+</dialog>
+
 <script src="js/app.js"></script>
 </body>
 </html>
