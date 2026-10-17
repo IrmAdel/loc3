@@ -32,6 +32,10 @@
     {"tipo":"texto","pagina":null,"texto":"Celebrante - Afastai de nós, vos pedimos, Senhor, todas as nossas iniquidades, para que mereçamos entrar com mentes puras no santo dos santos. Por Cristo, nosso Senhor. Amém."},
     {"tipo":"rubrica","pagina":null,"texto":"* O celebrante beija o altar no meio e faz o sinal da cruz:"},
     {"tipo":"texto","pagina":null,"texto":"Celebrante - Em nome do Pai e do Filho e do Espírito Santo. Amém."},
-    {"tipo":"titulo","pagina":null,"texto":"ENTRADA DA PALAVRA"}
+    {"tipo":"subtitulo","pagina":null,"texto":"Entrada da Palavra"},
+    {"tipo":"titulo","pagina":null,"texto":"INTROITO (antífona do dia)"},
+    {"tipo":"texto","pagina":null,"texto":"______________________________ ,\nCelebrante - (versículo do salmo). Glória ao Pai, e ao Filho, e ao Espírito Santo.\nAcólito - Assim como era no princípio, e agora, e sempre, e pelos séculos\ndos séculos. Amém.\n______________________________ ."},
+    {"tipo":"titulo","pagina":null,"texto":"KYRIE"},
+    {"tipo":"texto","pagina":null,"texto":"Kyrie eleison. Kyrie eleison. Kyrie eleison.\nChriste eleison. Christe eleison. Christe eleison.\nKyrie eleison. Kyrie eleison. Kyrie eleison."}
   ]
 }
