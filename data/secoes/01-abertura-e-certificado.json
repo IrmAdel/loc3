@@ -1,0 +1,14 @@
+{
+  "id":"01-abertura-e-certificado",
+  "titulo":"Abertura e certificado",
+  "modo":"prosa",
+  "paginaInicial":1,
+  "paginaFinal":3,
+  "blocos":[
+    {"tipo":"texto","pagina":1,"texto":"LIVRO DE Oração COMUM"},
+    {"tipo":"titulo","pagina":3,"texto":"LIVRO DE ORAÇÃO COMUM"},
+    {"tipo":"texto","pagina":3,"texto":"Forma abreviada e atualizada Com Salmos Litúrgicos"},
+    {"tipo":"subtitulo","pagina":3,"texto":"Conforme uso da"},
+    {"tipo":"texto","pagina":3,"texto":"IEAB – Igreja Episcopal Anglicana do Brasil Província da Comunhão Anglicana"}
+  ]
+}

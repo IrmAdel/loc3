@@ -1,0 +1,12 @@
+{
+  "id":"34-oficios-diarios-ocasioes-especiais",
+  "titulo":"Ofícios Diários – Ocasiões Especiais",
+  "modo":"tabela",
+  "paginaInicial":509,
+  "paginaFinal":510,
+  "blocos":[
+    {"tipo":"tabela","pagina":509,"cabecalho":true,"linhas":[["Data","Oração Matutina","Oração Vespertina"],["Dia de\nTodos os Santos\n(1.\"/novembro)","111,112\nNeemias 2:11-20\nHebreus 11:32—12:2","148,150\nSabedoria 5:1-5,14-16\nApocalipse 21:1-4,22—22:5"],["Dia de Ação\nde Graças","147\nDeuteronômio 26:1-11\nJoão 6:26-35","145\nJoel 2:21-27\nI Tessalonicenses 5:12-24"]]},
+    {"tipo":"titulo","pagina":509,"texto":"OCASIÕES ESPECIAIS"},
+    {"tipo":"tabela","pagina":509,"cabecalho":false,"linhas":[["Data\nVéspera da\nDedicação","Oração Matutina\n—\n----","Oração Vespertina\n48,122\nAgeu 2:1-9\nI Coríntios 3:9-17"],["Aniversário da\nDedicação de\numa Igreja","132\nI Reis 8:1-13\nJoão 10:22-30","29,46\n1 Reis 8:54-62\nHebreus 10:19-25"],["Véspera da\nFesta de um\nPatrono","-----\n-----","27 ou 116,117\nIsaías 49:1-13 ou\nEclesiástico 51:6b-12\nEfésios 4:1-13 ou\nApocalipse 7:9-17 ou\nLucas 10:38-42"],["Festa de\num Patrono","92,93 ou 148,149\nIsaías 52:7-10 ou\nJó 5:8-21\nAtos 4:5-13 ou\nLucas 12:1-12","96,97 ou 111,112\nJeremias 31:10-14 ou\nEclesiástico 2:7-18\nRomanos 12:1-21 ou\nLucas 21:10-19"],["Vésperas de\nApóstolos e\nEvangelistas","-----\n-----","48,122 ou 84,150\nIsaías 43:10-15 ou\nIsaías 52:7-10\nApocalipse 21:1-4,9-14 ou\nMateus 9:35—10:4"]]}
+  ]
+}

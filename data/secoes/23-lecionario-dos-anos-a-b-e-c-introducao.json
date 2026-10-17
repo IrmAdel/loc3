@@ -1,0 +1,18 @@
+{
+  "id":"23-lecionario-dos-anos-a-b-e-c-introducao",
+  "titulo":"Lecionário dos Anos A, B e C – Introdução",
+  "modo":"prosa",
+  "paginaInicial":407,
+  "paginaFinal":408,
+  "blocos":[
+    {"tipo":"subtitulo","pagina":407,"texto":"Lecionário"},
+    {"tipo":"subtitulo","pagina":408,"texto":"Do Lecionário"},
+    {"tipo":"rubrica","pagina":408,"texto":"O Lecionário para os domingos está organizado num ciclo de três anos, em que o Ano A sempre começa no primeiro domingo do Advento dos anos cujos números são divisíveis por três. (Por exemplo, 1986 é divisível por três; o Ano A começa portanto, no primeiro domingo do Advento desse ano.)."},
+    {"tipo":"rubrica","pagina":408,"texto":"Os Salmos e as Leituras- designados para os domingos e para as festas maiores estão planejados para o uso nos cultos públicos em tais dias, exceto quando a mesma congregação participa em mais de um Ofício. Portanto, as mesmas Leituras devem ser lidas no Ofício Matutino principal, independentemente da Liturgia da Palavra estar inserida na Santa Eucaristia ou no Ofício Diário."},
+    {"tipo":"rubrica","pagina":408,"texto":"Quando a mesma congregação estiver presente na Oração Matutina ou na Vespertina, além da Eucaristia, as Leituras nesse outro Ofício podem ser selecionadas de um outro Ciclo ou do Lecionário do Ofício Diário. Os Salmos em tais Ofícios são normalmente aqueles designados no Lecionário do Ofício Diário, mas quando se desejar, pode-se usar, no lugar daquele, o salmo mencionado no Próprio do domingo."},
+    {"tipo":"rubrica","pagina":408,"texto":"Nesse Lecionário, as seleções dos Salmos com frequência aparecem numa versão mais longa e outra mais breve, geralmente do mesmo salmo. A versão mais longa é, especialmente, apropriada para uso no Ofício, e a versão mais abreviada é apropriada para ser cantada entre as Leituras na Eucaristia. As seleções podem ser ainda mais abreviadas ou alongadas quando se julgar conveniente."},
+    {"tipo":"rubrica","pagina":408,"texto":"Quando uma leitura alternativa é mencionada, ela é, às vezes, a mesma leitura designada para o mesmo dia no Lecionário do Ofício Diário."},
+    {"tipo":"rubrica","pagina":408,"texto":"Nos primeiros versículos das Leituras, o leitor deve omitir conjunções iniciais que têm sentido somente em relação ao texto precedente, assim como também substituir substantivos por pronomes quando o referido não está claro, ou ainda acrescentando à leitura uma introdução como, por exemplo, \"N. disse (para N.)\"."},
+    {"tipo":"rubrica","pagina":408,"texto":"Qualquer leitura pode ser alongada quando se julgar conveniente. As prolongações sugeridas encontram-se entre parênteses."}
+  ]
+}

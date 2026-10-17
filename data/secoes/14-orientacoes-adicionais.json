@@ -1,0 +1,26 @@
+{
+  "id":"14-orientacoes-adicionais",
+  "titulo":"Orientações Adicionais",
+  "modo":"prosa",
+  "paginaInicial":107,
+  "paginaFinal":108,
+  "blocos":[
+    {"tipo":"subtitulo","pagina":107,"texto":"Trindade"},
+    {"tipo":"texto","pagina":107,"texto":"O Deus Triuno, Pai, Filho e Espírito Santo vos abençoe e vos defenda em todas as situações e vos conduza pelos caminhos da verdade e da paz. Amém."},
+    {"tipo":"subtitulo","pagina":107,"texto":"Dia de um Santo"},
+    {"tipo":"texto","pagina":107,"texto":"O Senhor Deus vos conceda a graça de seguir seus santos na fé, na esperança e no amor; e a Bênção de Deus Onipotente, Pai, Filho e Espírito Santo, seja convosco, e convosco habite eternamente. Amém."},
+    {"tipo":"subtitulo","pagina":107,"texto":"Unidade"},
+    {"tipo":"texto","pagina":107,"texto":"Cristo, o Bom Pastor, que deu a sua vida pelas suas ovelhas, vos reúna juntamente com todos os que ouvem sua voz, para que se tornem um só rebanho; e a Bênção de Deus Onipotente, Pai, Filho e Espírito Santo, seja convosco, e convosco habite eternamente. Amém."},
+    {"tipo":"subtitulo","pagina":107,"texto":"Orientações Adicionais"},
+    {"tipo":"rubrica","pagina":107,"texto":"* A Santa Mesa deverá estar coberta com um pano limpo e branco durante a celebração."},
+    {"tipo":"rubrica","pagina":107,"texto":"* Ao fim de cada Salmo ou seleção de Salmos, cantar-se-á ou dir-se-á o Gloria Patri."},
+    {"tipo":"rubrica","pagina":107,"texto":"* Nos dias de Festa, dir-se-á ou cantar-se-á o Gloria in Excelsis, o qual será omitido durante a Quaresma, o Advento e em Ofícios Memoriais; note-se que o Gloria in Excelsis poderá ser substituído por qualquer hino apropriado."},
+    {"tipo":"rubrica","pagina":107,"texto":"* É recomendável que as leituras do Antigo Testamento e da Epístola sejam feitas do atril e que o Evangelho seja lido no meio da congregação, ou do púlpito."},
+    {"tipo":"rubrica","pagina":108,"texto":"* Quando não houver comunhão, poderá ser lido tudo que é designado até o fim das Intercessões (Oração do Povo). Poder-se-á cantar um hino ou antífona e receber as ofertas do povo. Poder-se-á, então, concluir o Ofício com a Oração Dominical, outras orações, e a Graça, ou a Bênção, ou ainda com a Saudação da Paz. * Na ausência de um Presbítero, tudo que é descrito na rubrica anterior, exceto a Absolvição e a Bênção, pode ser dito por um Diácono ou, não havendo, por um leigo. * As intenções, anúncios e comunicações poderão ser feitas antes do Ofício, após o Credo, antes do Ofertório, ou no fim do Ofício, conforme a conveniência. * Se o Pão ou Vinho consagrados não forem suficientes, o Celebrante deverá retornar à Santa Mesa e consagrar mais, com as seguintes palavras:"},
+    {"tipo":"texto","pagina":108,"texto":"Ouve-nos, ó Pai Celestial e digna-te abençoar e santificar com teu Espírito Santo este Pão (ou este Vinho), para que seja também para nós o Sacramento do precioso Corpo (ou Sangue) de teu Filho, nosso Salvador Jesus Cristo. Amém."},
+    {"tipo":"rubrica","pagina":108,"texto":"* Quando não houver um Presbítero, o Bispo, à sua discrição, poderá autorizar um Diácono a ministrar o Sacramento reservado para a congregação, da seguinte maneira:"},
+    {"tipo":"rubrica","pagina":108,"texto":"1) Após a Liturgia da Palavra (depois da recepção das ofertas em dinheiro), o Diácono colocará reverentemente os elementos consagrados sobre o Altar. Enquanto isso, poderá ser cantado um hino de Comunhão. 2) Após o convite pelo Diácono: \"como nos ensinou Cristo, o Salvador, nos animamos a dizer\", todos rezarão a Oração Dominical. 3) Então, seguir-se-á o rito eucarístico, omitindo-se o Partir do Pão. 4) Após a ministração da Comunhão ao Povo, será concluída a Liturgia, omitida apenas a Bênção."},
+    {"tipo":"subtitulo","pagina":108,"texto":"Rubrica Disciplinar"},
+    {"tipo":"rubrica","pagina":108,"texto":"* Se o Presbítero conhecer alguém, cuja conduta é irregular, conforme os Cânones da Igreja, e que tenciona vir à Comunhão, conversará pastoralmente com essa pessoa, em particular, dizendo-lhe que não poderá comungar até que tenha dado provas de arrependimento e emenda de vida."}
+  ]
+}

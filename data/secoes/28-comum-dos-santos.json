@@ -1,0 +1,15 @@
+{
+  "id":"28-comum-dos-santos",
+  "titulo":"Comum dos Santos",
+  "modo":"tabela",
+  "paginaInicial":433,
+  "paginaFinal":434,
+  "blocos":[
+    {"tipo":"titulo","pagina":433,"texto":"COMUM DOS SANTOS"},
+    {"tipo":"tabela","pagina":433,"cabecalho":true,"linhas":[["Ocasião","Salmo","Leituras"],["De um Mártir I","126 ou 121","Neemias 2:11-20"]]},
+    {"tipo":"subtitulo","pagina":433,"texto":"I Pedro 3:14-18,22"},
+    {"tipo":"subtitulo","pagina":433,"texto":"Mateus 10:16-22"},
+    {"tipo":"tabela","pagina":433,"cabecalho":false,"linhas":[["De um Mártir 11","116 ou 116:1 -8","Eclesiástico 51:1-12\nApocalipse 7:13-17\nLucas 12:2-12"],["De um Mártir III","124 ou 31:1-5","Jeremias 15:15-21\nI Pedro 4:12-19\nMarcos 8:34-38"],["De um Missionário I","96 ou 96:1-7","Isaías 52:7-10\nAtos 1:1-9\nLucas 10:1-9"],["De um Missionário II","98 ou 98:1-4","Isaías 49:1-6\nAtos 17:22-31\nMateus 28:16-20"],["De um Pastor I","23","Ezequiel 34:11-16\nI Pedro 5:1-4\nJoão 21:15-17"],["De um Pastor II","84 ou 84:7-11","Atos 20:17-35\nEfésios 3:14-21\nMateus 24:42-47"],["De um Teólogo e Professor I","119:97-104","Sabedoria 7:7-14\nI Coríntios 2:6-10,13-16\nJoão 17:18-23"],["De um Teólogo e Professor II","119:89-96","Provérbios 3:1-7\nI Coríntios 3:5-11\nMateus 13:47-52"],["De um Monge I","34 ou 34:1-8","Cântico dos Cânticos 8:6-7\nFilipenses 3:7-15\nLucas 12:33-37 ou Lucas 9:57-62"]]},
+    {"tipo":"tabela","pagina":434,"cabecalho":true,"linhas":[["Ocasião","Salmo","Leituras"],["De um Monge II","133 ou\n119:161-168","Atos 2:42-47ª\nII Coríntios 6:1-10\nMateus 6:24-33"],["De um Santo I","15","Miquéias 6:6-8\nHebreus 12:1-2\nMateus 25:31-40"],["De um Santo II","34 ou 34:15-22","Sabedoria 3:1-9\nFilipenses 4:4-9\nLucas 6:17-23"],["De um Santo III","1","Eclesiástico 2:7-11\nI Coríntios 1:26-31\nMateus 25:1-13"]]}
+  ]
+}

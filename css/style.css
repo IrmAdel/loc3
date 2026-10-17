@@ -1,0 +1,211 @@
+/* ===== Variáveis e temas ===== */
+:root {
+  --tam: 1.125rem;
+  --fundo: #fbf8f1;
+  --papel: #fffdf8;
+  --texto: #222018;
+  --suave: #6d675a;
+  --linha: #ddd5c3;
+  --rubrica: #9b1c1c;       /* vermelho litúrgico */
+  --destaque: #7a2e2e;
+  --acento: #2f5d8a;
+  --realce: #fff2a8;
+  --sombra: 0 1px 3px rgba(0, 0, 0, .12);
+  --largura-indice: 19rem;
+  --altura-topo: 3.4rem;
+  --fonte-livro: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+  --fonte-ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+html[data-tema="escuro"] {
+  --fundo: #17150f; --papel: #1f1c15; --texto: #e9e3d3; --suave: #a39c88;
+  --linha: #3a3527; --rubrica: #ff8a80; --destaque: #e7b8a8; --acento: #8fb8e6;
+  --realce: #5a4b00; --sombra: 0 1px 3px rgba(0, 0, 0, .5);
+}
+@media (prefers-color-scheme: dark) {
+  html[data-tema="auto"] {
+    --fundo: #17150f; --papel: #1f1c15; --texto: #e9e3d3; --suave: #a39c88;
+    --linha: #3a3527; --rubrica: #ff8a80; --destaque: #e7b8a8; --acento: #8fb8e6;
+    --realce: #5a4b00; --sombra: 0 1px 3px rgba(0, 0, 0, .5);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: calc(var(--altura-topo) + 1rem); }
+body {
+  margin: 0; background: var(--fundo); color: var(--texto);
+  font-family: var(--fonte-ui); line-height: 1.5;
+}
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+[hidden] { display: none !important; }
+
+/* ===== Topo ===== */
+.topo {
+  position: sticky; top: 0; z-index: 30; height: var(--altura-topo);
+  display: flex; align-items: center; gap: .6rem; padding: 0 .8rem;
+  background: var(--papel); border-bottom: 1px solid var(--linha); box-shadow: var(--sombra);
+}
+.titulo-site { font: 600 1.05rem var(--fonte-livro); margin: 0; white-space: nowrap; }
+.titulo-site small { font: 400 .75rem var(--fonte-ui); color: var(--suave); margin-left: .35rem; }
+.busca { flex: 1; max-width: 26rem; margin-left: auto; }
+.busca input {
+  width: 100%; padding: .4rem .7rem; border: 1px solid var(--linha); border-radius: 999px;
+  background: var(--fundo);
+}
+.ferramentas { display: flex; gap: .25rem; }
+.icone {
+  min-width: 2.2rem; height: 2.2rem; padding: 0 .55rem; border: 1px solid transparent;
+  background: transparent; border-radius: .5rem;
+}
+.icone:hover { border-color: var(--linha); background: var(--fundo); }
+.icone.destaque { border-color: var(--destaque); color: var(--destaque); font-weight: 600; }
+body.editando .icone.destaque { background: var(--destaque); color: var(--papel); }
+
+/* ===== Layout ===== */
+.layout { display: flex; align-items: flex-start; }
+.indice {
+  position: sticky; top: var(--altura-topo); flex: 0 0 var(--largura-indice);
+  height: calc(100vh - var(--altura-topo)); overflow-y: auto;
+  padding: 1rem .6rem 4rem; border-right: 1px solid var(--linha); background: var(--papel);
+}
+.indice a {
+  display: block; padding: .4rem .6rem; border-radius: .4rem; color: inherit;
+  text-decoration: none; font-size: .92rem; line-height: 1.3;
+}
+.indice a small { display: block; color: var(--suave); font-size: .75rem; }
+.indice a:hover { background: var(--fundo); }
+.indice a[aria-current="page"] { background: var(--fundo); border-left: 3px solid var(--rubrica); font-weight: 600; }
+
+.conteudo { flex: 1; min-width: 0; padding: 1.5rem 1rem 6rem; outline: none; }
+#leitura, .resultados { max-width: 44rem; margin: 0 auto; }
+
+/* ===== Texto do livro ===== */
+#leitura { font-family: var(--fonte-livro); font-size: var(--tam); line-height: 1.65; }
+#leitura h2 {
+  margin: 2.2rem 0 .8rem; text-align: center; text-transform: uppercase;
+  letter-spacing: .08em; font-size: 1.25em; font-weight: 700;
+}
+#leitura h3 { margin: 1.6rem 0 .5rem; font-size: 1.05em; font-weight: 700; color: var(--destaque); }
+#leitura h1.nome-secao {
+  margin: 0 0 1.5rem; text-align: center; font-size: 1.7em; font-weight: 700;
+  border-bottom: 2px solid var(--rubrica); padding-bottom: .6rem;
+}
+#leitura p { margin: .7rem 0; }
+.bloco { position: relative; }
+.texto { text-align: left; hyphens: auto; }
+.rubrica { color: var(--rubrica); font-style: italic; }
+.verso { white-space: pre-line; padding-left: 1.6em; text-indent: -1.6em; }
+.fala-rotulo { color: var(--rubrica); font-weight: 700; font-variant: small-caps; letter-spacing: .03em; }
+.texto { white-space: pre-line; }
+
+.marca-pagina {
+  display: flex; align-items: center; gap: .6rem; margin: 2rem 0 .4rem;
+  font: .72rem var(--fonte-ui); color: var(--suave); text-transform: uppercase; letter-spacing: .1em;
+}
+.marca-pagina::before, .marca-pagina::after { content: ""; flex: 1; border-top: 1px dashed var(--linha); }
+
+/* tabelas dos lecionários */
+.tabela-rolagem { overflow-x: auto; margin: 1rem 0; }
+#leitura table { width: 100%; border-collapse: collapse; font-family: var(--fonte-ui); font-size: .88em; line-height: 1.4; }
+#leitura th, #leitura td { text-align: left; vertical-align: top; padding: .45rem .6rem; border-bottom: 1px solid var(--linha); white-space: pre-line; }
+#leitura th { color: var(--destaque); border-bottom: 2px solid var(--rubrica); }
+
+/* ===== Resultados da busca ===== */
+.resultados { font-family: var(--fonte-ui); }
+.resultados h2 { font-size: 1.1rem; }
+.resultados ol { list-style: none; padding: 0; margin: 0; }
+.resultados li { border-bottom: 1px solid var(--linha); }
+.resultados a { display: block; padding: .65rem .3rem; color: inherit; text-decoration: none; }
+.resultados a:hover { background: var(--papel); }
+.resultados .onde { font-size: .78rem; color: var(--suave); }
+.resultados mark, #leitura mark { background: var(--realce); color: inherit; padding: 0 .1em; border-radius: .2em; }
+.alvo { outline: 3px solid var(--realce); outline-offset: 4px; border-radius: .25rem; }
+
+/* ===== Modo de edição ===== */
+body.editando #leitura .bloco[contenteditable],
+body.editando #leitura td[contenteditable],
+body.editando #leitura th[contenteditable] {
+  outline: 1px dashed var(--linha); outline-offset: 3px; border-radius: .2rem; min-height: 1.4em; cursor: text;
+}
+body.editando #leitura [contenteditable]:focus { outline: 2px solid var(--acento); background: var(--papel); }
+.envolve { position: relative; }
+.ferr-bloco {
+  display: none; position: absolute; right: 0; top: -1.7rem; z-index: 5; gap: .2rem;
+  background: var(--papel); border: 1px solid var(--linha); border-radius: .4rem; padding: .15rem; box-shadow: var(--sombra);
+  font: .78rem var(--fonte-ui); font-style: normal; font-weight: 400; letter-spacing: normal; text-transform: none;
+}
+body.editando .envolve:hover > .ferr-bloco,
+body.editando .envolve:focus-within > .ferr-bloco { display: flex; }
+.ferr-bloco button, .ferr-bloco select {
+  border: 1px solid transparent; background: transparent; border-radius: .3rem; padding: .1rem .35rem;
+}
+.ferr-bloco button:hover { border-color: var(--linha); background: var(--fundo); }
+
+.barra-edicao {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: flex; align-items: center; gap: .5rem;
+  padding: .55rem .9rem; background: var(--papel); border-top: 2px solid var(--destaque); box-shadow: 0 -2px 8px rgba(0, 0, 0, .15);
+  font-size: .9rem;
+}
+.barra-edicao.sujo { border-top-color: var(--rubrica); }
+.barra-edicao button, dialog button {
+  padding: .4rem .8rem; border: 1px solid var(--linha); border-radius: .45rem; background: var(--fundo);
+}
+.barra-edicao button:hover, dialog button:hover { border-color: var(--suave); }
+button.primario { background: var(--destaque); border-color: var(--destaque); color: var(--papel); font-weight: 600; }
+button.perigo { color: var(--rubrica); border-color: var(--rubrica); }
+.espaco { flex: 1; }
+
+.aviso {
+  position: fixed; left: 50%; bottom: 4.2rem; transform: translateX(-50%); z-index: 60; max-width: 90vw;
+  padding: .6rem 1rem; border-radius: .5rem; background: var(--texto); color: var(--papel); box-shadow: var(--sombra); font-size: .9rem;
+}
+.aviso.erro { background: var(--rubrica); color: #fff; }
+
+/* ===== Diálogos ===== */
+dialog {
+  width: min(32rem, 94vw); padding: 1.2rem 1.3rem; border: 1px solid var(--linha); border-radius: .8rem;
+  background: var(--papel); color: var(--texto); box-shadow: 0 10px 40px rgba(0, 0, 0, .35);
+}
+dialog::backdrop { background: rgba(0, 0, 0, .45); }
+dialog h2 { margin: 0 0 .6rem; font-family: var(--fonte-livro); }
+dialog label { display: block; margin: .7rem 0; font-size: .85rem; color: var(--suave); }
+dialog label input:not([type="checkbox"]) {
+  display: block; width: 100%; margin-top: .2rem; padding: .45rem .6rem; border: 1px solid var(--linha);
+  border-radius: .4rem; background: var(--fundo); color: var(--texto);
+}
+dialog label.linha { display: flex; gap: .5rem; align-items: center; }
+.duas { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
+.botoes { display: flex; gap: .5rem; align-items: center; margin-top: 1rem; flex-wrap: wrap; }
+.ajuda { font-size: .82rem; color: var(--suave); line-height: 1.45; }
+.msg { min-height: 1.3em; font-size: .85rem; }
+.msg.ok { color: #1c7a3a; }
+.msg.erro { color: var(--rubrica); }
+code { font-size: .9em; background: var(--fundo); padding: .05em .3em; border-radius: .25em; }
+.carregando { color: var(--suave); text-align: center; }
+
+/* ===== Telas estreitas ===== */
+@media (max-width: 900px) {
+  .titulo-site small { display: none; }
+  .indice {
+    position: fixed; left: 0; top: var(--altura-topo); z-index: 25; width: min(20rem, 86vw);
+    transform: translateX(-100%); transition: transform .2s; box-shadow: var(--sombra);
+  }
+  body.indice-aberto .indice { transform: none; }
+  .conteudo { padding: 1rem .9rem 6rem; }
+}
+@media (min-width: 901px) { #btn-menu { display: none; } }
+@media (max-width: 560px) {
+  .titulo-site { display: none; }
+  .busca { margin-left: 0; }
+}
+
+/* ===== Impressão ===== */
+@media print {
+  .topo, .indice, .barra-edicao, .aviso, .ferr-bloco, .resultados, .marca-pagina { display: none !important; }
+  body { background: #fff; color: #000; }
+  .layout { display: block; }
+  .conteudo { padding: 0; }
+  #leitura { max-width: none; font-size: 12pt; }
+  .rubrica, .fala-rotulo { color: #7a0000; }
+  #leitura h2, #leitura h3 { break-after: avoid; }
+}

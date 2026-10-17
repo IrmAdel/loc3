@@ -1,0 +1,20 @@
+{
+  "id":"30-lecionario-dos-oficios-diarios",
+  "titulo":"Lecionário dos Ofícios Diários",
+  "modo":"prosa",
+  "paginaInicial":439,
+  "paginaFinal":440,
+  "blocos":[
+    {"tipo":"subtitulo","pagina":439,"texto":"Lecionário dos Ofícios Diários"},
+    {"tipo":"rubrica","pagina":439,"texto":"O Lecionário do Ofício Diário está organizado num ciclo de dois anos. O ano UM começa no primeiro domingo do Advento de um ano par do calendário civil. O ano DOIS começa no primeiro domingo do Advento de um ano ímpar. Por exemplo, no primeiro domingo do Advento de 1986 inicia o ciclo do ano UM."},
+    {"tipo":"rubrica","pagina":439,"texto":"Há indicações para três leituras para cada dia do ano, inclusive domingos. Duas podem ser usadas na Oração Matutina e uma na Oração Vespertina; ou pode-se ler as três se for feito apenas um ofício diário. Quando houver dois ofícios diários, sugere-se que a leitura do evangelho seja usada na Oração Vespertina durante o Ano UM, e na Oração Matutina no ano DOIS. Se alguém desejar fazer duas leituras em ambos os ofícios, a leitura do Antigo Testamento indicada para o mesmo dia no outro ciclo, poderá ser usada como a primeira leitura da Oração Vespertina."},
+    {"tipo":"rubrica","pagina":439,"texto":"Quando for usada mais de uma leitura, a primeira será sempre a do Antigo Testamento (ou dos Apócrifos)."},
+    {"tipo":"rubrica","pagina":439,"texto":"Quando uma Festa Maior interromper a sequência das leituras, estas podem ser reorganizadas, alongando, combinando ou omitindo as mesmas, de modo a assegurar a continuidade ou evitar a repetição."},
+    {"tipo":"rubrica","pagina":439,"texto":"Qualquer leitura poderá ser alongada se for julgado conveniente. Entre parênteses encontram-se as sugestões de alongamento."},
+    {"tipo":"rubrica","pagina":439,"texto":"Neste Lecionário (exceto nas semanas do 4º Domingo do Advento até o 1º Domingo da Epifania, e do Domingo de Ramos até o 2º Domingo da Páscoa), os Salmos são organizados em ciclos de sete semanas, que se repetem através do ano, exceto para as variações apropriadas na Quaresma e na Quadra da Páscoa."},
+    {"tipo":"rubrica","pagina":439,"texto":"Na indicação dos Salmos, os primeiros são apropriados para uso na Oração Matutina e os outros são próprios para a Oração Vespertina. Todavia, ã discrição do Oficiante, qualquer um dos Salmos designados para o dia pode ser usado na Oração Matutina ou na Vespertina. Do mesmo modo, os salmos designados para qualquer dia podem ser usados em qualquer dia da mesma semana, exceto nas Festas Maiores."},
+    {"tipo":"rubrica","pagina":440,"texto":"Os colchetes e os parênteses são utilizados (colchetes no caso de todo o salmo, e parênteses no caso dos versos) para indicar os Salmos e os versos dos Salmos que podem ser omitidos. Em alguns casos, a porção inteira de salmos designados para um Ofício foi posta dentro dos colchetes e uma porção alternativa é indicada. Os que desejarem recitar o Saltério inteiro devem usar os salmos mencionados dentro dos colchetes, ao invés do alternativo."},
+    {"tipo":"rubrica","pagina":440,"texto":"As antífonas extraídas dos Salmos ou das sentenças iniciais dos Ofícios ou de outras passagens das Escrituras, podem ser usadas com 05 Salmos e Cânticos bíblicos. As antífonas podem ser cantadas ou ditas no início e/ou fim de cada Salmo ou Cântico ou ainda podem ser usadas como refrão após cada verso ou grupo de versos."},
+    {"tipo":"rubrica","pagina":440,"texto":"Em ocasiões especiais, o Oficiante poderá selecionar Salmos e Leituras adequados."}
+  ]
+}

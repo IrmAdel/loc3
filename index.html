@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Livro de Oração Comum — IEAB 1987</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topo">
+  <button id="btn-menu" class="icone" aria-label="Abrir índice" title="Índice">☰</button>
+  <h1 class="titulo-site">Livro de Oração Comum <small>IEAB · 1987</small></h1>
+
+  <form id="form-busca" class="busca" role="search" autocomplete="off">
+    <input id="campo-busca" type="search" placeholder="Buscar em todo o livro…" aria-label="Buscar no livro">
+  </form>
+
+  <div class="ferramentas">
+    <button id="btn-menos" class="icone" title="Diminuir letra" aria-label="Diminuir letra">A−</button>
+    <button id="btn-mais"  class="icone" title="Aumentar letra" aria-label="Aumentar letra">A+</button>
+    <button id="btn-tema"  class="icone" title="Alternar tema claro/escuro" aria-label="Alternar tema">◐</button>
+    <button id="btn-editar" class="icone destaque" hidden title="Ligar/desligar modo de edição">✎ Editar</button>
+    <button id="btn-admin" class="icone" title="Administração (GitHub)" aria-label="Administração">⚙</button>
+  </div>
+</header>
+
+<div class="layout">
+  <nav id="indice" class="indice" aria-label="Índice do livro">
+    <p class="carregando">Carregando índice…</p>
+  </nav>
+
+  <main id="conteudo" class="conteudo" tabindex="-1">
+    <article id="leitura" aria-live="polite">
+      <p class="carregando">Carregando…</p>
+    </article>
+    <div id="resultados" class="resultados" hidden></div>
+  </main>
+</div>
+
+<div id="barra-edicao" class="barra-edicao" hidden>
+  <span id="estado-edicao">Modo de edição</span>
+  <span class="espaco"></span>
+  <button id="btn-descartar" type="button">Descartar rascunho</button>
+  <button id="btn-baixar" type="button">Baixar .json</button>
+  <button id="btn-publicar" type="button" class="primario">Publicar no GitHub</button>
+</div>
+
+<div id="aviso" class="aviso" role="status" hidden></div>
+
+<!-- ============ Painel admin ============ -->
+<dialog id="dlg-admin">
+  <form method="dialog" id="form-admin" autocomplete="off">
+    <h2>Administração · GitHub</h2>
+    <p class="ajuda">
+      Para editar e publicar, use um <strong>token de acesso fino</strong> (fine-grained) criado em
+      <em>GitHub → Settings → Developer settings → Personal access tokens</em>, restrito a
+      <strong>este repositório</strong>, com a permissão <strong>Contents: Read and write</strong>.
+      O token fica só neste navegador e é enviado somente para <code>api.github.com</code>.
+    </p>
+
+    <label>Usuário ou organização
+      <input id="adm-dono" required placeholder="ex.: minha-fraternidade">
+    </label>
+    <label>Repositório
+      <input id="adm-repo" required placeholder="ex.: loc-1987">
+    </label>
+    <div class="duas">
+      <label>Ramo (branch)
+        <input id="adm-ramo" required value="main">
+      </label>
+      <label>Pasta dos dados
+        <input id="adm-pasta" required value="data">
+      </label>
+    </div>
+    <label>Token
+      <input id="adm-token" type="password" required placeholder="github_pat_…">
+    </label>
+    <label class="linha">
+      <input id="adm-lembrar" type="checkbox"> Lembrar neste navegador (senão vale só até fechar a aba)
+    </label>
+
+    <p id="adm-msg" class="msg" role="status"></p>
+
+    <div class="botoes">
+      <button type="button" id="adm-sair" class="perigo">Sair e apagar token</button>
+      <span class="espaco"></span>
+      <button type="button" id="adm-testar">Testar conexão</button>
+      <button type="button" id="adm-cancelar">Fechar</button>
+      <button type="submit" class="primario" id="adm-salvar" value="ok">Salvar</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- ============ Confirmar publicação ============ -->
+<dialog id="dlg-publicar">
+  <form method="dialog" id="form-publicar">
+    <h2>Publicar alterações</h2>
+    <p id="pub-resumo" class="ajuda"></p>
+    <label>Mensagem do commit
+      <input id="pub-mensagem" required>
+    </label>
+    <p id="pub-msg" class="msg" role="status"></p>
+    <div class="botoes">
+      <span class="espaco"></span>
+      <button type="button" id="pub-cancelar">Cancelar</button>
+      <button type="submit" class="primario" id="pub-confirmar" value="ok">Fazer commit</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="js/app.js"></script>
+</body>
+</html>

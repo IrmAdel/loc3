@@ -1,0 +1,24 @@
+{
+  "id":"21-selecao-de-salmos",
+  "titulo":"Seleção de Salmos",
+  "modo":"prosa",
+  "paginaInicial":213,
+  "paginaFinal":214,
+  "blocos":[
+    {"tipo":"subtitulo","pagina":213,"texto":"Seleção de Salmos"},
+    {"tipo":"texto","pagina":213,"texto":"Deus, o Criador. 8, 19; 33; 65, 111; 104; 145; 147. Deus, o Redentor. 33; 102; 15; 103; 111, 126; 113; 114; 130, 138. Deus, o Juiz. 1, 11; 7; 46, 97; 50; 62, 82; 75, 76; 90; 96; 98. Glória de Deus. 18: 1-20; 29, 99; 36: 5 e 46; 148, 150. Soberania de Deus. 24, 93; 46, 47; 72; 89: 1-19; 96, 97; 98, 99; 112, 146; 145. Sabedoria de Deus. 33; 104; 111, 113; 139; 145; 147. Lei de Deus. 19; 50; 62, 111; 119; 147. Providência de Deus. 23, 121; 33; 34; 37; 26 e 124; 89: 1- 19; 139; 145; 146; 147. Misericórdia de Deus. 23, 100; 32, 130; 57, 61; 62, 63; 73; 77; 85; 86; 103; 118; 145. Encarnação. 2, 110; 8, 113; 85, 111; 89:1-30; 102; 132. Paixão. 22; 40:1-16; 42; 54, 130; 69:1-22, 30-37; 88; 116. Igreja. 46, 111; 48; 84; 122, 133; 147. Adoração. 5; 26, 43; 63, 65; 66; 67, 122; 84, 138; 96, 100; 102; 15; 116. Ação de Graças. 30, 67; 65; 92, 100; 98, 111; 103; 107; 116; 134, 138; 145; 147; 148, 150. Oração. 4, 5; 17; 20, 28; 31; 54, 61; 84; 86; 102; 141:1-4 e 142. Confiança em Deus. 27; 31; 57, 146; 62, 63; 71; 73; 77; 91; 118; 121, 124, 125; 123, 143."},
+    {"tipo":"texto","pagina":214,"texto":"Deus, nosso refúgio. 4, 20; 17; 37; 46; 49; 54; 61; 71; 91; 103; 121, 146."},
+    {"tipo":"texto","pagina":214,"texto":"Direção Divina. 25; 43, 85; 80; 111, 112."},
+    {"tipo":"texto","pagina":214,"texto":"Em tempo de tribulação. 3, 11; 12, 13; 18:1-20; 20, 46; 30, 146; 40:1-16; 49; 57, 85; 62, 63; 80; 86; 90; 107:1-16; 118; 144."},
+    {"tipo":"texto","pagina":214,"texto":"Retidão. 1, 15; 11, 12; 18:21-35; 19; 26; 34; 40:1-16; 92; 111, 112."},
+    {"tipo":"texto","pagina":214,"texto":"Paz. 29, 46; 76; 85; 98, 100; 124, 125, 126."},
+    {"tipo":"subtitulo","pagina":214,"texto":"Brevidade da vida. 39; 49; 90; 102."},
+    {"tipo":"texto","pagina":214,"texto":"Esperança da imortalidade. 16, 146; 30, 121; 42; 49; 66; 73; 103; 116; 139."},
+    {"tipo":"texto","pagina":214,"texto":"Manhã. 3, 20; 5, 63; 90; 143."},
+    {"tipo":"texto","pagina":214,"texto":"Tarde. 4, 31:1-6, 91, 134; 13, 121; 16, 17; 77."},
+    {"tipo":"texto","pagina":214,"texto":"Salmos penitenciais. 6, 32; 38; 51; 102; 130, 143."},
+    {"tipo":"subtitulo","pagina":214,"texto":"Preparo para a Santa Comunhão. 23, 36:5; 25; 26, 43; 41;"},
+    {"tipo":"texto","pagina":214,"texto":"63; 84, 122; 85; 86; 130, 133; 139."},
+    {"tipo":"texto","pagina":214,"texto":"Ação de graças após a Santa Comunhão. 8, 15; 18:1-20; 19; 27; 29, 30; 34; 100, 110; 103; 118; 145; 150."}
+  ]
+}

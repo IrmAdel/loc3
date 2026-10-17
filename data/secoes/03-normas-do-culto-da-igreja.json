@@ -1,0 +1,19 @@
+{
+  "id":"03-normas-do-culto-da-igreja",
+  "titulo":"Normas do Culto da Igreja",
+  "modo":"prosa",
+  "paginaInicial":11,
+  "paginaFinal":12,
+  "blocos":[
+    {"tipo":"titulo","pagina":11,"texto":"NORMAS PARA O CULTO DA IGREJA"},
+    {"tipo":"texto","pagina":11,"texto":"A Santa Eucaristia, ato central da adoração no Dia do Senhor e noutras Festas Maiores, e os ofícios de Oração Matutina e Vespertina, tal como determina este Livro, são os ritos regulares designados para o culto público nesta Igreja."},
+    {"tipo":"texto","pagina":11,"texto":"Além destes e de outros ritos contidos neste Livro, outras fórmulas estabelecidas pela autoridade desta Igreja podem ser usadas. Sob a direção do bispo, é possível também usar devoções especiais retiradas deste Livro ou das Santas Escrituras, quando as necessidades da congregação assim o requererem."},
+    {"tipo":"texto","pagina":11,"texto":"Para os dias especiais de jejum ou ação de graças, prescritos pela autoridade eclesiástica ou civil, bem assim como em outras ocasiões especiais para as quais não haja nenhum rito ou oração previstos neste Livro, o bispo pode promulgar as fórmulas que a ocasião requerer."},
+    {"tipo":"texto","pagina":11,"texto":"Em todos os ritos, a assembleia cristã na sua totalidade participa de maneira tal que os membros de cada ordem na Igreja: leigos, bispos, presbíteros, e diáconos, cumpram as funções próprias de suas respectivas ordens tais como indicadas nas rubricas de cada rito."},
+    {"tipo":"texto","pagina":11,"texto":"O Oficiante principal do culto numa assembleia crista é, normalmente, um bispo ou presbítero. Os diáconos, em virtude de sua ordem, não exercem função presidencial, mas, como os leigos, podem oficiar a Liturgia da Palavra, conforme estabelecida na Oração Matutina e Vespertina, ou (na ausência de um bispo ou um presbítero) no rito da Santa Comunhão até o ofertório. Sob circunstâncias excepcionais, quando não houver disponibilidade de um presbítero, o bispo, a sua discrição, pode autorizar um diácono a presidir em outros ritos, sempre sujeito às limitações prescritas nas rubricas de cada rito."},
+    {"tipo":"texto","pagina":11,"texto":"Os hinos a que se referem as rubricas deste Livro são aqueles autorizados por esta Igreja ou pelo Bispo Diocesano. As palavras das Antífonas devem proceder das Santas Escrituras, ou deste Livro, ou de textos similares."},
+    {"tipo":"texto","pagina":12,"texto":"Em certas ocasiões, quando seja apropriado, o hino pode ser substituído por música instrumental."},
+    {"tipo":"texto","pagina":12,"texto":"Quando as rubricas indicam que uma parte do rito seja \"dita\", deve-se entender também que pode ser \"cantada\" ou vice-versa."},
+    {"tipo":"texto","pagina":12,"texto":"Quando se desejar música composta para os ritos, podem ser usados textos litúrgicos previamente autorizados em lugar dos que aparecem neste Livro."}
+  ]
+}
