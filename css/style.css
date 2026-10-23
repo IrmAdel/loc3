@@ -120,6 +120,11 @@ body.editando h1.nome-secao[contenteditable] { outline: 1px dashed var(--linha);
 #leitura table { width: 100%; border-collapse: collapse; font-family: var(--fonte-ui); font-size: .88em; line-height: 1.4; }
 #leitura th, #leitura td { text-align: left; vertical-align: top; padding: .45rem .6rem; border-bottom: 1px solid var(--linha); white-space: pre-line; }
 #leitura th { color: var(--destaque); border-bottom: 2px solid var(--rubrica); }
+/* bordas escolhidas no editor; sem a classe, a tabela mantém o visual antigo (só linhas horizontais) */
+#leitura table.com-bordas th, #leitura table.com-bordas td { border: 1px solid var(--suave); }
+#leitura table.com-bordas th { border-bottom: 2px solid var(--rubrica); }
+#leitura table.sem-bordas th, #leitura table.sem-bordas td { border: 0; }
+#leitura table.sem-bordas th { font-weight: 700; }
 
 /* ===== Resultados da busca ===== */
 .resultados { font-family: var(--fonte-ui); }
@@ -151,6 +156,7 @@ body.editando .envolve:focus-within > .ferr-bloco { display: flex; }
   border: 1px solid transparent; background: transparent; border-radius: .3rem; padding: .1rem .35rem;
 }
 .ferr-bloco button:hover { border-color: var(--linha); background: var(--fundo); }
+.ferr-bloco .dimensao { align-self: center; padding: 0 .35rem; color: var(--suave); }
 
 .barra-edicao {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: flex; align-items: center; gap: .5rem;

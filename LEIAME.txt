@@ -19,3 +19,11 @@ CRIAR NOVAS SEÇÕES (modo de edição):
 - Escreva o conteúdo (o título da seção nova também pode ser corrigido enquanto não for publicada).
 - "Publicar no GitHub" grava o arquivo da seção em data/secoes/ e atualiza data/indice.json.
 - Antes de publicar, a seção fica só como rascunho neste navegador; "Descartar rascunho" a apaga.
+
+TABELAS E ATALHOS (modo de edição):
+- No seletor de tipo de cada bloco há a opção "Tabela": abre uma janela para escolher número de linhas e colunas,
+  bordas visíveis ou não e cabeçalho. Bloco vazio é substituído pela tabela; bloco com texto ganha a tabela logo abaixo.
+- Sobre a tabela aparece uma barra com: ＋/− linha, ＋/− coluna, cabeçalho e bordas.
+- Atalhos para mudar o tipo do bloco em que está o cursor: Ctrl+Shift+1 título, 2 subtítulo, 3 rubrica, 4 texto,
+  5 verso, 6 tabela. As teclas ficam na constante ATALHOS, no começo do js/app.js.
+- O arquivo da seção guarda "bordas": true/false na tabela. Tabelas antigas (sem esse campo) mantêm o visual de antes.

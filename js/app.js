@@ -9,7 +9,12 @@
 
   const $ = (sel, raiz = document) => raiz.querySelector(sel);
   const API = 'https://api.github.com';
-  const TIPOS = { titulo: 'Título', subtitulo: 'Subtítulo', rubrica: 'Rubrica', texto: 'Texto', verso: 'Verso' };
+  const TIPOS = { titulo: 'Título', subtitulo: 'Subtítulo', rubrica: 'Rubrica', texto: 'Texto', verso: 'Verso', tabela: 'Tabela' };
+  // Atalhos (Ctrl+Shift+tecla) para mudar o tipo do bloco em que está o cursor. Para trocar as teclas, edite aqui.
+  // Evitei Ctrl+Alt, que no Windows é o AltGr e atrapalha a digitação (¹ ² ³ £ ¢ no teclado ABNT2).
+  const ATALHOS = { Digit1: 'titulo', Digit2: 'subtitulo', Digit3: 'rubrica', Digit4: 'texto', Digit5: 'verso', Digit6: 'tabela' };
+  const DICA_ATALHOS = 'Atalhos: Ctrl+Shift+1 título · 2 subtítulo · 3 rubrica · 4 texto · 5 verso · 6 tabela';
+  const LIMITES_TABELA = { linhas: [1, 100], colunas: [1, 12] };
   const ROTULO = /^(\p{Lu}[\p{L} .]{0,25}?\s[-–]\s)/u;       // "Oficiante - ", "Povo - ", "Todos - "...
 
   function el(tag, classe, texto) {
@@ -42,7 +47,11 @@
     const j = JSON.stringify;
     const linhas = s.blocos.map(b => {
       let o = '    {"tipo":' + j(b.tipo) + ',"pagina":' + j(b.pagina);
-      if (b.tipo === 'tabela') o += ',"cabecalho":' + j(!!b.cabecalho) + ',"linhas":' + j(b.linhas);
+      if (b.tipo === 'tabela') {
+        o += ',"cabecalho":' + j(!!b.cabecalho);
+        if (b.bordas !== undefined) o += ',"bordas":' + j(!!b.bordas);   // ausente = visual antigo (só linhas horizontais)
+        o += ',"linhas":' + j(b.linhas);
+      }
       else o += ',"texto":' + j(b.texto);
       return o + '}';
     });
@@ -371,6 +380,8 @@
   function criarTabela(b) {
     const rolagem = el('div', 'tabela-rolagem');
     const tabela = el('table');
+    if (b.bordas === true) tabela.className = 'com-bordas';
+    else if (b.bordas === false) tabela.className = 'sem-bordas';
     const corpo = el('tbody');
     b.linhas.forEach((linha, r) => {
       const tr = el('tr');
@@ -418,15 +429,21 @@
 
     if (b.tipo !== 'tabela') {
       const sel = el('select');
-      sel.title = 'Tipo do bloco';
+      sel.title = 'Tipo do bloco. ' + DICA_ATALHOS;
       for (const [v, nome] of Object.entries(TIPOS)) {
         const o = el('option', null, nome);
         o.value = v; o.selected = v === b.tipo;
         sel.appendChild(o);
       }
-      sel.addEventListener('change', () => { b.tipo = sel.value; marcarSujo(); renderSecao(i); });
+      sel.addEventListener('change', () => {
+        if (sel.value === 'tabela') abrirTabela(i, () => { sel.value = b.tipo; });   // cancelou: volta ao tipo anterior
+        else mudarTipo(i, sel.value);
+      });
       f.appendChild(sel);
     } else {
+      const colunas = () => Math.max(1, ...b.linhas.map(l => l.length));
+      f.appendChild(el('span', 'dimensao', `${b.linhas.length}×${colunas()}`));
+      f.lastChild.title = 'linhas × colunas';
       f.appendChild(botao('＋ linha', 'Acrescentar linha à tabela', () => {
         b.linhas.push(new Array(b.linhas[0] ? b.linhas[0].length : 1).fill(''));
         marcarSujo(); renderSecao(i);
@@ -434,8 +451,22 @@
       f.appendChild(botao('− linha', 'Remover a última linha', () => {
         if (b.linhas.length > 1 && confirm('Remover a última linha da tabela?')) { b.linhas.pop(); marcarSujo(); renderSecao(i); }
       }));
+      f.appendChild(botao('＋ coluna', 'Acrescentar coluna à direita', () => {
+        b.linhas.forEach(l => l.push(''));
+        marcarSujo(); renderSecao(i);
+      }));
+      f.appendChild(botao('− coluna', 'Remover a última coluna', () => {
+        const n = colunas();
+        if (n > 1 && confirm('Remover a última coluna da tabela?')) {
+          b.linhas.forEach(l => { if (l.length >= n) l.pop(); });
+          marcarSujo(); renderSecao(i);
+        }
+      }));
       f.appendChild(botao(b.cabecalho ? '☑ cabeçalho' : '☐ cabeçalho', 'Primeira linha como cabeçalho', () => {
         b.cabecalho = !b.cabecalho; marcarSujo(); renderSecao(i);
+      }));
+      f.appendChild(botao(b.bordas === false ? '☐ bordas' : '☑ bordas', 'Mostrar ou esconder as bordas da tabela', () => {
+        b.bordas = b.bordas === false; marcarSujo(); renderSecao(i);
       }));
     }
     f.appendChild(botao('↑', 'Mover para cima', () => {
@@ -451,6 +482,113 @@
       if (confirm('Remover este bloco?')) { blocos.splice(i, 1); marcarSujo(); renderSecao(Math.max(0, i - 1)); }
     }));
     return f;
+  }
+
+  const EDITAVEL = '[contenteditable]:not([contenteditable="false"])';
+
+  // ------------------------------------------------- mudar tipo, tabela e atalhos
+
+  /** Troca o tipo de um bloco de texto. `pos` (opcional) devolve o cursor à mesma posição depois de redesenhar. */
+  function mudarTipo(i, tipo, pos = null) {
+    const b = estado.secao.blocos[i];
+    if (!b || b.tipo === 'tabela' || b.tipo === tipo) return;
+    b.tipo = tipo;
+    marcarSujo();
+    renderSecao(i);
+    if (pos != null) colocarCursor(i, pos);
+  }
+
+  function posicaoDoCursor(envolve) {
+    const e = envolve.querySelector(EDITAVEL);
+    const sel = window.getSelection();
+    if (!e || !sel.rangeCount || !e.contains(sel.anchorNode)) return null;
+    const r = document.createRange();
+    r.setStart(e, 0);
+    r.setEnd(sel.anchorNode, sel.anchorOffset);
+    return r.toString().length;
+  }
+
+  function colocarCursor(i, pos) {
+    const e = document.querySelector(`#leitura [data-i="${i}"] ${EDITAVEL}`);
+    if (!e) return;
+    e.focus();
+    const r = document.createRange();
+    const no = e.firstChild;
+    if (no && no.nodeType === 3) r.setStart(no, Math.min(pos, no.length)); else r.setStart(e, 0);
+    r.collapse(true);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(r);
+  }
+
+  /** Bloco (parágrafo, título, tabela…) onde está o cursor, ou null se o cursor não está em nenhum. */
+  function blocoDoCursor() {
+    const sel = window.getSelection();
+    if (!sel || !sel.anchorNode || !estado.secao) return null;
+    const no = sel.anchorNode.nodeType === 1 ? sel.anchorNode : sel.anchorNode.parentElement;
+    const envolve = no && no.closest('#leitura .envolve');
+    if (!envolve) return null;
+    const i = parseInt(envolve.dataset.i, 10);
+    const b = estado.secao.blocos[i];
+    return b ? { i, b, envolve } : null;
+  }
+
+  let tabelaPendente = null;      // { i, aoCancelar } enquanto o diálogo está aberto
+
+  function abrirTabela(i, aoCancelar = null) {
+    let padrao = { linhas: 3, colunas: 2, bordas: true, cabecalho: false };
+    try { padrao = { ...padrao, ...JSON.parse(ler('loc.tabela.padrao') || '{}') }; } catch { /* usa padrão */ }
+    $('#tab-linhas').value = padrao.linhas;
+    $('#tab-colunas').value = padrao.colunas;
+    $('#tab-bordas').checked = !!padrao.bordas;
+    $('#tab-cabecalho').checked = !!padrao.cabecalho;
+    tabelaPendente = { i, aoCancelar };
+    $('#dlg-tabela').showModal();
+    $('#tab-linhas').select();
+  }
+
+  function limitar(valor, [min, max]) {
+    const n = parseInt(valor, 10);
+    return Math.min(max, Math.max(min, Number.isFinite(n) ? n : min));
+  }
+
+  function criarTabelaNova(ev) {
+    ev.preventDefault();
+    const p = tabelaPendente;
+    if (!p) { $('#dlg-tabela').close(); return; }
+    const linhas = limitar($('#tab-linhas').value, LIMITES_TABELA.linhas);
+    const colunas = limitar($('#tab-colunas').value, LIMITES_TABELA.colunas);
+    const bordas = $('#tab-bordas').checked;
+    const cabecalho = $('#tab-cabecalho').checked;
+    guardar('loc.tabela.padrao', JSON.stringify({ linhas, colunas, bordas, cabecalho }));
+    tabelaPendente = null;                                  // confirmou: o “close” não deve contar como cancelamento
+    $('#dlg-tabela').close();
+
+    const blocos = estado.secao.blocos;
+    const atual = blocos[p.i];
+    if (!atual) return;
+    const tabela = {
+      tipo: 'tabela', pagina: atual.pagina, cabecalho, bordas,
+      linhas: Array.from({ length: linhas }, () => new Array(colunas).fill('')),
+    };
+    const vazio = atual.tipo !== 'tabela' && !(atual.texto || '').trim();
+    let alvo;
+    if (vazio) { blocos.splice(p.i, 1, tabela); alvo = p.i; }     // bloco vazio: a tabela toma o lugar dele
+    else { blocos.splice(p.i + 1, 0, tabela); alvo = p.i + 1; }   // bloco com texto: a tabela entra logo abaixo
+    marcarSujo();
+    renderSecao(alvo);
+  }
+
+  function atalhoDeTipo(ev) {
+    if (!estado.editando || !ev.ctrlKey || !ev.shiftKey || ev.altKey || ev.metaKey) return;
+    const tipo = ATALHOS[ev.code];
+    if (!tipo || document.querySelector('dialog[open]')) return;
+    const alvo = blocoDoCursor();
+    if (!alvo) return;
+    ev.preventDefault();
+    if (tipo === 'tabela') { abrirTabela(alvo.i); return; }
+    if (alvo.b.tipo === 'tabela') { aviso('Dentro de uma tabela este atalho não muda o tipo. Clique num parágrafo fora dela.', true); return; }
+    mudarTipo(alvo.i, tipo, posicaoDoCursor(alvo.envolve));
   }
 
   function renderSecao(focoIndice = null) {
@@ -485,7 +623,7 @@
     });
     if (focoIndice != null) {
       window.scrollTo({ top: rolagem });
-      const foco = alvo.querySelector(`[data-i="${focoIndice}"] [contenteditable]`);
+      const foco = alvo.querySelector(`[data-i="${focoIndice}"] ${EDITAVEL}`);
       if (foco) foco.focus({ preventScroll: false });
     }
   }
@@ -511,6 +649,7 @@
     $('#estado-edicao').textContent = estado.sujo
       ? '● Alterações não publicadas (rascunho guardado neste navegador)'
       : 'Modo de edição · sem alterações pendentes';
+    $('#estado-edicao').title = DICA_ATALHOS;
   }
 
   function alternarEdicao() {
@@ -866,7 +1005,16 @@
     $('#pub-cancelar').addEventListener('click', () => $('#dlg-publicar').close());
     $('#form-nova').addEventListener('submit', criarNovaSecao);
     $('#nova-cancelar').addEventListener('click', () => $('#dlg-nova').close());
+    $('#form-tabela').addEventListener('submit', criarTabelaNova);
+    $('#tab-cancelar').addEventListener('click', () => $('#dlg-tabela').close());
+    $('#dlg-tabela').addEventListener('close', () => {      // Esc, Cancelar ou clique fora
+      if (!tabelaPendente) return;
+      const cancelar = tabelaPendente.aoCancelar;
+      tabelaPendente = null;
+      if (cancelar) cancelar();
+    });
 
+    document.addEventListener('keydown', atalhoDeTipo);
     document.addEventListener('keydown', ev => {
       if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 's' && estado.editando) {
         ev.preventDefault();
