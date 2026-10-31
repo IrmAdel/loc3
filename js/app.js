@@ -9,11 +9,11 @@
 
   const $ = (sel, raiz = document) => raiz.querySelector(sel);
   const API = 'https://api.github.com';
-  const TIPOS = { titulo: 'Título', subtitulo: 'Subtítulo', rubrica: 'Rubrica', texto: 'Texto', verso: 'Verso', tabela: 'Tabela' };
+  const TIPOS = { titulo: 'Título', subtitulo: 'Subtítulo', subsubtitulo: 'Sub-subtítulo', rubrica: 'Rubrica', texto: 'Texto', verso: 'Verso', tabela: 'Tabela' };
   // Atalhos (Ctrl+Shift+tecla) para mudar o tipo do bloco em que está o cursor. Para trocar as teclas, edite aqui.
   // Evitei Ctrl+Alt, que no Windows é o AltGr e atrapalha a digitação (¹ ² ³ £ ¢ no teclado ABNT2).
-  const ATALHOS = { Digit1: 'titulo', Digit2: 'subtitulo', Digit3: 'rubrica', Digit4: 'texto', Digit5: 'verso', Digit6: 'tabela' };
-  const DICA_ATALHOS = 'Atalhos: Ctrl+Shift+1 título · 2 subtítulo · 3 rubrica · 4 texto · 5 verso · 6 tabela';
+  const ATALHOS = { Digit1: 'titulo', Digit2: 'subtitulo', Digit3: 'rubrica', Digit4: 'texto', Digit5: 'verso', Digit6: 'tabela', Digit7: 'subsubtitulo' };
+  const DICA_ATALHOS = 'Atalhos: Ctrl+Shift+1 título · 2 subtítulo · 3 rubrica · 4 texto · 5 verso · 6 tabela · 7 sub-subtítulo';
   const LIMITES_TABELA = { linhas: [1, 100], colunas: [1, 12] };
   const ROTULO = /^(\p{Lu}[\p{L} .]{0,25}?\s[-–]\s)/u;       // "Oficiante - ", "Povo - ", "Todos - "...
 
@@ -402,12 +402,12 @@
 
   function criarElemento(b) {
     if (b.tipo === 'tabela') return criarTabela(b);
-    const mapa = { titulo: ['h2', 'bloco'], subtitulo: ['h3', 'bloco'], rubrica: ['p', 'bloco rubrica'], verso: ['p', 'bloco verso'] };
+    const mapa = { titulo: ['h2', 'bloco'], subtitulo: ['h3', 'bloco'], subsubtitulo: ['h4', 'bloco'], rubrica: ['p', 'bloco rubrica'], verso: ['p', 'bloco verso'] };
     const [tag, classe] = mapa[b.tipo] || ['p', 'bloco texto'];
     const e = el(tag, classe);
     if (estado.editando) {
       e.textContent = b.texto;
-      tornarEditavel(e, b.tipo === 'titulo' || b.tipo === 'subtitulo');
+      tornarEditavel(e, b.tipo === 'titulo' || b.tipo === 'subtitulo' || b.tipo === 'subsubtitulo');
       e.addEventListener('input', () => { b.texto = lerTexto(e); marcarSujo(); });
     } else if (b.tipo === 'texto') preencherComFalas(e, b.texto);
     else e.textContent = b.texto;
