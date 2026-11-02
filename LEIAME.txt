@@ -29,4 +29,4 @@ TABELAS E ATALHOS (modo de edição):
 - O arquivo da seção guarda "bordas": true/false na tabela. Tabelas antigas (sem esse campo) mantêm o visual de antes.
 
 SUB-SUBTÍTULO:
-- Novo tipo de bloco "Sub-subtítulo" (grava "tipo":"subsubtitulo" no JSON). Aparece menor que o subtítulo, em itálico e com uma barra vermelha à esquerda, para indicar que é uma subdivisão dele (ex.: A, B, C... dentro do Artigo I). Atalho: Ctrl+Shift+7.
+- Novo tipo de bloco "Sub-subtítulo" (grava "tipo":"subsubtitulo" no JSON). Aparece em versalete (small caps) na cor do texto, com um fio fino embaixo, mais sóbrio que o subtítulo (que é negrito colorido), para indicar que é uma subdivisão dele (ex.: A, B, C... dentro do Artigo I). Atalho: Ctrl+Shift+7.

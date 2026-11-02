@@ -97,7 +97,11 @@ body.editando h1.nome-secao[contenteditable] { outline: 1px dashed var(--linha);
   letter-spacing: .08em; font-size: 1.25em; font-weight: 700;
 }
 #leitura h3 { margin: 1.6rem 0 .5rem; font-size: 1.05em; font-weight: 700; color: var(--destaque); }
-#leitura h4 { margin: 1.2rem 0 .4rem; padding-left: .6rem; border-left: 3px solid var(--rubrica); font-size: .95em; font-weight: 600; font-style: italic; color: var(--destaque); }
+#leitura h4 {
+  margin: 1.3rem 0 .5rem; padding-bottom: .2rem; border-bottom: 1px solid var(--linha);
+  font-size: 1em; font-weight: 600; font-style: normal; font-variant: small-caps;
+  letter-spacing: .06em; color: var(--texto);
+}
 #leitura h1.nome-secao {
   margin: 0 0 1.5rem; text-align: center; font-size: 1.7em; font-weight: 700;
   border-bottom: 2px solid var(--rubrica); padding-bottom: .6rem;
