@@ -5,10 +5,17 @@
   "paginaInicial":1,
   "paginaFinal":3,
   "blocos":[
-    {"tipo":"texto","pagina":1,"texto":"LIVRO DE Oração COMUM"},
-    {"tipo":"titulo","pagina":3,"texto":"LIVRO DE ORAÇÃO COMUM"},
-    {"tipo":"texto","pagina":3,"texto":"Forma abreviada e atualizada Com Salmos Litúrgicos"},
-    {"tipo":"subtitulo","pagina":3,"texto":"Conforme uso da"},
-    {"tipo":"texto","pagina":3,"texto":"IEAB – Igreja Episcopal Anglicana do Brasil Província da Comunhão Anglicana"}
+    {"tipo":"titulo","pagina":1,"texto":"LIVRO DE ORAÇÃO COMUM"},
+    {"tipo":"texto","pagina":1,"texto":"E ADMINISTRAÇÃO DOS SACRAMENTOS E OUTROS RITOS E CERIMÔNIAS DA IGREJA, SEGUNDO O USO ANGLO-CATÓLICO; JUNTAMENTE COM OS SALMOS LITÚRGICOS, O RITO DE SARUM, AS LADAINHAS, OS TERÇOS E OS TRINTA E DOIS ARTIGOS DE RELIGIÃO"},
+    {"tipo":"titulo","pagina":1,"texto":""},
+    {"tipo":"texto","pagina":1,"texto":"Conforme o uso da FRATERNIDADE EPISCOPAL ANGLICANA DO SANTÍSSIMO SACRAMENTO\nOrdem da IGREJA EPISCOPAL ANGLICANA DO BRASIL"},
+    {"tipo":"titulo","pagina":3,"texto":"CERTIFICADO"},
+    {"tipo":"texto","pagina":3,"texto":"CERTIFICO que esta edição do LIVRO DE ORAÇÃO COMUM foi recomendada pela Fraternidade Episcopal Anglicana do Santíssimo Sacramento e aprovada pelo Bispo Diocesano e pelo Conselho Diocesano."},
+    {"tipo":"titulo","pagina":3,"texto":""},
+    {"tipo":"texto","pagina":3,"texto":"[NOME DO GUARDIÃO]"},
+    {"tipo":"texto","pagina":3,"texto":"CUSTÓDIO DO LIVRO DE ORAÇÃO COMUM"},
+    {"tipo":"texto","pagina":3,"texto":"[MÊS] DE [ANO] AD"},
+    {"tipo":"titulo","pagina":3,"texto":""},
+    {"tipo":"rubrica","pagina":3,"texto":"Direitos reservados. Nenhuma porção deste livro pode ser reproduzida, fotocopiada ou registrada de qualquer modo sem a autorização da Igreja Episcopal Anglicana do Brasil e da Fraternidade Episcopal Anglicana do Santíssimo Sacramento."}
   ]
 }
