@@ -3,7 +3,7 @@ LIVRO DE ORAÇÃO COMUM (IEAB 1987) - SITE PRONTO
 1. Extraia o .zip no computador.
 2. No GitHub, crie um repositório (New repository).
 3. Add file > Upload files. Arraste para a página estes itens, que estão
-   dentro da pasta extraída:  index.html, css, js, data   -> Commit changes.
+   dentro da pasta extraída:  index.html, favicon.png, css, js, data   -> Commit changes.
 4. Settings > Pages > Source: "Deploy from a branch" > Branch: main, pasta "/ (root)" > Save.
 5. Espere 1 a 2 minutos. O endereço será https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/
 
