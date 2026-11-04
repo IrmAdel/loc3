@@ -1,0 +1,16 @@
+{
+  "id":"39-santa-eucaristia",
+  "titulo":"Santa Eucaristia",
+  "modo":"prosa",
+  "paginaInicial":null,
+  "paginaFinal":null,
+  "blocos":[
+    {"tipo":"subtitulo","pagina":null,"texto":"Da Celebração da Santa Eucaristia"},
+    {"tipo":"rubrica","pagina":null,"texto":"* É privilégio do Bispo, quando presente, ser o Celebrante Principal e pregador. Em todas as celebrações litúrgicas, é apropriado que o Celebrante principal, Bispo ou Presbítero, seja assistido por outros Presbíteros, Diáconos e Leigos."},
+    {"tipo":"rubrica","pagina":null,"texto":"* É apropriado que outros Presbíteros presentes estejam com o Celebrante junto ao Altar, participando da consagração dos elementos, do partir do pão e da distribuição da Comunhão."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O Diácono deve ler o Evangelho e pode conduzir as Orações do Povo. Os Diáconos devem também servir à Mesa do Senhor, preparando-a e colocando sobre ela as oferendas do pão e do vinho. Na ausência do Diácono, essas ministrações podem ser feitas por um Presbítero assistente e mesmo por pessoas leigas."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Leigos designados pelo Celebrante devem ser normalmente indicados para fazer leituras bíblicas que precedem ao Evangelho e podem conduzir as Orações do Povo (Intercessões)."},
+    {"tipo":"rubrica","pagina":null,"texto":"* A Oração Matutina ou Vespertina pode ser usada em substituição a tudo quanto precede a saudação da Paz e Ofertório, contanto que uma leitura do Evangelho seja sempre incluída e que as intercessões se conformem às orientações dadas pelas Orações do Povo."},
+    {"tipo":"rubrica","pagina":null,"texto":"* As orientações adicionais encontram-se à Pág. 107."}
+  ]
+}
