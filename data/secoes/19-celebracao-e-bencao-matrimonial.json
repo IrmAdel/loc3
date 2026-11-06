@@ -38,6 +38,7 @@
     {"tipo":"rubrica","pagina":185,"texto":"* Após a leitura do Evangelho o leitor dirá:"},
     {"tipo":"texto","pagina":185,"texto":"Leitor - O Evangelho do Senhor."},
     {"tipo":"texto","pagina":185,"texto":"Povo - Louvado sejas, ó Cristo"},
+    {"tipo":"rubrica","pagina":185,"texto":"* Poderá seguir uma homilia ou um comentário apropriado às leituras."},
     {"tipo":"subtitulo","pagina":186,"texto":"Matrimônio"},
     {"tipo":"rubrica","pagina":186,"texto":"* Estando ambos de frente um para o outro, o Noivo tomará a mão direita da Noiva (ou: um noivo tomará a mão direita do outro; ou: uma noiva tomará a mão direita da outra) e dirá:"},
     {"tipo":"texto","pagina":186,"texto":"Em nome de Deus, eu, N. __________, recebo a ti, N. _________ para seres a minha esposa (ou: o meu esposo), de hoje em diante, para conservar-te, na alegria e na tristeza, na riqueza e na pobreza, na saúde e na doença, para te amar e cuidar de ti, até que a morte nos separe. E para isso, eu te dou minha palavra e fé."},
@@ -88,6 +89,19 @@
     {"tipo":"rubrica","pagina":191,"texto":"* Poder-se-á recitar o Credo Apostólico depois das leituras bíblicas ou depois da homilia, se houver."},
     {"tipo":"rubrica","pagina":191,"texto":"* É apropriado que todos permaneçam de pé até o final da 1ª Coleta deste Rito."},
     {"tipo":"subtitulo","pagina":191,"texto":"Leituras:"},
-    {"tipo":"texto","pagina":191,"texto":"Gn 1.26-28 (“...homem e mulher os criou...”) Gn 2.4-9; 15-24 (“...o homem se une à sua mulher, tornando-se uma só carne.”) Ct 2.10-13; 8.6-7 (“As muita águas não poderiam apagar o amor.”) Tb 8.4-10 (“...que cheguemos juntos a uma ditosa velhice.”) 1 Co 13.1-13 (“O amor é paciente e prestativo.”) Ef 3.14-19 (“...diante do Pai, de quem toma o nome toda família.”) Ef 5.1-2, 21-23 (“...andai em amor, como Cristo também vos amou...”) Cl 3.12-17 (“...o amor, que é o vínculo da perfeição.”) 1 Jo 4.7-16 (“...amemo-nos unas aos outros, porque o amor procede de Deus.”) Mt 5.1-10 (Bem-aventuranças) Mt 5.13-16 (“Vós sois a luz... assim brilhe a vossa luz.”) Mt 7.21, 24-29 (“...homem prudente que edificou a sua casa sobre a rocha.”) Mc 10.6-9, 13-16 (“Já não sois dois, mas uma só carne.”) Jo 15,9-12 (“...que vos ameis uns aos outros...”)"}
+    {"tipo":"texto","pagina":191,"texto":"Gn 1.26-28 (“...homem e mulher os criou...”)"},
+    {"tipo":"texto","pagina":191,"texto":"Gn 2.4-9; 15-24 (“...o homem se une à sua mulher, tornando-se uma só carne.”)"},
+    {"tipo":"texto","pagina":191,"texto":"Ct 2.10-13; 8.6-7 (“As muita águas não poderiam apagar o amor.”)"},
+    {"tipo":"texto","pagina":191,"texto":"Tb 8.4-10 (“...que cheguemos juntos a uma ditosa velhice.”)"},
+    {"tipo":"texto","pagina":191,"texto":"1 Co 13.1-13 (“O amor é paciente e prestativo.”)"},
+    {"tipo":"texto","pagina":191,"texto":"Ef 3.14-19 (“...diante do Pai, de quem toma o nome toda família.”)"},
+    {"tipo":"texto","pagina":191,"texto":"Ef 5.1-2, 21-23 (“...andai em amor, como Cristo também vos amou...”)"},
+    {"tipo":"texto","pagina":191,"texto":"Cl 3.12-17 (“...o amor, que é o vínculo da perfeição.”)"},
+    {"tipo":"texto","pagina":191,"texto":"1 Jo 4.7-16 (“...amemo-nos unas aos outros, porque o amor procede de Deus.”)"},
+    {"tipo":"texto","pagina":191,"texto":"Mt 5.1-10 (Bem-aventuranças)"},
+    {"tipo":"texto","pagina":191,"texto":"Mt 5.13-16 (“Vós sois a luz... assim brilhe a vossa luz.”)"},
+    {"tipo":"texto","pagina":191,"texto":"Mt 7.21, 24-29 (“...homem prudente que edificou a sua casa sobre a rocha.”)"},
+    {"tipo":"texto","pagina":191,"texto":"Mc 10.6-9, 13-16 (“Já não sois dois, mas uma só carne.”)"},
+    {"tipo":"texto","pagina":191,"texto":"Jo 15,9-12 (“...que vos ameis uns aos outros...”)"}
   ]
 }
