@@ -5,7 +5,6 @@
   "paginaInicial":433,
   "paginaFinal":434,
   "blocos":[
-    {"tipo":"titulo","pagina":433,"texto":"COMUM DOS SANTOS"},
     {"tipo":"tabela","pagina":433,"cabecalho":true,"linhas":[["Ocasião","Salmo","Leituras"],["De um Mártir I","126 ou 121","Neemias 2:11-20"]]},
     {"tipo":"subtitulo","pagina":433,"texto":"I Pedro 3:14-18,22"},
     {"tipo":"subtitulo","pagina":433,"texto":"Mateus 10:16-22"},
