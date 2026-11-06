@@ -5,13 +5,6 @@
   "paginaInicial":174,
   "paginaFinal":181,
   "blocos":[
-    {"tipo":"subtitulo","pagina":174,"texto":"Rito da Confirmação"},
-    {"tipo":"titulo","pagina":174,"texto":"JUNTAMENTE COM FÓRMULAS DE RECEPÇÃO E DE REAFIRMAÇÃO DE VOTOS BATISMAIS."},
-    {"tipo":"subtitulo","pagina":174,"texto":"Rubricas referentes ao Rito"},
-    {"tipo":"rubrica","pagina":174,"texto":"* Quando os ritos da Confirmação, Recepção ou Reafirmação dos Votos Batismais forem usados numa cerimônia separada do Batismo, a fórmula seguinte será usada."},
-    {"tipo":"rubrica","pagina":174,"texto":"* Quando forem feitos em conjunto, a ordem será a seguinte: Santo Batismo, Confirmação, Recepção e Reafirmação dos Votos Batismais."},
-    {"tipo":"rubrica","pagina":174,"texto":"* Adultos que queiram batizar-se, devem preferencialmente ser confirmados no mesmo ofício."},
-    {"tipo":"rubrica","pagina":174,"texto":"* Espera-se que, no amadurecimento normal da vida cristã, as pessoas que tenham sido batizadas na infância, quando estiverem dispostas e devidamente preparadas, façam uma reafirmação pública e consciente de fé, das promessas e dos votos batismais e então recebam a imposição das mãos do Bispo, através do rito seguinte."},
     {"tipo":"texto","pagina":175,"texto":"Rito da Confirmação * Pode-se cantar um hino, salmo ou cântico. * O povo de pé, o Bispo dirá:\nBispo - Bendito seja Deus Pai, Filho e Espírito Santo.\nPovo - E bendito seja o seu Reino, agora e para sempre. Amém."},
     {"tipo":"texto","pagina":175,"texto":"*Da Páscoa até o Pentecostes, acrescentar-se-á:\nBispo - Aleluia! Cristo ressuscitou.\nPovo - Verdadeiramente o Senhor ressuscitou. Aleluia?"},
     {"tipo":"rubrica","pagina":175,"texto":"* Durante a Quaresma e em outras ocasiões penitenciais, acrescentar-se-á:\nBispo - Bendito seja o Senhor que perdoa todos os nossos pecados.\nPovo - Porque a sua misericórdia dura para sempre."},
