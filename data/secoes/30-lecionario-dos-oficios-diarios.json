@@ -5,7 +5,6 @@
   "paginaInicial":439,
   "paginaFinal":440,
   "blocos":[
-    {"tipo":"subtitulo","pagina":439,"texto":"Lecionário dos Ofícios Diários"},
     {"tipo":"rubrica","pagina":439,"texto":"O Lecionário do Ofício Diário está organizado num ciclo de dois anos. O ano UM começa no primeiro domingo do Advento de um ano par do calendário civil. O ano DOIS começa no primeiro domingo do Advento de um ano ímpar. Por exemplo, no primeiro domingo do Advento de 1986 inicia o ciclo do ano UM."},
     {"tipo":"rubrica","pagina":439,"texto":"Há indicações para três leituras para cada dia do ano, inclusive domingos. Duas podem ser usadas na Oração Matutina e uma na Oração Vespertina; ou pode-se ler as três se for feito apenas um ofício diário. Quando houver dois ofícios diários, sugere-se que a leitura do evangelho seja usada na Oração Vespertina durante o Ano UM, e na Oração Matutina no ano DOIS. Se alguém desejar fazer duas leituras em ambos os ofícios, a leitura do Antigo Testamento indicada para o mesmo dia no outro ciclo, poderá ser usada como a primeira leitura da Oração Vespertina."},
     {"tipo":"rubrica","pagina":439,"texto":"Quando for usada mais de uma leitura, a primeira será sempre a do Antigo Testamento (ou dos Apócrifos)."},
