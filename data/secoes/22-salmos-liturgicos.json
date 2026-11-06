@@ -5,7 +5,6 @@
   "paginaInicial":215,
   "paginaFinal":406,
   "blocos":[
-    {"tipo":"subtitulo","pagina":215,"texto":"Salmos Litúrgicos"},
     {"tipo":"subtitulo","pagina":215,"texto":"Livro I"},
     {"tipo":"subtitulo","pagina":215,"texto":"Primeiro Dia: Oração Matutina"},
     {"tipo":"subtitulo","pagina":215,"texto":"1 Beatus vir qui non abiit"},
