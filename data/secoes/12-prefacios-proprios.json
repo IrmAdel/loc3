@@ -5,7 +5,6 @@
   "paginaInicial":99,
   "paginaFinal":103,
   "blocos":[
-    {"tipo":"subtitulo","pagina":99,"texto":"Prefácios Próprios"},
     {"tipo":"titulo","pagina":99,"texto":"PARA O DIA DO SENHOR"},
     {"tipo":"rubrica","pagina":99,"texto":"* Para ser usado somente aos domingos."},
     {"tipo":"subtitulo","pagina":99,"texto":"1 De Deus Pai"},
