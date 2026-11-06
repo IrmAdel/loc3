@@ -1,0 +1,20 @@
+{
+  "id":"40-oficios-pastorais",
+  "titulo":"Ofícios Pastorais",
+  "modo":"prosa",
+  "paginaInicial":null,
+  "paginaFinal":null,
+  "blocos":[
+    {"tipo":"titulo","pagina":null,"texto":"Rito da Confirmação"},
+    {"tipo":"subtitulo","pagina":null,"texto":"JUNTAMENTE COM FÓRMULAS DE RECEPÇÃO E DE REAFIRMAÇÃO DE VOTOS BATISMAIS"},
+    {"tipo":"subsubtitulo","pagina":null,"texto":"Rubricas referentes ao Rito"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Quando os ritos da Confirmação, Recepção ou Reafirmação dos Votos Batismais forem usados numa cerimônia separada do Batismo, a fórmula seguinte será usada."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Quando forem feitos em conjunto, a ordem será a seguinte: Santo Batismo, Confirmação, Recepção e Reafirmação dos Votos Batismais."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Adultos que queiram batizar-se, devem preferencialmente ser confirmados no mesmo ofício."},
+    {"tipo":"rubrica","pagina":null,"texto":"* Espera-se que, no amadurecimento normal da vida cristã, as pessoas que tenham sido batizadas na infância, quando estiverem dispostas e devidamente preparadas, façam uma reafirmação pública e consciente de fé, das promessas e dos votos batismais e então recebam a imposição das mãos do Bispo, através do rito seguinte."},
+    {"tipo":"subsubtitulo","pagina":null,"texto":"Oficio de Matrimônio"},
+    {"tipo":"texto","pagina":null,"texto":""},
+    {"tipo":"subsubtitulo","pagina":null,"texto":"Oficio de Sepultura"},
+    {"tipo":"texto","pagina":null,"texto":""}
+  ]
+}
