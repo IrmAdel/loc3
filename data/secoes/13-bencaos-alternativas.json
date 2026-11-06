@@ -5,8 +5,7 @@
   "paginaInicial":104,
   "paginaFinal":106,
   "blocos":[
-    {"tipo":"subtitulo","pagina":104,"texto":"Bênçãos Alternativas"},
-    {"tipo":"subtitulo","pagina":104,"texto":"Bênçãos Gerais"},
+    {"tipo":"titulo","pagina":104,"texto":"Bênçãos Gerais"},
     {"tipo":"rubrica","pagina":104,"texto":"* O Bispo quando presente, ou o Celebrante, abençoará o povo:"},
     {"tipo":"texto","pagina":104,"texto":"O Senhor vos abençoe, e vos guarde. O Senhor faça resplandecer o seu semblante sobre vós, e tenha misericórdia de vós. O Senhor sobre vós levante a sua face, e vos dê a paz, agora e sempre."},
     {"tipo":"rubrica","pagina":104,"texto":"* Ou"},
@@ -16,7 +15,7 @@
     {"tipo":"rubrica","pagina":104,"texto":"* Ou"},
     {"tipo":"texto","pagina":104,"texto":"Que o amor de Deus nos una; a alegria de Deus nos inspire; a paz de Deus nos envolva; a coragem de Deus nos sustente; e a Bênção de Deus, Pai, Filho e Espírito Santo, repouse sobre nós para sempre."},
     {"tipo":"texto","pagina":104,"texto":"Povo - Amém."},
-    {"tipo":"subtitulo","pagina":105,"texto":"Bênçãos Opcionais para as Quadras"},
+    {"tipo":"titulo","pagina":105,"texto":"Bênçãos Opcionais para as Quadras"},
     {"tipo":"subtitulo","pagina":105,"texto":"Advento"},
     {"tipo":"texto","pagina":105,"texto":"Que Cristo, o Sol da Justiça, brilhe sobre nós e disperse as trevas, iluminando o nosso caminho; e a Bênção de Deus onipotente, Pai, Filho e Espírito Santo, seja convosco, e convosco habite eternamente. Amém."},
     {"tipo":"subtitulo","pagina":105,"texto":"Natal"},
