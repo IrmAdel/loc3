@@ -42,47 +42,30 @@
     {"tipo":"rubrica","pagina":164,"texto":"* A seguinte pergunta deverá ser também respondida pelas testemunhas, no caso de adultos."},
     {"tipo":"texto","pagina":164,"texto":"Celebrante - Prometes fazer com que esta(s) criança(s) [ou pessoa(s)] seja(m) orientada(s) nos princípios da Fé Cristã, e, assim preparada(s), em época oportuna seja(m) apresentada(s) ao Bispo para a Confirmação?"},
     {"tipo":"texto","pagina":164,"texto":"Resposta - Prometo."},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* O Celebrante, então, realizará os ritos preparatórios, que constam a seguir:"},
-    
-    {"tipo":"subtitulo","pagina":164,"texto":"Ritos Preparatórios"},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* Insuflação: Gest, gesto de Cristo para expulsar o demônio. O Celebrante, soprando suavemente sobre o rosto da criança (ou pessoa), diz:"},
+
+    {"tipo":"rubrica","pagina":164,"texto":"* Antes de serem conduzidos à Pia Batismal, o Celebrante poderá realizar os seguintes ritos preparatórios:"},
+    {"tipo":"subtitulo","pagina":164,"texto":"Ritos Preparatórios (Opcionais)"},
+    {"tipo":"rubrica","pagina":164,"texto":"* Insuflação: gesto de Cristo para expulsar o demônio. O Celebrante, soprando suavemente sobre o rosto do batizando, diz:"},
     {"tipo":"texto","pagina":164,"texto":"Celebrante - Afasta-te, espírito imundo, e dá lugar ao Espírito Santo."},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* Sinal da Cruz: Com o polegar, o sacerdote traça o sinal da cruz sobre a fronte e o peito da criança, dizendo:"},
+    {"tipo":"rubrica","pagina":164,"texto":"* Sinal da Cruz: com o polegar, o sacerdote traça o sinal da cruz sobre a fronte e o peito da criança, dizendo:"},
     {"tipo":"texto","pagina":164,"texto":"Celebrante - Recebe o sinal da cruz (+) sobre a tua fronte e em teu coração. Recebe a fé que te fará conhecer a Deus e guardar os seus mandamentos."},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* Imposição das Mãos: Gesto de autoridade pelo qual Deus toma posse de uma alma e a chama à sua graça. O Celebrante impõe as mãos sobre a cabeça do batizando em silêncio, ou dizendo:"},
-    {"tipo":"texto","pagina":164,"texto":"Celebrante - O Senhor, que te chamou à sua graça, te acompanhe e te fortaleça."},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* Imposição do Sal: O sal é presságio dos alimentos divinos e preserva da corrupção dos vícios. O Celebrante coloca uma pequena porção de sal na boca do batizando (ou, se não for possível, na língua), dizendo:"},
+    {"tipo":"rubrica","pagina":164,"texto":"* Imposição das Mãos: gesto de autoridade pelo qual Deus toma posse de uma alma e a chama à sua graça. O Celebrante impõe as mãos sobre a cabeça do batizando em silêncio."},
+    {"tipo":"rubrica","pagina":164,"texto":"* Imposição do Sal: o sal é presságio dos alimentos divinos e preserva da corrupção dos vícios. O Celebrante coloca uma pequena porção de sal na boca do batizando, dizendo:"},
     {"tipo":"texto","pagina":164,"texto":"Celebrante - Recebe o sal da sabedoria. Que ele te preserve da corrupção do pecado e te conduza à vida eterna. Amém."},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* Exorcismo: O demônio perde o domínio que havia usurpado. O Batismo vai fazer daquela alma um templo de Deus. O Celebrante, voltado para o batizando, diz:"},
+    {"tipo":"rubrica","pagina":164,"texto":"* Exorcismo: o demônio perde o domínio que havia usurpado. O Batismo vai fazer daquela alma um templo de Deus. O Celebrante diz:"},
     {"tipo":"texto","pagina":164,"texto":"Celebrante - Eu te ordeno, espírito imundo, no Nome do Pai, e do Filho, e do Espírito Santo: que saias e te apartes deste(s) infante(s) [ou pessoa(s)], a quem nosso Senhor Jesus Cristo comprou com o seu precioso sangue, e por este santo Batismo chama a ser parte do seu rebanho."},
-    {"tipo":"rubrica","pagina":164,"texto":"* Em seguida, o Celebrante acrescenta a admoestação final ao espírito:"},
     {"tipo":"texto","pagina":164,"texto":"Celebrante - E não ouses daqui em diante exercer nenhuma tirania para com este(s) infante(s) [ou pessoa(s)], a quem Cristo comprou com o seu Sangue Precioso, e por este santo Batismo chama a ser do seu rebanho."},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* Entrada na Igreja: O ministro coloca sobre a criança a extremidade da estola, insígnia da autoridade sacerdotal, e, introduzindo-a na igreja, diz:"},
+    {"tipo":"rubrica","pagina":164,"texto":"* Entrada na Igreja: o ministro coloca sobre a criança a extremidade da estola, insígnia da autoridade sacerdotal, e, introduzindo-a na igreja, diz:"},
     {"tipo":"texto","pagina":164,"texto":"Celebrante - Entra na Casa de Deus, para que tenhas parte com Cristo na vida eterna. Amém."},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* Credo e Pai Nosso: Se já não tiverem sido recitados, ou se o rito exigir, here o Celebrante e os presentes professam a fé:"},
-    {"tipo":"texto","pagina":164,"texto":"Todos - Creio em Deus Pai, Todo-poderoso, Criador do céu e da terra. E em Jesus Cristo, seu único Filho, nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria; padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus; está sentado à direita de Deus Pai Todo-poderoso, donde há de vir a julgar os vivos e os mortos. Creio no Espírito Santo; na Santa Igreja Católica; na comunhão dos santos; na remissão dos pecados; na ressurreição da carne; na vida eterna. Amém."},
-    {"tipo":"texto","pagina":164,"texto":"Celebrante - Pai nosso, que estás nos céus..."},
-    {"tipo":"texto","pagina":164,"texto":"Todos - ...Santificado seja o teu Nome, Venha o teu Reino, Seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje. E perdoa-nos as nossas dívidas, Assim como nós também perdoamos aos nossos devedores. E não nos deixes cair em tentação, Mas livra-nos do mal; Pois teu é o Reino, e o poder, e a glória para sempre. Amém."},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* Effeta: O sacerdote toma um pouco da sua saliva e com ela umedece os ouvidos e as narinas da criança, à imitação do que fez Jesus para curar o surdo-mudo, dizendo:"},
+    {"tipo":"rubrica","pagina":164,"texto":"* Effeta: o sacerdote toma um pouco da sua saliva e com ela umedece os ouvidos e as narinas da criança, à imitação do que fez Jesus para curar o surdo-mudo, dizendo:"},
     {"tipo":"texto","pagina":164,"texto":"Celebrante - Effeta, isto é, abre-te. Para que possas ouvir a Palavra de Deus e proclamar a tua fé, para a glória de Deus Pai. Amém."},
-    
-    {"tipo":"rubrica","pagina":164,"texto":"* Unção com o Santo Óleo: Com o óleo dos catecúmenos, o sacerdote unge, em forma de cruz, o peito e as espáduas da criança, dizendo:"},
+    {"tipo":"rubrica","pagina":164,"texto":"* Unção com o Santo Óleo: com o óleo dos catecúmenos, o sacerdote unge, em forma de cruz, o peito e as espáduas da criança, dizendo:"},
     {"tipo":"texto","pagina":164,"texto":"Celebrante - Eu te unjo com o óleo da salvação (+) em Cristo Jesus, nosso Senhor, para que sejas fortalecido e possas vencer o mal. Amém."},
-    
+
     {"tipo":"rubrica","pagina":164,"texto":"* Levantando-se a Congregação, enquanto o(s) batizando(s) é (são) conduzido(s) até a Pia Batismal, o Celebrante dirá o que segue, após o que poderá ser cantado um hino."},
     {"tipo":"texto","pagina":165,"texto":"Celebrante - Vinde, então, meus irmãos, o povo desta comunidade rejubila-se convosco, ao sentir-se renovado pelo recebimento desta(s) criança(s) [ou pessoa(s)] que passa(m) a irmanar-se conosco, pelo vínculo da fé, ao serviço de Deus."},
     {"tipo":"rubrica","pagina":165,"texto":"* Quando o Batismo não for celebrado durante a Eucaristia ou em dia Santo, o Celebrante poderá dizer as palavras dos Evangelistas, contidas nas Instruções Adicionais à página 172, enquanto a Congregação permanece em pé e o Celebrante conduz os batizandos até a Pia Batismal."},
     {"tipo":"rubrica","pagina":165,"texto":"* Quando houver Confirmação (Recepção / Reafirmação), aqui os candidatos serão apresentados ao Bispo e farão suas promessas."},
-    
     {"tipo":"subtitulo","pagina":165,"texto":"Aliança Batismal"},
     {"tipo":"rubrica","pagina":165,"texto":"* A Afirmação da Aliança Batismal será feita por todos."},
     {"tipo":"texto","pagina":165,"texto":"Celebrante - Unamo-nos a estes irmãos em Cristo e com eles renovemos os votos da nossa Aliança Batismal. Crês em Deus Pai?"},
@@ -132,26 +115,9 @@
     {"tipo":"rubrica","pagina":168,"texto":"* Batizada(s) a(s) criança(s) ou o(s) adulto(s), dirá o Celebrante:"},
     {"tipo":"texto","pagina":169,"texto":"Celebrante - \"N\", no Batismo estás selado (a) pelo Espírito Santo com o sinal da Cruz (+). És de Cristo para sempre. Amém."},
     {"tipo":"rubrica","pagina":169,"texto":"* (+) Aqui Celebrante fará uma cruz na testa de cada criança ou pessoa batizada, podendo usar o óleo consagrado pelo Bispo."},
-    
-    {"tipo":"subtitulo","pagina":169,"texto":"Unção do Santo Crisma"},
-    {"tipo":"rubrica","pagina":169,"texto":"* O Celebrante, usando o óleo do Santo Crisma consagrado pelo Bispo, unge a coroa da cabeça do batizado, em forma de cruz, dizendo:"},
-    {"tipo":"texto","pagina":169,"texto":"Celebrante - Deus Todo-poderoso, Pai de nosso Senhor Jesus Cristo, que te regenerou pela água e pelo Espírito Santo e te deu a remissão de todos os pecados, ele mesmo te unge com o Crisma da salvação (+) em Cristo Jesus, nosso Senhor, para que sejas incorporado ao seu povo e permaneças para sempre membro do Corpo de Cristo. Amém."},
-    
-    {"tipo":"subtitulo","pagina":169,"texto":"Imposição da Veste Branca"},
-    {"tipo":"rubrica","pagina":169,"texto":"* O Celebrante poderá entregar uma veste branca aos pais e padrinhos (ou ao adulto), dizendo:"},
-    {"tipo":"texto","pagina":169,"texto":"Celebrante - Recebe esta veste branca. Que ela seja o símbolo da pureza da tua alma, purificada do pecado, e que a conserves sem mancha até à vida eterna. Amém."},
-    
-    {"tipo":"subtitulo","pagina":169,"texto":"Entrega da Vela Acesa"},
     {"tipo":"rubrica","pagina":169,"texto":"* O Celebrante poderá, então, entregar aos pais e padrinhos de cada criança ou ao adulto, um Círio aceso, dizendo:"},
     {"tipo":"texto","pagina":169,"texto":"Celebrante - Entrego-te esta Luz,"},
     {"tipo":"texto","pagina":169,"texto":"Todos - Como testemunho de que passaste das trevas para a luz. Agora deves brilhar como a luz no mundo, para a glória de Deus Pai."},
-    
-    {"tipo":"subtitulo","pagina":169,"texto":"Bênção Individual"},
-    {"tipo":"rubrica","pagina":169,"texto":"* O Celebrante abençoa individualmente o pai, a mãe (ou pais/mães) e o filho, dizendo para cada um:"},
-    {"tipo":"texto","pagina":169,"texto":"Celebrante - (Para o pai) Que Deus Pai te abençoe e te guarde, e te conceda a graça de educar este teu filho na fé e no amor de Cristo. Amém."},
-    {"tipo":"texto","pagina":169,"texto":"Celebrante - (Para a mãe) Que Deus Pai te abençoe e te guarde, e te conceda a graça de educar este teu filho na fé e no amor de Cristo. Amém."},
-    {"tipo":"texto","pagina":169,"texto":"Celebrante - (Para o filho) Que Deus Todo-poderoso te abençoe, te guarde e te conduza à vida eterna. Amém."},
-    
     {"tipo":"texto","pagina":169,"texto":"Celebrante - Juntos vamos receber o(s) Batizado(s), dizendo:"},
     {"tipo":"texto","pagina":169,"texto":"Todos - Deus hoje te recebeu em sua Igreja pelo Batismo; nós te acolhemos alegremente na família do Senhor; como membro do Corpo de Cristo, como filho do mesmo Pai Celestial, como cidadão conosco do Reino de Deus. Confessa conosco a Fé no Cristo Crucificado, proclama a sua Ressurreição e compartilha conosco do seu Eterno Sacerdócio."},
     {"tipo":"rubrica","pagina":169,"texto":"* Havendo candidatos, segue a Confirmação, Recepção ou a Afirmação dos votos da Aliança Batismal."},
