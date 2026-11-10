@@ -5,6 +5,13 @@
   "paginaInicial":null,
   "paginaFinal":null,
   "blocos":[
-    {"tipo":"texto","pagina":null,"texto":""}
+    {"tipo":"rubrica","pagina":null,"texto":"* O Saltério é um livro de poesia litúrgica. Seu propósito é o uso oral pela congregação, tanto pelo canto como pela recitação. Existem vários métodos tradicionais de salmodia. O uso de um único método de recitação torna-a desnecessariamente monótona. A congregação é incentivada, pois, a usar métodos variados. Os mais comuns, que podem ser elaborados ou simples, são os seguintes:"},
+    {"tipo":"texto","pagina":null,"texto":"Recitação direta - indica a leitura ou canto de um salmo, ou parte de um salmo, em uníssono. É particularmente apropriada se for lido, e não cantado, o salmo indicado no Lecionário para uso entre as leituras do ofício eucarístico."},
+    {"tipo":"texto","pagina":null,"texto":"Recitação antifonal - é a recitação alternada, versículo por versículo, entre grupos de leitores ou cantores, ou entre um lado e outro da congregação. A recitação antifonal conclui com o Gloria Patri ou um refrão (chamado de Antífona) que se recita em uníssono."},
+    {"tipo":"texto","pagina":null,"texto":"Recitação responsiva - é o nome dado ao método de salmodia em que um solista, canta ou lê um ou mais versículos de um salmo e o coro e/ou con- gregação responde com um refrão. Esta era a maneira tradicional de cantar o Venite e os salmos indicados para a eucaristia. Este uso vem sendo recuperado por alguns grupos e compositores atualmente."},
+    {"tipo":"texto","pagina":null,"texto":"Recitação alternada - é o método mais frequentemente usado. Consiste na leitura alternada dos versículos entre o oficiante e a congregação."},
+    {"tipo":"rubrica","pagina":null,"texto":"* O asterisco divide cada versículo em duas partes indicando uma pausa, que deve ser guardada no canto ou na leitura"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Indicações adicionais encontram-se às páginas 408 e 439s"},
+    {"tipo":"rubrica","pagina":null,"texto":"* Todo o saltério poderá ser recitado no decorrer de 30 dias seguindo-se as indicações em negrito no próprio saltério."}
   ]
 }
