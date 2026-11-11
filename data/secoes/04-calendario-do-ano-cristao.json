@@ -25,7 +25,7 @@
     {"tipo":"subsubtitulo","pagina":14,"texto":"Outras Festas Principais do Calendário Maior:"},
     {"tipo":"tabela","pagina":14,"cabecalho":false,"bordas":false,"linhas":[["Os Apóstolos","Dormição / Assunção da\nBem-aventurada Virgem Maria","Apresentação da Bem-aventurada\nVirgem Maria no Templo"],["Os Evangelistas","Martírio de São João Batista ","Santo Estevão"],["Bem-aventurada Virgem Maria","São Miguel e Todos os Anjos","Santos Inocentes"],["São José","Nossa Senhora de Walsingham","Dia Nacional de\nAção de Graças"],["Maria Madalena","São Tiago de Jerusalém",""]],"coresCelula":[["vermelho","azul","azul"],["vermelho","vermelho","vermelho"],["azul","dourado","vermelho"],["dourado","azul","dourado"],["dourado","vermelho"]]},
     {"tipo":"subsubtitulo","pagina":15,"texto":"Dias de Jejum"},
-    {"tipo":"tabela","pagina":15,"cabecalho":false,"bordas":false,"linhas":[["Quarta-feira de Cinzas"],["Sexta-feira da Paixão"]],"coresCelula":[["roxo"],["preto"]]},
+    {"tipo":"tabela","pagina":15,"cabecalho":false,"bordas":false,"linhas":[["Quarta-feira de Cinzas","Sexta-feira da Paixão"]],"coresCelula":[["roxo","preto"],["preto"]]},
     {"tipo":"texto","pagina":15,"texto":"As festas designadas nas datas fixas no Calendário não são observadas nos dias da Semana Santa ou da Semana da Páscoa. As festas principais que caem nestas semanas são transferidas para a semana que se segue ao segundo domingo da Páscoa, na ordem de ocorrência."},
     {"tipo":"subtitulo","pagina":15,"texto":"4) DIAS DE DEVOÇÕES ESPECIAIS"},
     {"tipo":"texto","pagina":15,"texto":"Quarta-feira de Cinzas e os dias da Quaresma e da Semana Santa com exceção dos domingos e da Festa da Anunciação da Bem-aventurada Virgem Maria."},
