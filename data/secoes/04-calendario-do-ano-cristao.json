@@ -31,7 +31,7 @@
     {"tipo":"texto","pagina":15,"texto":"Quarta-feira de Cinzas e os dias da Quaresma e da Semana Santa com exceção dos domingos e da Festa da Anunciação da Bem-aventurada Virgem Maria."},
     {"tipo":"texto","pagina":15,"texto":"Sexta-feira da Paixão e todas as outras sextas-feiras do ano, em lembrança da crucificação do Senhor, exceto nas sextas-feiras das Quadras do Natal e da Páscoa, e em quaisquer outras festas de Nosso Senhor que ocorram numa sexta-feira."},
     {"tipo":"subtitulo","pagina":15,"texto":"5) DIAS DE OBSERVÂNCIA OPCIONAL"},
-    {"tipo":"texto","pagina":15,"texto":"Sujeitas às regras de precedência, que governam as festas principais, domingos e dias santos, as seguintes observâncias podem ser feitas corri coleta, salmos e leituras devidamente autorizadas por esta Igreja: comemorações designadas no Calendário; outras comemorações, usando os próprios para o dia de um santo, as Têmporas, tradicionalmente observadas nas quartas, sextas e sábados após o primeiro domingo na Quaresma, depois de Pentecostes, depois do Dia da Santa Cruz (14 de setembro) e após o dia 13 de dezembro; os Dias de Rogações, tradicionalmente observados na segunda, terça e quartas-feiras antes do Dia da Ascensão."},
+    {"tipo":"texto","pagina":15,"texto":"Sujeitas às regras de precedência, que governam as festas principais, domingos e dias santos, as seguintes observâncias podem ser feitas com coleta, salmos e leituras devidamente autorizadas por esta Igreja: comemorações designadas no Calendário; outras comemorações, usando os próprios para o dia de um santo, as Têmporas, tradicionalmente observadas nas quartas, sextas e sábados após o primeiro domingo na Quaresma, depois de Pentecostes, depois do Dia da Santa Cruz (14 de setembro) e após o dia 13 de dezembro; os Dias de Rogações, tradicionalmente observados na segunda, terça e quartas-feiras antes do Dia da Ascensão.\n\nEm relação ao Dia de Ação de Graças, esse deve ser comemorado na quarta quinta-feira de novembro."},
     {"tipo":"titulo","pagina":16,"texto":"CALENDÁRIO DO ANO CRISTÃO"},
     {"tipo":"subtitulo","pagina":16,"texto":"JANEIRO"},
     {"tipo":"texto","pagina":16,"cor":"dourado","texto":"1 - SANTO NOME DE NOSSO SENHOR JESUS CRISTO"},
@@ -49,9 +49,9 @@
     {"tipo":"texto","pagina":16,"cor":"dourado","texto":"19- SÃO JOSÉ\nㅤ"},
     {"tipo":"texto","pagina":16,"texto":"21 - Thomas Cranmer, Arcebispo de Cantuária e Mártir, 1556\nㅤ"},
     {"tipo":"texto","pagina":16,"cor":"azul","texto":"25 - ANUNCIAÇÃO DA BEM-AVENTURADA VIRGEM MARIA\nㅤ"},
-    {"tipo":"texto","pagina":16,"texto":"27 - Charles Henrique Brent, Bispo das Filipinas e de Nova Iorque Ocidental, - 1929\n29- Jonh Keble, presbítero, 1866"},
+    {"tipo":"texto","pagina":16,"texto":"27 - Charles Henrique Brent, Bispo das Filipinas e de Nova Iorque Ocidental, - 1929\n29- John Keble, presbítero, 1866"},
     {"tipo":"subtitulo","pagina":17,"texto":"ABRIL"},
-    {"tipo":"texto","pagina":17,"texto":"1 - Frederick Denison Maurice, presbítero, 1872\n8 - William August Muhlenberg. Presbítero, 1877\n21 - Anselmo. Arcebispo de Cantuária, 1109\nㅤ"},
+    {"tipo":"texto","pagina":17,"texto":"1 - Frederick Denison Maurice, presbítero, 1872\n8 - William Augustus Muhlenberg, presbítero, 1877\n21 - Anselmo, Arcebispo de Cantuária, 1109\nㅤ"},
     {"tipo":"texto","pagina":17,"cor":"vermelho","texto":"25 - SÃO MARCOS, EVANGELISTA"},
     {"tipo":"subtitulo","pagina":17,"texto":"MAIO"},
     {"tipo":"texto","pagina":17,"cor":"vermelho","texto":"1 - SÃO FELIPE E SÃO TIAGO, APÓSTOLOS\nㅤ"},
@@ -76,7 +76,7 @@
     {"tipo":"texto","pagina":18,"cor":"azul","texto":"15 - DORMIÇÃO / ASSUNÇÃO DA BEM-AVENTURADA VIRGEM MARIA\nㅤ"},
     {"tipo":"texto","pagina":18,"texto":"20 - Bernardo, abade de Clairvaux, 1153\nㅤ"},
     {"tipo":"texto","pagina":18,"cor":"vermelho","texto":"24 - SÃO BARTOLOMEU, APÓSTOLO\nㅤ"},
-    {"tipo":"texto","pagina":18,"texto":"29 - Athalício Theodoro Pithan, 1966 (1.º Bispo Brasileiro da Comunhão Anglicana)\nㅤ"},
+    {"tipo":"texto","pagina":18,"texto":"28 - Agostinho de Hipona, Bispo e Teólogo, 430\nㅤ"},
     {"tipo":"texto","pagina":18,"cor":"vermelho","texto":"29 - MARTÍRIO DE SÃO JOÃO BATISTA\nㅤ"},
     {"tipo":"texto","pagina":18,"texto":"29 - Athalício Theodoro Pithan, 1966 (1.º Bispo Brasileiro da Comunhão Anglicana)"},
     {"tipo":"subtitulo","pagina":18,"texto":"SETEMBRO"},
@@ -91,7 +91,7 @@
     {"tipo":"texto","pagina":18,"cor":"dourado","texto":"29 - SÃO MIGUEL E TODOS OS ANJOS\nㅤ"},
     {"tipo":"texto","pagina":18,"texto":"30- Jerônimo, presbítero e monge em Belém, 420"},
     {"tipo":"subtitulo","pagina":18,"texto":"OUTUBRO "},
-    {"tipo":"texto","pagina":18,"texto":"4 - Francisco de Assis, Frade, 1226\n6 - William Tyndale, Presbítero, 1536\n15 - Tereza de Ávila, Priora, 1582, e Samuel Isaac José Schereschewsky, Bispo de Xangai, 1906\n17 - Inácio, Bispo de Antioquia e Mártir, 115\nㅤ"},
+    {"tipo":"texto","pagina":18,"texto":"4 - Francisco de Assis, Frade, 1226\n6 - William Tyndale, Presbítero, 1536\n15 - Teresa de Ávila, Priora, 1582, e Samuel Isaac Joseph Schereschewsky, Bispo de Xangai, 1906\n17 - Inácio, Bispo de Antioquia e Mártir, 115\nㅤ"},
     {"tipo":"texto","pagina":18,"cor":"vermelho","texto":"18 - SÃO LUCAS, EVANGELISTA\nㅤ"},
     {"tipo":"texto","pagina":18,"texto":"19- Henry Martyn, presbítero e missionário na Índia e Pérsia, 1812\nㅤ"},
     {"tipo":"texto","pagina":18,"cor":"vermelho","texto":"23 - SÃO TIAGO DE JERUSALÉM, IRMÃO DE NOSSO SENHOR JESUS CRISTO, MÁRTIR, 62\n28 - SÃO SIMÃO E SÃO JUDAS, APÓSTOLOS\nㅤ"},
@@ -109,6 +109,6 @@
     {"tipo":"texto","pagina":19,"cor":"vermelho","texto":"21 - SÃO TOMÉ, APÓSTOLO"},
     {"tipo":"texto","pagina":19,"cor":"dourado","texto":"25 - NATIVIDADE DE NOSSO SENHOR JESUS CRISTO (NATAL)"},
     {"tipo":"texto","pagina":19,"cor":"vermelho","texto":"26- SANTO ESTEVÃO, DIÁCONO E MÁRTIR\n27 - SÃO JOÃO, APÓSTOLO E EVANGELISTA\n28 - SANTOS INOCENTES\nㅤ"},
-    {"tipo":"texto","pagina":19,"texto":"29 - Thomas Becket, Arcebispo de Cantuária e Mártir, 1170\n31 - John Wycliff, precursor da Reforma, 1384"}
+    {"tipo":"texto","pagina":19,"texto":"29 - Thomas Becket, Arcebispo de Cantuária e Mártir, 1170\n31 - John Wycliffe, precursor da Reforma, 1384"}
   ]
 }
