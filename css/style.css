@@ -131,6 +131,18 @@ body.editando h1.nome-secao[contenteditable] { outline: 1px dashed var(--linha);
 #leitura table.sem-bordas th, #leitura table.sem-bordas td { border: 0; }
 #leitura table.sem-bordas th { font-weight: 700; }
 
+
+/* Formatação individual das células das tabelas */
+#leitura td > .celula-titulo { font-size: 1.35em; font-weight: 700; margin: .35rem 0; }
+#leitura td > .celula-subtitulo { font-size: 1.15em; font-weight: 700; margin: .3rem 0; }
+#leitura td > .celula-subsubtitulo { font-size: 1.05em; font-weight: 700; margin: .25rem 0; }
+#leitura td > .celula-rubrica { font-style: italic; }
+#leitura td > .celula-verso { white-space: pre-line; padding-left: 1.2em; text-indent: -1.2em; }
+#leitura td > .celula-texto { white-space: pre-line; }
+.ferr-celula { display: none; gap: .2rem; margin-top: .3rem; font: .72rem var(--fonte-ui); }
+body.editando .ferr-celula { display: flex; flex-wrap: wrap; }
+.ferr-celula select { max-width: 10rem; min-width: 0; padding: .1rem .2rem; border: 1px solid var(--linha); border-radius: .25rem; background: var(--papel); color: var(--texto); }
+
 /* ===== Resultados da busca ===== */
 .resultados { font-family: var(--fonte-ui); }
 .resultados h2 { font-size: 1.1rem; }

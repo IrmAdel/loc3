@@ -62,6 +62,8 @@
         o += ',"cabecalho":' + j(!!b.cabecalho);
         if (b.bordas !== undefined) o += ',"bordas":' + j(!!b.bordas);   // ausente = visual antigo (só linhas horizontais)
         o += ',"linhas":' + j(b.linhas);
+        if (b.tiposCelula) o += ',"tiposCelula":' + j(b.tiposCelula);
+        if (b.coresCelula) o += ',"coresCelula":' + j(b.coresCelula);
       }
       else o += ',"texto":' + j(b.texto);
       return o + '}';
@@ -394,14 +396,43 @@
     if (b.bordas === true) tabela.className = 'com-bordas';
     else if (b.bordas === false) tabela.className = 'sem-bordas';
     const corpo = el('tbody');
+    const tipoClasse = { titulo: 'celula-titulo', subtitulo: 'celula-subtitulo', subsubtitulo: 'celula-subsubtitulo', rubrica: 'celula-rubrica', texto: 'celula-texto', verso: 'celula-verso' };
     b.linhas.forEach((linha, r) => {
       const tr = el('tr');
       linha.forEach((cel, c) => {
-        const td = el(b.cabecalho && r === 0 ? 'th' : 'td', null, cel);
+        const td = el(b.cabecalho && r === 0 ? 'th' : 'td');
+        const tipo = b.tiposCelula?.[r]?.[c] || 'texto';
+        const cor = b.coresCelula?.[r]?.[c] || '';
+        const conteudo = el('div', tipoClasse[tipo] || 'celula-texto', cel);
+        if (cor && CORES_LITURGICAS[cor]) { conteudo.dataset.cor = cor; conteudo.style.color = `var(--lit-${cor})`; }
         if (estado.editando) {
-          tornarEditavel(td);
-          td.addEventListener('input', () => { b.linhas[r][c] = lerTexto(td); marcarSujo(); });
-        }
+          tornarEditavel(conteudo);
+          conteudo.addEventListener('input', () => { b.linhas[r][c] = lerTexto(conteudo); marcarSujo(); });
+          const ferramentas = el('div', 'ferr-celula');
+          const seletorTipo = el('select'); seletorTipo.title = 'Tipo deste texto da tabela';
+          for (const [valor, nome] of Object.entries(TIPOS)) {
+            if (valor === 'tabela') continue;
+            const op = el('option', null, nome); op.value = valor; op.selected = valor === tipo; seletorTipo.appendChild(op);
+          }
+          seletorTipo.addEventListener('change', () => {
+            b.tiposCelula ||= []; b.tiposCelula[r] ||= []; b.tiposCelula[r][c] = seletorTipo.value;
+            marcarSujo(); renderSecao();
+          });
+          const seletorCor = el('select'); seletorCor.title = 'Cor litúrgica deste texto da tabela';
+          const normal = el('option', null, 'Cor normal'); normal.value = ''; seletorCor.appendChild(normal);
+          for (const [chave, item] of Object.entries(CORES_LITURGICAS)) {
+            const op = el('option', null, item.nome); op.value = chave; op.selected = chave === cor; seletorCor.appendChild(op);
+          }
+          seletorCor.value = cor;
+          seletorCor.addEventListener('change', () => {
+            b.coresCelula ||= []; b.coresCelula[r] ||= [];
+            if (seletorCor.value) b.coresCelula[r][c] = seletorCor.value;
+            else { delete b.coresCelula[r][c]; if (b.coresCelula[r].every(v => !v)) delete b.coresCelula[r]; }
+            marcarSujo(); renderSecao();
+          });
+          ferramentas.append(seletorTipo, seletorCor);
+          td.append(conteudo, ferramentas);
+        } else td.appendChild(conteudo);
         tr.appendChild(td);
       });
       corpo.appendChild(tr);
