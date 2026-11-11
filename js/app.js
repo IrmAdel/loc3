@@ -13,6 +13,16 @@
   // Atalhos (Ctrl+Shift+tecla) para mudar o tipo do bloco em que está o cursor. Para trocar as teclas, edite aqui.
   // Evitei Ctrl+Alt, que no Windows é o AltGr e atrapalha a digitação (¹ ² ³ £ ¢ no teclado ABNT2).
   const ATALHOS = { Digit1: 'titulo', Digit2: 'subtitulo', Digit3: 'rubrica', Digit4: 'texto', Digit5: 'verso', Digit6: 'tabela', Digit7: 'subsubtitulo' };
+  const CORES_LITURGICAS = {
+    roxo: { nome: 'Roxo · Quaresma', claro: '#7950A1', escuro: '#C5A2E5' },
+    branco: { nome: 'Branco · Natal e festas', claro: '#A58A45', escuro: '#E6CA7C' },
+    dourado: { nome: 'Dourado · Grandes festas', claro: '#94701C', escuro: '#EBC65D' },
+    verde: { nome: 'Verde · Tempo comum', claro: '#397A50', escuro: '#83C99A' },
+    vermelho: { nome: 'Vermelho · Pentecostes e mártires', claro: '#B52F35', escuro: '#FF777E' },
+    rosa: { nome: 'Rosa · Gaudete e Laetare', claro: '#B65D83', escuro: '#F0A4C2' },
+    preto: { nome: 'Preto · Ofícios fúnebres e penitência', claro: '#55515B', escuro: '#B9B3C2' },
+    azul: { nome: 'Azul de Sarum · Advento', claro: '#315D9A', escuro: '#8CB8F2' }
+  };
   const DICA_ATALHOS = 'Atalhos: Ctrl+Shift+1 título · 2 subtítulo · 3 rubrica · 4 texto · 5 verso · 6 tabela · 7 sub-subtítulo';
   const LIMITES_TABELA = { linhas: [1, 100], colunas: [1, 12] };
   const ROTULO = /^(\p{Lu}[\p{L} .]{0,25}?\s[-–]\s)/u;       // "Oficiante - ", "Povo - ", "Todos - "...
@@ -47,6 +57,7 @@
     const j = JSON.stringify;
     const linhas = s.blocos.map(b => {
       let o = '    {"tipo":' + j(b.tipo) + ',"pagina":' + j(b.pagina);
+      if (b.cor && CORES_LITURGICAS[b.cor]) o += ',\"cor\":' + j(b.cor);
       if (b.tipo === 'tabela') {
         o += ',"cabecalho":' + j(!!b.cabecalho);
         if (b.bordas !== undefined) o += ',"bordas":' + j(!!b.bordas);   // ausente = visual antigo (só linhas horizontais)
@@ -405,6 +416,7 @@
     const mapa = { titulo: ['h2', 'bloco'], subtitulo: ['h3', 'bloco'], subsubtitulo: ['h4', 'bloco'], rubrica: ['p', 'bloco rubrica'], verso: ['p', 'bloco verso'] };
     const [tag, classe] = mapa[b.tipo] || ['p', 'bloco texto'];
     const e = el(tag, classe);
+    if (b.cor && CORES_LITURGICAS[b.cor]) { e.dataset.cor = b.cor; e.style.color = `var(--lit-${b.cor})`; }
     if (estado.editando) {
       e.textContent = b.texto;
       tornarEditavel(e, b.tipo === 'titulo' || b.tipo === 'subtitulo' || b.tipo === 'subsubtitulo');
@@ -440,6 +452,12 @@
         else mudarTipo(i, sel.value);
       });
       f.appendChild(sel);
+      const cor = el('select'); cor.title = 'Cor litúrgica do texto';
+      const op0 = el('option', null, 'Cor normal'); op0.value = ''; cor.appendChild(op0);
+      for (const [chave, item] of Object.entries(CORES_LITURGICAS)) { const op = el('option', null, item.nome); op.value = chave; op.selected = b.cor === chave; cor.appendChild(op); }
+      cor.value = b.cor || '';
+      cor.addEventListener('change', () => { b.cor = cor.value || null; if (!b.cor) delete b.cor; marcarSujo(); renderSecao(i); });
+      f.appendChild(cor);
     } else {
       const colunas = () => Math.max(1, ...b.linhas.map(l => l.length));
       f.appendChild(el('span', 'dimensao', `${b.linhas.length}×${colunas()}`));
@@ -968,6 +986,52 @@
     return v;
   }
 
+  function lerPaleta() {
+    let salva = {}; try { salva = JSON.parse(ler('loc.cores') || '{}'); } catch { /* padrão */ }
+    const paleta = {};
+    for (const [k, v] of Object.entries(CORES_LITURGICAS)) paleta[k] = { claro: salva[k]?.claro || v.claro, escuro: salva[k]?.escuro || v.escuro };
+    return paleta;
+  }
+
+  function aplicarPaleta() {
+    const paleta = lerPaleta();
+    const tema = document.documentElement.dataset.tema;
+    const escuro = tema === 'escuro' || (tema === 'auto' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    for (const [k, v] of Object.entries(paleta)) {
+      document.documentElement.style.setProperty(`--lit-${k}`, `var(--lit-${k}-${escuro ? 'escuro' : 'claro'})`);
+      document.documentElement.style.setProperty(`--lit-${k}-claro`, v.claro);
+      document.documentElement.style.setProperty(`--lit-${k}-escuro`, v.escuro);
+    }
+  }
+
+  function abrirCores() {
+    let dlg = $('#dlg-cores');
+    if (!dlg) {
+      dlg = el('dialog'); dlg.id = 'dlg-cores';
+      const form = el('form'); form.method = 'dialog';
+      form.appendChild(el('h2', null, 'Cores litúrgicas'));
+      form.appendChild(el('p', 'ajuda', 'Escolha uma cor para o tema claro e outra para o tema escuro. As alterações são guardadas neste navegador.'));
+      const campos = el('div', 'grade-cores');
+      for (const [k, v] of Object.entries(CORES_LITURGICAS)) {
+        const grupo = el('div', 'campo-cor'); grupo.appendChild(el('strong', null, v.nome));
+        for (const modo of ['claro', 'escuro']) {
+          const label = el('label', null, modo === 'claro' ? 'Tema claro' : 'Tema escuro');
+          const input = el('input'); input.type = 'color'; input.dataset.cor = k; input.dataset.modo = modo; input.value = v[modo]; label.appendChild(input); grupo.appendChild(label);
+        }
+        campos.appendChild(grupo);
+      }
+      form.appendChild(campos);
+      const botoes = el('div', 'botoes');
+      botoes.appendChild(botao('Restaurar padrão', 'Restaurar a paleta original', () => { apagar('loc.cores'); aplicarPaleta(); dlg.querySelectorAll('input[type=color]').forEach(i => i.value = CORES_LITURGICAS[i.dataset.cor][i.dataset.modo]); aviso('Paleta original restaurada.'); }));
+      const esp = el('span', 'espaco'); botoes.appendChild(esp);
+      const fechar = el('button', null, 'Fechar'); fechar.type = 'submit'; botoes.appendChild(fechar);
+      const salvar = el('button', 'primario', 'Salvar cores'); salvar.type = 'button'; salvar.addEventListener('click', () => { const p = {}; dlg.querySelectorAll('input[type=color]').forEach(i => { p[i.dataset.cor] ||= {}; p[i.dataset.cor][i.dataset.modo] = i.value; }); guardar('loc.cores', JSON.stringify(p)); aplicarPaleta(); aviso('Cores litúrgicas salvas.'); dlg.close(); }); botoes.appendChild(salvar);
+      form.appendChild(botoes); dlg.appendChild(form); document.body.appendChild(dlg);
+    }
+    const paleta = lerPaleta(); dlg.querySelectorAll('input[type=color]').forEach(i => i.value = paleta[i.dataset.cor][i.dataset.modo]);
+    dlg.showModal();
+  }
+
   function iniciarAparencia() {
     let tam = parseFloat(ler('loc.tam')) || 1.125;
     aplicarTamanho(tam);
@@ -975,10 +1039,13 @@
     $('#btn-menos').addEventListener('click', () => { tam = aplicarTamanho(tam - 0.1); });
     const ordem = ['auto', 'claro', 'escuro'];
     document.documentElement.dataset.tema = ordem.includes(ler('loc.tema')) ? ler('loc.tema') : 'auto';
+    aplicarPaleta();
+    $('#btn-cores').addEventListener('click', abrirCores);
     $('#btn-tema').addEventListener('click', () => {
       const prox = ordem[(ordem.indexOf(document.documentElement.dataset.tema) + 1) % ordem.length];
       document.documentElement.dataset.tema = prox;
       guardar('loc.tema', prox);
+      aplicarPaleta();
       aviso('Tema: ' + prox);
     });
   }
