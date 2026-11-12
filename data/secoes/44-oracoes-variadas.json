@@ -1,0 +1,10 @@
+{
+  "id":"44-oracoes-variadas",
+  "titulo":"Orações Variadas",
+  "modo":"prosa",
+  "paginaInicial":null,
+  "paginaFinal":null,
+  "blocos":[
+    {"tipo":"texto","pagina":null,"texto":""}
+  ]
+}
