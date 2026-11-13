@@ -5,6 +5,7 @@
   "paginaInicial":null,
   "paginaFinal":null,
   "blocos":[
+    {"tipo":"subtitulo","pagina":null,"texto":"Ladainhas"},
     {"tipo":"titulo","pagina":null,"texto":"Ladainha da Bem-Aventurada Virgem Maria"},
     {"tipo":"rubrica","pagina":null,"texto":"* A ladainha é dirigida pelo Oficiante, e o Povo responde onde indicado."},
     {"tipo":"texto","pagina":null,"texto":"Oficiante - Senhor, tem piedade de nós.\nPovo - Cristo, tem piedade de nós.\nOficiante - Senhor, tem piedade de nós.\nPovo - Cristo, ouve-nos.\nOficiante - Cristo, atende-nos."},
@@ -69,6 +70,12 @@
     {"tipo":"texto","pagina":null,"texto":"Oficiante - Pelos Vossos Sagrados Estigmas,\nPovo - Tende piedade de nós.\n\nPelos cravos que os abriram,\nPela dor que Vos causaram,\nPela cruz que Vos acolheu,\nPela glorificação que Vos trouxeram,\nPela salvação que nos mereceram,\nPela redenção que nos recordam,"},
     {"tipo":"texto","pagina":null,"texto":"Oficiante - Por Vossas mãos benfazejas e feridas,\nPovo - Abençoai-nos, Jesus.\n\nPor Vossas mãos poderosas e feridas,\nPor Vossas mãos benignas e feridas,\nPor Vossos pés incansáveis e feridos,\nPor Vossas pisaduras e feridas,\nPor Vosso coração sensível e ferido,\nPor Vosso coração compassivo e ferido,\nPor Vosso coração amoroso e ferido,"},
     {"tipo":"texto","pagina":null,"texto":"Oficiante - Estigmas de dor e de glória,\nPovo - Louvai a Vós, ó Cristo.\n\nEstigmas, sinais de obediência ao Pai,\nEstigmas, disponibilidade do amor,\nEstigmas, símbolo de heroísmo,\nEstigmas, documento de imolação,\nEstigmas distintivos da paixão,\nEstigmas anunciados pela profecia,\nEstigmas realizados na cruz,\nEstigmas, prova da ressurreição,\nEstigmas, esplendor de vitória,\nEstigmas, honra do triunfo da Congregação,"},
-    {"tipo":"texto","pagina":null,"texto":"Oficiante - Cordeiro de Deus, que tirais o pecado do mundo,\nPovo - tende piedade de nós.\nOficiante - Cordeiro de Deus, que tirais o pecado do mundo,\nPovo - dai-nos a paz."}
+    {"tipo":"texto","pagina":null,"texto":"Oficiante - Cordeiro de Deus, que tirais o pecado do mundo,\nPovo - tende piedade de nós.\nOficiante - Cordeiro de Deus, que tirais o pecado do mundo,\nPovo - dai-nos a paz."},
+    {"tipo":"titulo","pagina":null,"texto":"Louvores à Misericórdia de Deus"},
+    {"tipo":"rubrica","pagina":null,"texto":"* A ladainha é dirigida pelo Oficiante, e o Povo responde onde indicado."},
+    {"tipo":"texto","pagina":null,"texto":"O Amor de Deus é a flor — e a Misericórdia de Deus é o fruto."},
+    {"tipo":"texto","pagina":null,"texto":"Que a alma que desconfia leia estes louvores da Misericórdia e torne-se confiante."},
+    {"tipo":"rubrica","pagina":null,"texto":"* A cada invocação seguinte, o Povo responde: Eu confio em Vós."},
+    {"tipo":"texto","pagina":null,"texto":"Oficiante - Misericórdia Divina que brota do seio do Pai,\nPovo - Eu confio em Vós.\n\nMisericórdia Divina, atributo máximo de Deus,\nMisericórdia Divina, mistério inefável,\nMisericórdia Divina, fonte que brota do mistério da Santíssima Trindade,\nMisericórdia Divina, que nenhuma mente, nem angélica nem humana, pode perscrutar,\nMisericórdia Divina, da qual provém toda vida e toda felicidade,\nMisericórdia Divina, mais sublime do que os Céus,\nMisericórdia Divina, que envolve o universo todo,\nMisericórdia Divina, que desce ao mundo na pessoa do Verbo encarnado,\nMisericórdia Divina, que brotou da chaga aberta do Coração de Jesus,\nMisericórdia Divina, encerrada no Coração de Jesus para nós e, sobretudo, para os pecadores,\nMisericórdia Divina, imperscrutável na instituição da Eucaristia,\nMisericórdia Divina no sacramento do Santo Batismo,\nMisericórdia Divina na nossa justificação por Jesus Cristo,\nMisericórdia Divina, que nos acompanha toda a vida,\nMisericórdia Divina, que nos envolve de modo particular na hora da morte,"}
   ]
 }
