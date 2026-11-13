@@ -5,7 +5,6 @@
   "paginaInicial":null,
   "paginaFinal":null,
   "blocos":[
-    {"tipo":"subtitulo","pagina":null,"texto":"Ladainhas"},
     {"tipo":"titulo","pagina":null,"texto":"Ladainha da Bem-Aventurada Virgem Maria"},
     {"tipo":"rubrica","pagina":null,"texto":"* A ladainha é dirigida pelo Oficiante, e o Povo responde onde indicado."},
     {"tipo":"texto","pagina":null,"texto":"Oficiante - Senhor, tem piedade de nós.\nPovo - Cristo, tem piedade de nós.\nOficiante - Senhor, tem piedade de nós.\nPovo - Cristo, ouve-nos.\nOficiante - Cristo, atende-nos."},
