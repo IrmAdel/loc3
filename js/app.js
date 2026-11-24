@@ -168,6 +168,16 @@
     return r.json();
   }
 
+  async function ghApagar(cfg, caminho, sha, mensagem) {
+    const r = await fetch(urlConteudo(cfg, caminho), {
+      method: 'DELETE',
+      headers: cabecalhosGH(cfg, { 'Content-Type': 'application/json' }),
+      body: JSON.stringify({ message: mensagem, sha, branch: cfg.ramo }),
+    });
+    if (!r.ok) throw await erroHTTP(r);
+    return r.json();
+  }
+
   const pastaDados = cfg => cfg.pasta.replace(/^\/+|\/+$/g, '');
   const caminhoSecao = (cfg, id) => `${pastaDados(cfg)}/secoes/${id}.json`;
   const caminhoIndice = cfg => `${pastaDados(cfg)}/indice.json`;
@@ -268,7 +278,13 @@
       if (estado.novas.has(it.id)) nota = 'nova · não publicada';
       else if (it.paginaInicial != null) nota = it.paginaInicial === it.paginaFinal ? `p. ${it.paginaInicial}` : `pp. ${it.paginaInicial}–${it.paginaFinal}`;
       if (nota) a.appendChild(el('small', null, nota));
-      nav.appendChild(a);
+      if (estado.editando) {
+        const linha = el('div', 'item-indice');
+        const x = botao('🗑', 'Apagar esta seção', () => apagarSecao(it.id));
+        x.className = 'apagar-item';
+        linha.append(a, x);
+        nav.appendChild(linha);
+      } else nav.appendChild(a);
     }
     if (estado.secao) marcarNav(estado.secao.id);
   }
@@ -286,7 +302,7 @@
     $('#leitura').hidden = false;
     document.body.classList.remove('indice-aberto');
     const alvo = estado.indice.find(i => i.id === id) || estado.indice[0];
-    if (!alvo) return;
+    if (!alvo) { mostrarVazio(); return; }
     if (estado.secao && estado.secao.id === alvo.id) { rolarPara(bloco); return; }
     abrirSecao(alvo.id, { bloco });
   }
@@ -747,6 +763,65 @@
     abrirSecao(estado.secao.id, { ignorarRascunho: true });
   }
 
+  // ---------------------------------------------------------------- apagar seção
+
+  function mostrarVazio() {
+    estado.secao = null;
+    document.title = 'LOC IEAB 1987';
+    $('#leitura').replaceChildren(
+      el('h1', 'nome-secao', 'Livro vazio'),
+      el('p', 'carregando', 'Ative “✎ Editar” e use “＋ Nova seção” para escrever a primeira.'));
+    atualizarBarra();
+  }
+
+  /** Apaga uma seção. Rascunho local: só descarta. Publicada: tira do indice.json e apaga o arquivo no GitHub. */
+  async function apagarSecao(id) {
+    const it = estado.indice.find(i => i.id === id);
+    if (!it) return;
+    const nova = estado.novas.has(id);
+    const pergunta = nova
+      ? `Apagar a seção “${it.titulo}”?\n\nEla ainda não foi publicada e será descartada.`
+      : `Apagar a seção “${it.titulo}”?\n\nO arquivo será removido do GitHub e a seção sairá do site (continua no histórico do Git). Continuar?`;
+    if (!confirm(pergunta)) return;
+
+    if (!nova) {
+      if (!adminAtivo()) { abrirAdmin(); return; }
+      const cfg = lerConfig();
+      const msg = 'Apaga seção: ' + it.titulo;
+      try {
+        aviso('Apagando…');
+        const cam = caminhoIndice(cfg);
+        const atual = await ghLer(cfg, cam);
+        const remoto = JSON.parse(atual.texto).filter(i => i.id !== id);   // primeiro o índice: nunca fica link quebrado
+        const res = await ghGravar(cfg, cam, serializarIndice(remoto), atual.sha, msg);
+        estado.indiceSha = res.content.sha;
+        try {
+          const arq = await ghLer(cfg, caminhoSecao(cfg, id));
+          await ghApagar(cfg, caminhoSecao(cfg, id), arq.sha, msg);
+        } catch (e) { if (e.status !== 404) throw e; }               // 404 = arquivo já não existia
+      } catch (e) {
+        aviso('Não consegui apagar: ' + e.message, true);
+        return;
+      }
+    }
+
+    clearTimeout(estado.timer);
+    apagar(chaveRascunho(id));
+    estado.novas.delete(id);
+    estado.indice = estado.indice.filter(i => i.id !== id);
+    estado.indiceBusca = null;
+    salvarIndiceRascunho();
+    const eraAberta = estado.secao && estado.secao.id === id;
+    if (eraAberta) { estado.secao = null; estado.sujo = false; estado.navegacao++; }
+    renderNav();
+    if (eraAberta) {
+      const prox = estado.indice[0];
+      if (prox) { history.replaceState(null, '', '#/' + prox.id); rotear(); } else mostrarVazio();
+    }
+    atualizarBarra();
+    aviso(nova ? 'Seção descartada.' : 'Seção apagada. O GitHub Pages leva cerca de um minuto para atualizar o site.');
+  }
+
   // ------------------------------------------------------------------ nova seção
 
   function gerarId(titulo) {
@@ -1094,6 +1169,7 @@
     $('#btn-publicar').addEventListener('click', abrirPublicar);
     $('#btn-baixar').addEventListener('click', baixarJSON);
     $('#btn-descartar').addEventListener('click', descartarRascunho);
+    $('#btn-apagar').addEventListener('click', () => { if (estado.secao) apagarSecao(estado.secao.id); });
 
     $('#form-admin').addEventListener('submit', salvarAdmin);
     $('#adm-testar').addEventListener('click', testarConexao);
